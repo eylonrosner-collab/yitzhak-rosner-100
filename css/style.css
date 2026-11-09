@@ -176,6 +176,7 @@ figcaption{font-size:16px;color:var(--muted);margin-top:8px}
   .ev,.ev:nth-child(even){width:100%;margin:0;padding:0 34px 26px 0}
   .ev:before,.ev:nth-child(even):before{right:1px;left:auto}
   .mem-form .row{grid-template-columns:1fr}
+  .gallery-album{padding:0 16px;margin-top:22px}
   .sec-title{font-size:32px}
   .section{padding:52px 16px}
    .tree-viewport{height:380px}
@@ -276,3 +277,6 @@ html[dir=ltr] .hist blockquote{border-inline-start:4px solid var(--gold)}
 .mem-existing .ex{display:flex;align-items:center;gap:6px;border:1px solid var(--line);border-radius:8px;padding:6px 8px;background:#fff;font-size:14px}
 .mem-existing .ex img{width:40px;height:40px;object-fit:cover;border-radius:4px}
 .mem-existing .rm{background:none;border:0;color:#a33;cursor:pointer;font:inherit;padding:0}
+
+.gallery-album{display:flex;justify-content:center;margin:28px auto 8px;padding:0 24px;text-align:center}
+.gallery-album .btn{font-size:18px;padding:12px 28px;max-width:100%;text-align:center;white-space:normal}

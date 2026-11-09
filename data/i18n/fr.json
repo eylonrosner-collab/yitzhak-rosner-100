@@ -811,5 +811,6 @@
   "mem.save": "Enregistrer",
   "mem.removeFile": "Retirer",
   "mem.empty": "Il n’y a pas encore de souvenirs. Soyez les premiers à en écrire un.",
-  "mem.file": "Fichier"
+  "mem.file": "Fichier",
+  "gallery.album": "Album photo complet"
 }

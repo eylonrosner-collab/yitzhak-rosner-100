@@ -811,5 +811,6 @@
   "mem.save": "Save",
   "mem.removeFile": "Remove",
   "mem.empty": "No memories yet. Be the first to write one.",
-  "mem.file": "File"
+  "mem.file": "File",
+  "gallery.album": "Full photo album"
 }
