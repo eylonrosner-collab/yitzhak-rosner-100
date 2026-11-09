@@ -1,0 +1,485 @@
+{
+ "_readme": "אירועי רקע היסטוריים (לא מתולדות המשפחה). מקור: history/timeline_context.json",
+ "events": [
+  {
+   "id": "c01",
+   "date": "1775",
+   "year": 1775,
+   "title": "בוקובינה מסופחת לאוסטריה",
+   "text": "הצבא ההבסבורגי כובש ב־1774 את צפון־מערב מולדובה, ובשנת 1775 האזור מסופח רשמית כ״בוקובינה״. במפקד הראשון נרשמו בו 526 משפחות יהודיות.",
+   "context": true,
+   "sources": [
+    {
+     "type": "link",
+     "label": "YIVO – Bucovina",
+     "src": "https://encyclopedia.yivo.org/article.aspx/bucovina"
+    }
+   ]
+  },
+  {
+   "id": "c02",
+   "date": "1849",
+   "year": 1849,
+   "title": "בוקובינה הופכת לארץ כתר",
+   "text": "חוקת מרץ 1849 מפרידה את בוקובינה מגליציה והופכת אותה לארץ כתר אוטונומית שבירתה צ׳רנוביץ.",
+   "context": true,
+   "sources": [
+    {
+     "type": "link",
+     "label": "YIVO – Bucovina",
+     "src": "https://encyclopedia.yivo.org/article.aspx/bucovina"
+    }
+   ]
+  },
+  {
+   "id": "c03",
+   "date": "1866",
+   "year": 1866,
+   "title": "החוקה הרומנית שוללת אזרחות מיהודים",
+   "text": "סעיף 7 בחוקה של רומניה מגביל את האזרחות לנוצרים. בין 1880 ל־1913 קיבלו אזרחות רק 529 יהודים.",
+   "context": true,
+   "sources": [
+    {
+     "type": "link",
+     "label": "YIVO – Romania",
+     "src": "https://encyclopedia.yivo.org/article/24"
+    }
+   ]
+  },
+  {
+   "id": "c04",
+   "date": "1867",
+   "year": 1867,
+   "title": "האמנציפציה של יהודי אוסטריה",
+   "text": "יהודי האימפריה ההבסבורגית, ובהם יהודי בוקובינה, מקבלים שוויון זכויות מלא. מספר היהודים בבוקובינה עולה מ־14,581 ב־1850 ל־102,919 ב־1910.",
+   "context": true,
+   "sources": [
+    {
+     "type": "link",
+     "label": "YIVO – Bucovina",
+     "src": "https://encyclopedia.yivo.org/article.aspx/bucovina"
+    }
+   ]
+  },
+  {
+   "id": "c05",
+   "date": "1876",
+   "year": 1876,
+   "title": "התיאטרון היידי נולד ביאשי",
+   "text": "אברהם גולדפדן מעלה ביאשי את ההצגה הראשונה של התיאטרון היידי. ב־1899 היו היהודים יותר ממחצית תושבי העיר.",
+   "context": true,
+   "sources": [
+    {
+     "type": "link",
+     "label": "YIVO – Iași",
+     "src": "https://encyclopedia.yivo.org/article/925"
+    }
+   ]
+  },
+  {
+   "id": "c06",
+   "date": "1914–1918",
+   "year": 1914,
+   "title": "מלחמת העולם הראשונה בבוקובינה",
+   "text": "הצבא הרוסי כובש את בוקובינה, ומשפחות יהודיות רבות בורחות. ב־1916 מפרקים הרוסים את המנסרות של מולדוביצה.",
+   "context": true,
+   "sources": [
+    {
+     "type": "link",
+     "label": "YIVO – Bucovina",
+     "src": "https://encyclopedia.yivo.org/article.aspx/bucovina"
+    }
+   ]
+  },
+  {
+   "id": "c07",
+   "date": "נובמבר 1918",
+   "year": 1918.833,
+   "title": "בוקובינה מסופחת לרומניה",
+   "text": "הצבא הרומני נכנס לבוקובינה, והמחוז מצורף לרומניה הגדולה ומאבד את האוטונומיה שלו.",
+   "context": true,
+   "sources": [
+    {
+     "type": "link",
+     "label": "YIVO – Bucovina",
+     "src": "https://encyclopedia.yivo.org/article.aspx/bucovina"
+    }
+   ]
+  },
+  {
+   "id": "c08",
+   "date": "1923",
+   "year": 1923,
+   "title": "החוקה הרומנית מעניקה זכויות ליהודים",
+   "text": "בעקבות הסכמי המיעוטים של 1919, החוקה של 1923 מעגנת את זכויות האזרח של יהודי רומניה. באותה שנה נוסדה הליגה האנטישמית של א״ק קוזה.",
+   "context": true,
+   "sources": [
+    {
+     "type": "link",
+     "label": "YIVO – Romania",
+     "src": "https://encyclopedia.yivo.org/article/24"
+    }
+   ]
+  },
+  {
+   "id": "c09",
+   "date": "דצמבר 1937",
+   "year": 1937.917,
+   "title": "ממשלת גוגה־קוזה",
+   "text": "ממשלה אנטישמית בראשות אוקטביאן גוגה עולה לשלטון ומחוקקת צווים נגד היהודים. היא נופלת כעבור כ־40 יום.",
+   "context": true,
+   "sources": [
+    {
+     "type": "link",
+     "label": "Encyclopaedia Judaica / JVL – Romania",
+     "src": "https://www.jewishvirtuallibrary.org/romania-virtual-jewish-history-tour"
+    }
+   ]
+  },
+  {
+   "id": "c10",
+   "date": "22 בינואר 1938",
+   "year": 1938.058,
+   "title": "״בדיקת האזרחות מחדש״",
+   "text": "צו־חוק מס׳ 169 מחייב את היהודים להוכיח מחדש את אזרחותם. בסוף התהליך נשללה האזרחות מ־225,222 יהודים.",
+   "context": true,
+   "sources": [
+    {
+     "type": "link",
+     "label": "ועדת ויזל, פרק 1",
+     "src": "https://www.yadvashem.org/yv/pdf-drupal/en/report/english/1.1-roots-of-romanian-antisemitism.pdf"
+    }
+   ]
+  },
+  {
+   "id": "c11",
+   "date": "28 ביוני 1940",
+   "year": 1940.491,
+   "title": "צפון בוקובינה עוברת לברית המועצות",
+   "text": "בעקבות אולטימטום סובייטי מוותרת רומניה על בסרביה ועל צפון בוקובינה. הצבא הנסוג מתנכל ליהודים.",
+   "context": true,
+   "sources": [
+    {
+     "type": "link",
+     "label": "USHMM – Romania",
+     "src": "https://encyclopedia.ushmm.org/content/en/article/romania"
+    }
+   ]
+  },
+  {
+   "id": "c12",
+   "date": "9 באוגוסט 1940",
+   "year": 1940.605,
+   "title": "חוקי הגזע הרומניים",
+   "text": "צו־חוק 2650 מגדיר יהודים לפי ״דם״ ואוסר עליהם, בין השאר, להחזיק ברכוש כפרי ולעסוק בכלכלה בכפרים.",
+   "context": true,
+   "sources": [
+    {
+     "type": "link",
+     "label": "ועדת ויזל, פרק 1",
+     "src": "https://www.yadvashem.org/yv/pdf-drupal/en/report/english/1.1-roots-of-romanian-antisemitism.pdf"
+    },
+    {
+     "type": "story",
+     "label": "הקשר בסיפור שלו",
+     "src": "stories/shargorod.html"
+    }
+   ]
+  },
+  {
+   "id": "c13",
+   "date": "ספטמבר 1940",
+   "year": 1940.667,
+   "title": "אנטונסקו ומשמר הברזל בשלטון",
+   "text": "יון אנטונסקו ומשמר הברזל מכריזים על ״המדינה הלאומית־לגיונרית״. באוקטובר–דצמבר 1940 מגורשים יהודים מעשרות כפרים לערי המחוז.",
+   "context": true,
+   "sources": [
+    {
+     "type": "link",
+     "label": "ועדת ויזל, פרק 5",
+     "src": "https://www.yadvashem.org/yv/pdf-drupal/en/report/english/1.5-the-holocaust-in-romania.pdf"
+    }
+   ]
+  },
+  {
+   "id": "c14",
+   "date": "12 באוקטובר 1940",
+   "year": 1940.78,
+   "title": "יום כיפור של טרור בקימפולונג",
+   "text": "לגיונרים, שוטרים וחיילים בוזזים בתים יהודיים בקימפולונג, עיר המחוז של מולדוביצה, ומתעללים ברב יוסף רובין.",
+   "context": true,
+   "sources": [
+    {
+     "type": "link",
+     "label": "YIVO – Câmpulung Moldovenesc",
+     "src": "https://encyclopedia.yivo.org/article/913"
+    }
+   ]
+  },
+  {
+   "id": "c15",
+   "date": "21–23 בינואר 1941",
+   "year": 1941.055,
+   "title": "מרד הלגיונרים ופוגרום בוקרשט",
+   "text": "משמר הברזל מורד באנטונסקו, ובמהלך המרד נרצחים עשרות יהודים בבוקרשט.",
+   "context": true,
+   "sources": [
+    {
+     "type": "link",
+     "label": "USHMM – Romania",
+     "src": "https://encyclopedia.ushmm.org/content/en/article/romania"
+    }
+   ]
+  },
+  {
+   "id": "c16",
+   "date": "28–30 ביוני 1941",
+   "year": 1941.491,
+   "title": "פוגרום יאשי",
+   "text": "בעיר הולדתו של יצחק נרצחים אלפי יהודים ברחובות ובחצר המשטרה, ואלפים נוספים מתים ב״רכבות המוות״. ההערכות נעות בין יותר מ־8,000 ליותר מ־10,000 נרצחים.",
+   "context": true,
+   "sources": [
+    {
+     "type": "link",
+     "label": "יד ושם",
+     "src": "https://www.yadvashem.org/holocaust/this-month/june/1941-3.html"
+    }
+   ]
+  },
+  {
+   "id": "c17",
+   "date": "30 באוגוסט 1941",
+   "year": 1941.663,
+   "title": "הסכם טיגינה: טרנסניסטריה",
+   "text": "גרמניה מוסרת לרומניה את השטח שבין הדניסטר לבוג, ״טרנסניסטריה״, לניהול.",
+   "context": true,
+   "sources": [
+    {
+     "type": "link",
+     "label": "ועדת ויזל, פרק 5",
+     "src": "https://www.yadvashem.org/yv/pdf-drupal/en/report/english/1.5-the-holocaust-in-romania.pdf"
+    }
+   ]
+  },
+  {
+   "id": "c18",
+   "date": "9 באוקטובר 1941",
+   "year": 1941.772,
+   "title": "ראשית הגירוש מדרום בוקובינה",
+   "text": "מתחיל גירוש יהודי דרום בוקובינה לטרנסניסטריה, תחילה מסוצ׳אבה. לפי ההערכות גורשו בין כ־21,000 ליותר מ־26,000 יהודים.",
+   "context": true,
+   "sources": [
+    {
+     "type": "link",
+     "label": "המכון הלאומי לחקר השואה ברומניה ״אלי ויזל״",
+     "src": "https://www.victime.inshr-ew.ro/en"
+    },
+    {
+     "type": "story",
+     "label": "הקשר בסיפור שלו",
+     "src": "stories/shargorod.html"
+    }
+   ]
+  },
+  {
+   "id": "c19",
+   "date": "10 באוקטובר 1941",
+   "year": 1941.775,
+   "title": "גירוש יהודי גורה הומורולוי",
+   "text": "2,954 יהודים מגורה הומורולוי ומהכפרים שסביבה מגורשים ביום אחד לטרנסניסטריה, דרך אטאקי והדניסטר.",
+   "context": true,
+   "sources": [
+    {
+     "type": "link",
+     "label": "JBAT / Encyclopaedia Judaica",
+     "src": "https://jbat.lbi.org/locality/gura-humorului"
+    },
+    {
+     "type": "story",
+     "label": "הקשר בסיפור שלו",
+     "src": "stories/shargorod.html"
+    }
+   ]
+  },
+  {
+   "id": "c20",
+   "date": "אוקטובר–נובמבר 1941",
+   "year": 1941.833,
+   "title": "גטו שרגורוד מתמלא במגורשים",
+   "text": "אלפי מגורשים, רובם מבוקובינה, מצטרפים לכ־1,800 יהודי שרגורוד. בנובמבר 1941 הוקמה מועצה יהודית בראשות מאיר טייך.",
+   "context": true,
+   "sources": [
+    {
+     "type": "link",
+     "label": "יד ושם – אנציקלופדיית הגטאות",
+     "src": "https://wwv.yadvashem.org/yv/he/research/ghettos_encyclopedia/ghetto_details.asp?cid=1098"
+    },
+    {
+     "type": "story",
+     "label": "הקשר בסיפור שלו",
+     "src": "stories/conversation.html"
+    }
+   ]
+  },
+  {
+   "id": "c21",
+   "date": "חורף 1941/42",
+   "year": 1942.0,
+   "title": "מגפת הטיפוס בשרגורוד",
+   "text": "מתוך כ־9,000 יהודי שרגורוד חלו בטיפוס 2,414, ו־1,449 מהם מתו. בפברואר 1942 נפתח בגטו בית חולים של 100 מיטות.",
+   "context": true,
+   "sources": [
+    {
+     "type": "link",
+     "label": "ועדת ויזל, פרק 5",
+     "src": "https://www.yadvashem.org/yv/pdf-drupal/en/report/english/1.5-the-holocaust-in-romania.pdf"
+    },
+    {
+     "type": "story",
+     "label": "הקשר בסיפור שלו",
+     "src": "stories/haver.html"
+    }
+   ]
+  },
+  {
+   "id": "c22",
+   "date": "13 באוקטובר 1942",
+   "year": 1942.783,
+   "title": "הפסקת הגירושים",
+   "text": "ממשלת רומניה מפסיקה את הגירושים לטרנסניסטריה ומסרבת לתוכנית הגרמנית לשלוח את יהודי רומניה לבלז׳ץ.",
+   "context": true,
+   "sources": [
+    {
+     "type": "link",
+     "label": "יד ושם – טרנסניסטריה",
+     "src": "https://wwv.yadvashem.org/odot_pdf/Microsoft%20Word%20-%205304.pdf"
+    }
+   ]
+  },
+  {
+   "id": "c23",
+   "date": "14 במרץ 1944",
+   "year": 1944.202,
+   "title": "אנטונסקו מתיר את החזרת המגורשים",
+   "text": "בעוד הצבא הסובייטי מתקדם, אנטונסקו מסכים להחזרת המגורשים לרומניה.",
+   "context": true,
+   "sources": [
+    {
+     "type": "link",
+     "label": "YIVO – Transnistria",
+     "src": "https://encyclopedia.yivo.org/article/63"
+    }
+   ]
+  },
+  {
+   "id": "c24",
+   "date": "20 במרץ 1944",
+   "year": 1944.219,
+   "title": "שחרור שרגורוד",
+   "text": "הצבא האדום משחרר את שרגורוד ואת יהודי הגטו.",
+   "context": true,
+   "sources": [
+    {
+     "type": "link",
+     "label": "יד ושם – אנציקלופדיית הגטאות",
+     "src": "https://wwv.yadvashem.org/yv/he/research/ghettos_encyclopedia/ghetto_details.asp?cid=1098"
+    },
+    {
+     "type": "story",
+     "label": "הקשר בסיפור שלו",
+     "src": "stories/conversation.html"
+    }
+   ]
+  },
+  {
+   "id": "c25",
+   "date": "23 באוגוסט 1944",
+   "year": 1944.644,
+   "title": "הפיכה ברומניה",
+   "text": "המלך מיכאל מדיח את אנטונסקו, ורומניה חותמת על שביתת נשק עם ברית המועצות ועוברת לצד בעלות הברית.",
+   "context": true,
+   "sources": [
+    {
+     "type": "link",
+     "label": "USHMM – Romania",
+     "src": "https://encyclopedia.ushmm.org/content/en/article/romania"
+    }
+   ]
+  },
+  {
+   "id": "c26",
+   "date": "ספטמבר 1947",
+   "year": 1947.667,
+   "title": "עלייה ראשונה מגורה הומורולוי",
+   "text": "140 מיהודי גורה הומורולוי יוצאים לארץ ישראל דרך קפריסין. בשנים 1948–1951 עוזבים את העיר כמעט כל יהודיה.",
+   "context": true,
+   "sources": [
+    {
+     "type": "link",
+     "label": "JewishGen – ספר יזכור גורה הומורולוי",
+     "src": "https://www.jewishgen.org/Yizkor/gura1/gur203.html"
+    }
+   ]
+  },
+  {
+   "id": "c27",
+   "date": "3 במרץ 1949",
+   "year": 1949.172,
+   "title": "חיסול התנועה הציונית ברומניה",
+   "text": "משרד הפנים הקומוניסטי מורה לחסל את שרידי התנועה הציונית, כולל תנועות הנוער וחוות ההכשרה.",
+   "context": true,
+   "sources": [
+    {
+     "type": "link",
+     "label": "Encyclopaedia Judaica / JVL – Romania",
+     "src": "https://www.jewishvirtuallibrary.org/romania-virtual-jewish-history-tour"
+    }
+   ]
+  },
+  {
+   "id": "c28",
+   "date": "1952–1956",
+   "year": 1952.25,
+   "title": "הקפאת ההגירה",
+   "text": "רומניה עוצרת כמעט לגמרי את יציאת היהודים, ובמקביל מתנהל מסע אנטי־ציוני.",
+   "context": true,
+   "sources": [
+    {
+     "type": "link",
+     "label": "YIVO – Romania",
+     "src": "https://encyclopedia.yivo.org/article/24"
+    }
+   ]
+  },
+  {
+   "id": "c29",
+   "date": "1965",
+   "year": 1965,
+   "title": "כ־100,000 יהודים נותרו ברומניה",
+   "text": "בעקבות גלי ההגירה נותרו ברומניה ב־1965 כ־100,000 יהודים. מקום המדינה ועד סוף שנות ה־60 עלו לישראל מרומניה יותר מ־200,000 יהודים.",
+   "context": true,
+   "sources": [
+    {
+     "type": "link",
+     "label": "YIVO – Romania",
+     "src": "https://encyclopedia.yivo.org/article/24"
+    }
+   ]
+  },
+  {
+   "id": "c30",
+   "date": "יוני 1967",
+   "year": 1967.417,
+   "title": "רומניה לא מנתקת יחסים עם ישראל",
+   "text": "אחרי מלחמת ששת הימים רומניה היא המדינה היחידה בגוש המזרחי שלא ניתקה את יחסיה עם ישראל.",
+   "context": true,
+   "sources": [
+    {
+     "type": "link",
+     "label": "Encyclopaedia Judaica / JVL – Romania",
+     "src": "https://www.jewishvirtuallibrary.org/romania-virtual-jewish-history-tour"
+    }
+   ]
+  }
+ ]
+}

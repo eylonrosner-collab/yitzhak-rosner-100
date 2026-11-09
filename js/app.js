@@ -14,8 +14,8 @@ $('.lb-next').onclick=()=>{LI=(LI+1)%LB.length;showLB()};
 document.addEventListener('keydown',e=>{if($('#lb').hidden)return;if(e.key==='Escape')closeLB();if(e.key==='ArrowLeft')$('.lb-next').click();if(e.key==='ArrowRight')$('.lb-prev').click()});
 /* ---------- timeline ---------- */
 const ERAS=[['הכול',0,9999],['1926–1940',0,1940.99],['1941–1945',1941,1945.99],['1946–1968',1946,1968.99],['1969–2016',1969,2016.99]];
-getJSON('data/timeline.json').then(d=>{
-  const ev=d.events.slice().sort((a,b)=>a.year-b.year);
+Promise.all([getJSON('data/timeline.json'),getJSON('data/timeline_context.json').catch(()=>({events:[]}))]).then(([d,c])=>{
+  const ev=d.events.concat(c.events).sort((a,b)=>a.year-b.year);
   const tl=$('#tl');
   tl.innerHTML=ev.map(e=>{
     const imgs=e.sources.filter(s=>s.type==='image');
@@ -25,10 +25,11 @@ getJSON('data/timeline.json').then(d=>{
       if(s.type==='anchor')return `<a class="src-link" href="${esc(s.src)}">▶ ${esc(s.label)}</a>`;
       if(s.type==='video')return `<a class="src-link vid" href="${esc(s.src)}" target="_blank" rel="noopener">🎥 ${esc(s.label)}</a>`;
       return `<a class="src-link" href="${esc(s.src)}" target="_blank" rel="noopener">🔗 ${esc(s.label)}</a>`}).join('');
-    return `<li class="ev" data-year="${e.year}" id="${e.id}"><div class="ev-card"><div class="ev-date">${esc(e.date)}</div><h3>${esc(e.title)}</h3>${e.text?`<p>${esc(e.text)}</p>`:''}${e.note?`<p class="note">לבדיקה: ${esc(e.note)}</p>`:''}${e.sources.length?`<div class="srcs">${srcHtml}</div>`:''}</div></li>`}).join('');
+    return `<li class="ev${e.context?' ev-ctx':''}" data-year="${e.year}" id="${e.id}"><div class="ev-card">${e.context?'<span class="ctx-tag">רקע היסטורי</span>':''}<div class="ev-date">${esc(e.date)}</div><h3>${esc(e.title)}</h3>${e.text?`<p>${esc(e.text)}</p>`:''}${e.note?`<p class="note">לבדיקה: ${esc(e.note)}</p>`:''}${e.sources.length?`<div class="srcs">${srcHtml}</div>`:''}</div></li>`}).join('');
   tl.addEventListener('click',x=>{const b=x.target.closest('.src-img');if(!b)return;const e=ev.find(q=>q.id===b.dataset.ev);openLB(e.sources.filter(s=>s.type==='image'),+b.dataset.k)});
-  const f=$('#tlFilter');f.innerHTML=ERAS.map((r,i)=>`<button data-i="${i}" class="${i?'':'on'}">${r[0]}</button>`).join('');
-  f.onclick=x=>{const b=x.target.closest('button');if(!b)return;f.querySelectorAll('button').forEach(q=>q.classList.toggle('on',q===b));const r=ERAS[+b.dataset.i];
+  const f=$('#tlFilter');f.innerHTML=ERAS.map((r,i)=>`<button data-i="${i}" class="${i?'':'on'}">${r[0]}</button>`).join('')+'<label class="ctx-toggle"><input type="checkbox" id="ctxToggle"> הצג אירועי רקע היסטורי</label>';
+  const ctx=()=>tl.classList.toggle('show-ctx',$('#ctxToggle').checked);$('#ctxToggle').onchange=ctx;
+  f.onclick=x=>{const b=x.target.closest('button[data-i]');if(!b)return;f.querySelectorAll('button').forEach(q=>q.classList.toggle('on',q===b));const r=ERAS[+b.dataset.i];
     tl.querySelectorAll('.ev').forEach(li=>{const y=+li.dataset.year;li.style.display=(y>=r[1]&&y<=r[2])?'':'none'})};
 }).catch(e=>{$('#tl').innerHTML='<li>שגיאה בטעינת ציר הזמן</li>';console.error(e)});
 /* ---------- stories ---------- */
