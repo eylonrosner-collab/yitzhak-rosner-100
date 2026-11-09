@@ -23,6 +23,7 @@ getJSON('data/timeline.json').then(d=>{
       if(s.type==='image'){const k=imgs.indexOf(s);return `<button class="src-img" data-ev="${e.id}" data-k="${k}" title="${esc(s.label)}"><img loading="lazy" src="${esc(s.thumb||s.src)}" alt="${esc(s.label)}"><span>${esc(s.label)}</span></button>`}
       if(s.type==='story')return `<a class="src-link" href="${esc(s.src)}">📖 ${esc(s.label)}</a>`;
       if(s.type==='anchor')return `<a class="src-link" href="${esc(s.src)}">▶ ${esc(s.label)}</a>`;
+      if(s.type==='video')return `<a class="src-link vid" href="${esc(s.src)}" target="_blank" rel="noopener">🎥 ${esc(s.label)}</a>`;
       return `<a class="src-link" href="${esc(s.src)}" target="_blank" rel="noopener">🔗 ${esc(s.label)}</a>`}).join('');
     return `<li class="ev" data-year="${e.year}" id="${e.id}"><div class="ev-card"><div class="ev-date">${esc(e.date)}</div><h3>${esc(e.title)}</h3>${e.text?`<p>${esc(e.text)}</p>`:''}${e.note?`<p class="note">לבדיקה: ${esc(e.note)}</p>`:''}${e.sources.length?`<div class="srcs">${srcHtml}</div>`:''}</div></li>`}).join('');
   tl.addEventListener('click',x=>{const b=x.target.closest('.src-img');if(!b)return;const e=ev.find(q=>q.id===b.dataset.ev);openLB(e.sources.filter(s=>s.type==='image'),+b.dataset.k)});
@@ -33,7 +34,8 @@ getJSON('data/timeline.json').then(d=>{
 /* ---------- stories ---------- */
 getJSON('data/stories.json').then(st=>{$('#storyCards').innerHTML=st.map(s=>`<a class="card" href="${esc(s.url)}"><span class="period">${esc(s.period)}</span><h3 ${s.lang==='en'?'dir="ltr" style="text-align:right"':''}>${esc(s.title)}</h3><p>${esc(s.summary)}</p><span class="by">${esc(s.author)} · לקריאה ←</span></a>`).join('')});
 /* ---------- transcript ---------- */
-fetch('data/transcript_part2.txt').then(r=>r.ok?r.text():'').then(t=>{$('#tr2').textContent=t||'תמלול בהכנה.'});
+document.querySelectorAll('.tr-text[data-src]').forEach(el=>fetch(el.dataset.src).then(r=>r.ok?r.text():Promise.reject()).then(h=>{el.innerHTML=h}).catch(()=>{el.textContent='תמלול בהכנה.'}));
+if(/^#(part[12])-/.test(location.hash)){const d=document.getElementById('tr-'+location.hash.slice(1).split('-')[0]);if(d)d.open=true}
 /* ---------- documents ---------- */
 getJSON('data/documents.json').then(ds=>{$('#docs').innerHTML=ds.map((d,i)=>`<div class="doc"><h3>${esc(d.title)}</h3><div class="meta">${esc(d.date)} · ${esc(d.lang)}</div><p>${esc(d.caption)}</p><div class="pages">${d.images.map((p,k)=>`<button data-d="${i}" data-k="${k}"><img loading="lazy" src="${esc(p.thumb)}" alt="${esc(p.label)}"></button>`).join('')}</div></div>`).join('');
   $('#docs').onclick=x=>{const b=x.target.closest('button');if(!b)return;openLB(ds[+b.dataset.d].images,+b.dataset.k)}});

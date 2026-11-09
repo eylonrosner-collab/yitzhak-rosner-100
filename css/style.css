@@ -162,3 +162,16 @@ figcaption{font-size:16px;color:var(--muted);margin-top:8px}
   .sec-title{font-size:32px}
   .section{padding:52px 16px}
 }
+
+.tr-text{max-height:560px;overflow:auto;white-space:normal;font-size:16px;line-height:1.75}
+.tr-toc{background:#f8f3ea;border-radius:8px;padding:8px 14px;margin:8px 0 14px}
+.tr-toc ol{margin:4px 0 0;padding-inline-start:22px}
+.tr-toc li{margin:2px 0}
+.tr-body h4{font-family:"Frank Ruhl Libre",serif;font-size:20px;margin:22px 0 6px;color:var(--accent2);scroll-margin-top:70px}
+.tr-body p{margin:0 0 8px}
+.tr-body p.q{color:#5b5148}
+.tr-body p.a b{color:var(--accent)}
+.ts{font-size:13px;text-decoration:none;background:#eef3f6;border-radius:999px;padding:1px 8px;white-space:nowrap;direction:ltr;unicode-bidi:isolate}
+.tsline{display:inline-block;margin:6px 0 4px}
+.gap{color:var(--muted);font-style:italic;font-size:14px}
+.src-link.vid{background:#eef3f6}
