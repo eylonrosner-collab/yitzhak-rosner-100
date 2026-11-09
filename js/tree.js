@@ -155,6 +155,29 @@ function setupPanZoom(){
   window.addEventListener('resize',fit);
 }
 
-render();
-setupPanZoom();
+const T=(k,fb)=>window.I18N?I18N.t(k,fb):fb;
+function localize(){
+  PEOPLE.forEach(p=>{
+    const k='tree.'+p.id;
+    p.name=T(k+'.name',p.name);
+    p.dates=T(k+'.dates',p.dates);
+    p.role=T(k+'.role',p.role);
+    p.detail=T(k+'.detail',p.detail);
+  });
+}
+const _show=showInfo;
+showInfo=function(id){
+  const p=BY[id], box=$('#treeInfo'); if(!p||!box)return;
+  rootSelect(id);
+  const dates=p.dates?`<p class="ft-info-dates">${esc(p.dates)}</p>`:'';
+  const role=p.role?`<p class="ft-info-role">${esc(p.role)}</p>`:'';
+  const living=p.living?' · '+esc(T('tree.livingNote','לבני משפחה בחיים מוצג השם בלבד')):'';
+  box.innerHTML=`<button class="ft-info-x" type="button" aria-label="${esc(T('lb.close','סגירה'))}">×</button>
+    <h3>${esc(p.name)}</h3>${role}${dates}<p>${esc(p.detail)}</p>
+    <p class="muted">${esc(T('tree.source','מקור: העץ ב־Geni'))}${living}.</p>`;
+  box.hidden=false;
+  box.querySelector('.ft-info-x').onclick=()=>{box.hidden=true;rootSelect(null)};
+};
+const ready=(window.I18N&&I18N.ready)?I18N.ready:Promise.resolve();
+ready.then(()=>{localize();render();setupPanZoom()});
 })();

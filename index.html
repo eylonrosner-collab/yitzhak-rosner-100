@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="robots" content="noindex">
-<title>יצחק (ז׳אק) רוזנר · 100 שנה · 1926–2026</title>
+<title data-i18n="doc.title">יצחק (ז׳אק) רוזנר · 100 שנה · 1926–2026</title>
 <meta name="description" content="אתר לזכרו של יצחק (ז׳אק) רוזנר, לציון 100 שנה להולדתו: קורות חייו, ציר זמן עם מסמכים, סיפורים שכתב, עדות, עץ משפחה ותמונות.">
 <meta property="og:title" content="יצחק (ז׳אק) רוזנר · 100 שנה">
 <meta property="og:image" content="img/hero.jpg">
@@ -13,134 +13,142 @@
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<div class="draft-ribbon">טיוטה · לא לפרסום רחב</div>
+<div class="draft-ribbon" data-i18n="ui.draft">טיוטה · לא לפרסום רחב</div>
 <nav class="nav" id="nav">
-  <a href="#top" class="nav-brand">יצחק רוזנר · 100</a>
-  <button class="nav-toggle" aria-label="תפריט" onclick="document.getElementById('nav').classList.toggle('open')">☰</button>
+  <a href="#top" class="nav-brand" data-i18n="nav.brand">יצחק רוזנר · 100</a>
+  <div class="lang-switch" role="navigation" aria-label="Language">
+    <button type="button" data-set-lang="he" lang="he">עב</button>
+    <span aria-hidden="true">|</span>
+    <button type="button" data-set-lang="en" lang="en">EN</button>
+    <span aria-hidden="true">|</span>
+    <button type="button" data-set-lang="fr" lang="fr">FR</button>
+  </div>
+  <button class="nav-toggle" data-i18n-aria="nav.menu" aria-label="תפריט" onclick="document.getElementById('nav').classList.toggle('open')">☰</button>
   <div class="nav-links">
-    <a href="#bio">קורות חייו</a><a href="#timeline">ציר הזמן</a><a href="history.html">רקע היסטורי</a><a href="#stories">סיפורים</a><a href="#testimony">עדות</a><a href="#recording2016">הקלטה 2016</a><a href="#family">עץ המשפחה</a><a href="#documents">מסמכים</a><a href="#gallery">תמונות</a><a href="#memories">ספר זיכרונות</a>
+    <a href="#bio" data-i18n="nav.bio">קורות חייו</a><a href="#timeline" data-i18n="nav.timeline">ציר הזמן</a><a href="history.html" data-i18n="nav.history">רקע היסטורי</a><a href="#stories" data-i18n="nav.stories">סיפורים</a><a href="#testimony" data-i18n="nav.testimony">עדות</a><a href="#recording2016" data-i18n="nav.recording">הקלטה 2016</a><a href="#family" data-i18n="nav.family">עץ המשפחה</a><a href="#documents" data-i18n="nav.documents">מסמכים</a><a href="#gallery" data-i18n="nav.gallery">תמונות</a><a href="#memories" data-i18n="nav.memories">ספר זיכרונות</a>
   </div>
 </nav>
 
 <header class="hero" id="top">
   <div class="hero-inner">
-    <figure class="hero-photo"><img src="img/hero.jpg" alt="יצחק רוזנר, 2009"></figure>
+    <figure class="hero-photo"><img src="img/hero.jpg" alt="יצחק רוזנר, 2009" data-i18n-alt="hero.alt"></figure>
     <div class="hero-text">
       <p class="eyebrow">25.11.1926 – 25.11.2026</p>
-      <h1>יצחק (ז׳אק) רוזנר</h1>
+      <h1 data-i18n="hero.name">יצחק (ז׳אק) רוזנר</h1>
       <p class="latin">Yitzkhak Jacques Rosner</p>
-      <p class="hundred"><span>100</span> שנה להולדתו</p>
-      <p class="dates">נולד ביאשי, רומניה, 25.11.1926 · נפטר בכפר יונה, 13.8.2016</p>
-      <p class="hero-cta"><a class="btn" href="#timeline">לציר הזמן</a> <a class="btn ghost" href="#memories">שתפו זיכרון</a></p>
+      <p class="hundred"><span>100</span> <span data-i18n="hero.hundred">שנה להולדתו</span></p>
+      <p class="dates" data-i18n="hero.dates">נולד ביאשי, רומניה, 25.11.1926 · נפטר בכפר יונה, 13.8.2016</p>
+      <p class="hero-cta"><a class="btn" href="#timeline" data-i18n="hero.cta.timeline">לציר הזמן</a> <a class="btn ghost" href="#memories" data-i18n="hero.cta.memory">שתפו זיכרון</a></p>
     </div>
   </div>
 </header>
 
 <main>
 <section id="bio" class="section narrow">
-  <h2 class="sec-title">קורות חייו</h2>
+  <h2 class="sec-title" data-i18n="sec.bio">קורות חייו</h2>
   <div class="bio">
-    <p>יצחק (ז׳אק) רוזנר נולד ב־25 בנובמבר 1926 ביאשי שברומניה, בנם של ליטמן ורגינה (גינה) רוזנר ואחיה הצעיר של נלי. הוא גדל בכפר מולדוביצה שבבוקובינה, שחיו בו כ־400 עד 500 יהודים. אביו עסק בעצים וייצא אותם בעיקר לבריטניה ובחלקם גם לארץ ישראל, ומשנת 1937 או 1938 עמד בראש הוועד היהודי בכפר. ז׳אק הילד שיחק בקבוצת "מכבי מולדוביצה", ובזכות ליאו שנאפ, ידיד המשפחה, נחשב בין חבריו ל"חכם" שיודע דברים שילדים אחרים לא יודעים.</p>
-    <p>בקיץ 1940 נאסר על יהודים לגור בכפרים, והמשפחה עברה לגורה הומור. ב־9 באוקטובר 1941 גורשו עם כל יהודי העיירה לטרנסניסטריה, והגיעו לגטו שרגורוד. שם, בחדר אחד שחלקו ארבעתם, עברו עליהם כמעט שלוש שנים של רעב, מחלות ועבודת כפייה. בגטו הוא סחב מים ממעיין מרוחק, קילף תפוחי אדמה במטבח הז׳נדרמריה. באותן שנים גם לימד את עצמו רוסית, מספרים ומילון.</p>
-    <p>אחרי שהצבא האדום שחרר את הגטו ב־1944 עברה המשפחה דרך צ׳רנוביץ לבוטושאני. שם התקבל כמתורגמן במפקדה הרוסית, ובין יולי לאוקטובר 1944 שירת כמתרגם בחזית האוקראינית השנייה. בסתיו 1945 התחיל ללמוד בפוליטכניקה בבוקרשט, ובמקביל חילק עיתונים לפנות בוקר כדי לעזור להוריו. בבוקרשט נישא לברתה (בקה), וב־1954 נולד שם בנם דן (ניקולאי).</p>
-    <p>ב־1968 יצא מרומניה בשם "אדריאן רושקה", עם תעודת מסע לחסר אזרחות. הוא עבר בווינה ונחת בלוד ב־15 במאי 1968. ב־4 באוגוסט 1968 שינה רשמית את שמו ליצחק רוזנר, ובאותה תעודה שונה גם שמו של בנו ניקולאי לדן. בראשית שנות ה־70, כשעבד באבו רודיס, פגש את רות, וכפי שכתב: "כל מה שהתרחש לאחר מכן זה היסטוריה שכולם מכירים". לרות וליצחק נולדו שרון ואילון.</p>
-    <p>בשנותיו המאוחרות חזר אל השורשים. הוא ביקר עם בני המשפחה במולדוביצה ב־2000 ושוב ב־2008, הכין "לדורות הבאים של משפחתנו" את המצגת "The Rosner–Wassermann Family", כתב את זיכרונותיו, וב־2009 מסר עדות ליד ושם. הוא נפטר ב־13 באוגוסט 2016 בכפר יונה, והשאיר אחריו שלושה בנים ותשעה נכדים.</p>
+    <p data-i18n="bio.1">יצחק (ז׳אק) רוזנר נולד ב־25 בנובמבר 1926 ביאשי שברומניה, בנם של ליטמן ורגינה (גינה) רוזנר ואחיה הצעיר של נלי. הוא גדל בכפר מולדוביצה שבבוקובינה, שחיו בו כ־400 עד 500 יהודים. אביו עסק בעצים וייצא אותם בעיקר לבריטניה ובחלקם גם לארץ ישראל, ומשנת 1937 או 1938 עמד בראש הוועד היהודי בכפר. ז׳אק הילד שיחק בקבוצת "מכבי מולדוביצה", ובזכות ליאו שנאפ, ידיד המשפחה, נחשב בין חבריו ל"חכם" שיודע דברים שילדים אחרים לא יודעים.</p>
+    <p data-i18n="bio.2">בקיץ 1940 נאסר על יהודים לגור בכפרים, והמשפחה עברה לגורה הומור. ב־9 באוקטובר 1941 גורשו עם כל יהודי העיירה לטרנסניסטריה, והגיעו לגטו שרגורוד. שם, בחדר אחד שחלקו ארבעתם, עברו עליהם כמעט שלוש שנים של רעב, מחלות ועבודת כפייה. בגטו הוא סחב מים ממעיין מרוחק, קילף תפוחי אדמה במטבח הז׳נדרמריה. באותן שנים גם לימד את עצמו רוסית, מספרים ומילון.</p>
+    <p data-i18n="bio.3">אחרי שהצבא האדום שחרר את הגטו ב־1944 עברה המשפחה דרך צ׳רנוביץ לבוטושאני. שם התקבל כמתורגמן במפקדה הרוסית, ובין יולי לאוקטובר 1944 שירת כמתרגם בחזית האוקראינית השנייה. בסתיו 1945 התחיל ללמוד בפוליטכניקה בבוקרשט, ובמקביל חילק עיתונים לפנות בוקר כדי לעזור להוריו. בבוקרשט נישא לברתה (בקה), וב־1954 נולד שם בנם דן (ניקולאי).</p>
+    <p data-i18n="bio.4">ב־1968 יצא מרומניה בשם "אדריאן רושקה", עם תעודת מסע לחסר אזרחות. הוא עבר בווינה ונחת בלוד ב־15 במאי 1968. ב־4 באוגוסט 1968 שינה רשמית את שמו ליצחק רוזנר, ובאותה תעודה שונה גם שמו של בנו ניקולאי לדן. בראשית שנות ה־70, כשעבד באבו רודיס, פגש את רות, וכפי שכתב: "כל מה שהתרחש לאחר מכן זה היסטוריה שכולם מכירים". לרות וליצחק נולדו שרון ואילון.</p>
+    <p data-i18n="bio.5">בשנותיו המאוחרות חזר אל השורשים. הוא ביקר עם בני המשפחה במולדוביצה ב־2000 ושוב ב־2008, הכין "לדורות הבאים של משפחתנו" את המצגת "The Rosner–Wassermann Family", כתב את זיכרונותיו, וב־2009 מסר עדות ליד ושם. הוא נפטר ב־13 באוגוסט 2016 בכפר יונה, והשאיר אחריו שלושה בנים ותשעה נכדים.</p>
   </div>
 </section>
 
 <section id="timeline" class="section">
-  <h2 class="sec-title">ציר הזמן</h2>
-  <p class="sec-lead">לצד כל אירוע מופיע המקור שלו: תעודה, תמונה, סיפור שכתב או רגע בעדות המצולמת. לחצו על תמונה כדי להגדיל אותה. אפשר להציג גם אירועי רקע היסטורי (באפור), ולקרוא עליהם עוד בעמוד <a href="history.html">רקע היסטורי: יהודי רומניה ובוקובינה</a>.</p>
+  <h2 class="sec-title" data-i18n="sec.timeline">ציר הזמן</h2>
+  <p class="sec-lead" data-i18n-html="sec.timeline.lead">לצד כל אירוע מופיע המקור שלו: תעודה, תמונה, סיפור שכתב או רגע בעדות המצולמת. לחצו על תמונה כדי להגדיל אותה. אפשר להציג גם אירועי רקע היסטורי (באפור), ולקרוא עליהם עוד בעמוד <a href="history.html">רקע היסטורי: יהודי רומניה ובוקובינה</a>.</p>
   <div class="tl-filter" id="tlFilter"></div>
   <ol class="timeline" id="tl"></ol>
 </section>
 
 <section id="stories" class="section alt">
-  <h2 class="sec-title">הסיפורים שלו</h2>
-  <p class="sec-lead">סיפורים וזיכרונות שיצחק רוזנר כתב בעצמו, מתוך התיקייה "letters and stories".</p>
+  <h2 class="sec-title" data-i18n="sec.stories">הסיפורים שלו</h2>
+  <p class="sec-lead" data-i18n="sec.stories.lead">סיפורים וזיכרונות שיצחק רוזנר כתב בעצמו, מתוך התיקייה "letters and stories".</p>
   <div class="cards" id="storyCards"></div>
 </section>
 
 <section id="testimony" class="section narrow">
-  <h2 class="sec-title">העדות ביד ושם (2009)</h2>
-  <p class="sec-lead">עדות שמסר ליד ושם ב־י״ג באדר תשס״ט (9.3.2009), בבית בבאר שבע, בשני חלקים. מתחת לכל סרטון יש תמלול ערוך עם פרקים, וכל שעה בתמלול פותחת את הסרטון ברגע המתאים.</p>
+  <h2 class="sec-title" data-i18n="sec.testimony">העדות ביד ושם (2009)</h2>
+  <p class="sec-lead" data-i18n="sec.testimony.lead">עדות שמסר ליד ושם ב־י״ג באדר תשס״ט (9.3.2009), בבית בבאר שבע, בשני חלקים. מתחת לכל סרטון יש תמלול ערוך עם פרקים, וכל שעה בתמלול פותחת את הסרטון ברגע המתאים.</p>
   <div class="videos">
-    <figure><div class="yt"><iframe loading="lazy" src="https://www.youtube-nocookie.com/embed/Id7uz9Xt8M4" title="עדות יצחק רוזנר ליד ושם – חלק א" allowfullscreen></iframe></div>
-      <figcaption>חלק א׳ (1:59:23) · <a href="https://youtu.be/Id7uz9Xt8M4" target="_blank" rel="noopener">לצפייה ביוטיוב</a></figcaption>
-      <details class="transcript" id="tr-part1"><summary>תמלול חלק א׳ · תמלול אוטומטי ערוך – טרם נבדק על ידי המשפחה</summary><div class="tr-text" data-src="data/testimony_part1.html">טוען…</div></details></figure>
-    <figure><div class="yt"><iframe loading="lazy" src="https://www.youtube-nocookie.com/embed/WQ14GO9kM6o" title="עדות יצחק רוזנר ליד ושם – חלק ב" allowfullscreen></iframe></div>
-      <figcaption>חלק ב׳ (38:43) · <a href="https://youtu.be/WQ14GO9kM6o" target="_blank" rel="noopener">לצפייה ביוטיוב</a></figcaption>
-      <details class="transcript" id="tr-part2"><summary>תמלול חלק ב׳ · תמלול אוטומטי ערוך – טרם נבדק על ידי המשפחה</summary><div class="tr-text" data-src="data/testimony_part2.html">טוען…</div></details></figure>
+    <figure><div class="yt"><iframe loading="lazy" src="https://www.youtube-nocookie.com/embed/Id7uz9Xt8M4" title="עדות יצחק רוזנר ליד ושם – חלק א" data-i18n-aria="yt.part1" allowfullscreen></iframe></div>
+      <figcaption data-i18n-html="yt.cap1">חלק א׳ (1:59:23) · <a href="https://youtu.be/Id7uz9Xt8M4" target="_blank" rel="noopener">לצפייה ביוטיוב</a></figcaption>
+      <details class="transcript" id="tr-part1"><summary data-i18n="tr.part1">תמלול חלק א׳ · תמלול אוטומטי ערוך – טרם נבדק על ידי המשפחה</summary><div class="tr-text" data-src="data/testimony_part1.html">טוען…</div></details></figure>
+    <figure><div class="yt"><iframe loading="lazy" src="https://www.youtube-nocookie.com/embed/WQ14GO9kM6o" title="עדות יצחק רוזנר ליד ושם – חלק ב" data-i18n-aria="yt.part2" allowfullscreen></iframe></div>
+      <figcaption data-i18n-html="yt.cap2">חלק ב׳ (38:43) · <a href="https://youtu.be/WQ14GO9kM6o" target="_blank" rel="noopener">לצפייה ביוטיוב</a></figcaption>
+      <details class="transcript" id="tr-part2"><summary data-i18n="tr.part2">תמלול חלק ב׳ · תמלול אוטומטי ערוך – טרם נבדק על ידי המשפחה</summary><div class="tr-text" data-src="data/testimony_part2.html">טוען…</div></details></figure>
   </div>
 </section>
 
 <section id="recording2016" class="section narrow alt">
-  <h2 class="sec-title">אבא מספר את סיפור ילדותו בשואה (2016)</h2>
-  <p class="sec-lead">הקלטה ביתית מ־6.5.2016 (1:04:26). יצחק מספר לבני המשפחה על הדרך לשרגורוד, על החדר בגטו, על הרעב והטיפוס, על השחרור ועל הדרך לבוטושאני. ברקע נשמעים גם שאלות ושיחות של בני המשפחה.</p>
+  <h2 class="sec-title" data-i18n="sec.recording">אבא מספר את סיפור ילדותו בשואה (2016)</h2>
+  <p class="sec-lead" data-i18n="sec.recording.lead">הקלטה ביתית מ־6.5.2016 (1:04:26). יצחק מספר לבני המשפחה על הדרך לשרגורוד, על החדר בגטו, על הרעב והטיפוס, על השחרור ועל הדרך לבוטושאני. ברקע נשמעים גם שאלות ושיחות של בני המשפחה.</p>
   <audio id="rec2016" controls preload="metadata" src="audio/aba_sipur_yeladut_shoah_2016-05-06.mp3" style="display:block;width:100%;max-width:100%;box-sizing:border-box"></audio>
-  <p class="muted" style="font-size:14px"><a href="audio/aba_sipur_yeladut_shoah_2016-05-06.mp3" download>הורדת ההקלטה (MP3, 37MB)</a></p>
-  <details class="transcript" id="tr-rec2016"><summary>תמלול ההקלטה · תמלול אוטומטי – טרם נבדק</summary><div class="tr-text" data-src="data/recording2016.html">טוען…</div></details>
+  <p class="muted" style="font-size:14px"><a href="audio/aba_sipur_yeladut_shoah_2016-05-06.mp3" download data-i18n="rec.download">הורדת ההקלטה (MP3, 37MB)</a></p>
+  <details class="transcript" id="tr-rec2016"><summary data-i18n="tr.rec">תמלול ההקלטה · תמלול אוטומטי – טרם נבדק</summary><div class="tr-text" data-src="data/recording2016.html">טוען…</div></details>
 </section>
 
 <section id="family" class="section alt">
-  <h2 class="sec-title">עץ המשפחה</h2>
-  <p class="sec-lead">לפי הפרופילים ב־Geni. לבני משפחה בחיים מוצגים רק שמות.</p>
-  <p class="tree-hint">לחצו על אדם לפרטים. אפשר לזום ולגרור את העץ.</p>
+  <h2 class="sec-title" data-i18n="sec.family">עץ המשפחה</h2>
+  <p class="sec-lead" data-i18n="sec.family.lead">לפי הפרופילים ב־Geni. לבני משפחה בחיים מוצגים רק שמות.</p>
+  <p class="tree-hint" data-i18n="tree.hint">לחצו על אדם לפרטים. אפשר לזום ולגרור את העץ.</p>
   <div class="tree-toolbar" dir="ltr">
-    <button type="button" id="treeZoomOut" aria-label="הקטנה">−</button>
-    <button type="button" id="treeZoomFit">התאמה</button>
-    <button type="button" id="treeZoomIn" aria-label="הגדלה">+</button>
+    <button type="button" id="treeZoomOut" data-i18n-aria="tree.zoomOut" aria-label="הקטנה">−</button>
+    <button type="button" id="treeZoomFit" data-i18n="tree.fit">התאמה</button>
+    <button type="button" id="treeZoomIn" data-i18n-aria="tree.zoomIn" aria-label="הגדלה">+</button>
   </div>
   <div class="tree-viewport" id="treeViewport">
     <div class="tree-canvas" id="treeCanvas"></div>
   </div>
   <div class="tree-info" id="treeInfo" hidden></div>
-  <p class="center"><a class="btn big" href="https://www.geni.com/people/Yitzkhak-Rosner/145344" target="_blank" rel="noopener">לעץ המלא בג׳ני</a></p>
+  <p class="center"><a class="btn big" href="https://www.geni.com/people/Yitzkhak-Rosner/145344" target="_blank" rel="noopener" data-i18n="tree.geniBtn">לעץ המלא בג׳ני</a></p>
   <div class="geni-embed">
-    <h3 class="geni-embed-title">העץ מג׳ני</h3>
-    <iframe src="https://www.geni.com/family-tree/embed/6000000000591046927" style="width:100%;max-width:700px;height:450px;border:0" loading="lazy" title="עץ המשפחה באתר ג׳ני"></iframe>
-    <p class="fine"><a href="https://www.geni.com/family-tree/share/6000000000591046927" target="_blank" rel="noopener">העץ המלא בג׳ני</a></p>
+    <h3 class="geni-embed-title" data-i18n="tree.geniTitle">העץ מג׳ני</h3>
+    <iframe src="https://www.geni.com/family-tree/embed/6000000000591046927" style="width:100%;max-width:700px;height:450px;border:0" loading="lazy" title="עץ המשפחה באתר ג׳ני" data-i18n-aria="tree.iframe"></iframe>
+    <p class="fine"><a href="https://www.geni.com/family-tree/share/6000000000591046927" target="_blank" rel="noopener" data-i18n="tree.geniLink">העץ המלא בג׳ני</a></p>
   </div>
 </section>
 
 <section id="documents" class="section">
-  <h2 class="sec-title">מסמכים ותעודות</h2>
-  <p class="sec-lead">חמש התעודות מתיקיית "מסמכים של אבא מרומניה".</p>
+  <h2 class="sec-title" data-i18n="sec.docs">מסמכים ותעודות</h2>
+  <p class="sec-lead" data-i18n="sec.docs.lead">חמש התעודות מתיקיית "מסמכים של אבא מרומניה".</p>
   <div class="docs" id="docs"></div>
 </section>
 
 <section id="gallery" class="section alt">
-  <h2 class="sec-title">תמונות</h2>
-  <p class="sec-lead">מבחר תמונות מ־Geni, מהאלבומים "סבא ז׳ק" ו"אבא 100" ומהמצגת המשפחתית.</p>
+  <h2 class="sec-title" data-i18n="sec.gallery">תמונות</h2>
+  <p class="sec-lead" data-i18n="sec.gallery.lead">מבחר תמונות מ־Geni, מהאלבומים "סבא ז׳ק" ו"אבא 100" ומהמצגת המשפחתית.</p>
   <div id="galleryWrap"></div>
 </section>
 
 <section id="memories" class="section narrow">
-  <h2 class="sec-title">ספר זיכרונות</h2>
-  <p class="sec-lead">הכרתם את יצחק (ז׳אק)? כתבו זיכרון, סיפור או פרט מעניין, וצרפו תמונות, סרטונים או מסמכים. כל פנייה מגיעה קודם למשפחה, ותתפרסם באתר רק אחרי אישור.</p>
+  <h2 class="sec-title" data-i18n="sec.memories">ספר זיכרונות</h2>
+  <p class="sec-lead" data-i18n="sec.memories.lead">הכרתם את יצחק (ז׳אק)? כתבו זיכרון, סיפור או פרט מעניין, וצרפו תמונות, סרטונים או מסמכים. כל פנייה מגיעה קודם למשפחה, ותתפרסם באתר רק אחרי אישור.</p>
   <div id="memList" class="mem-list"></div>
   <form id="memForm" class="mem-form" novalidate>
-    <div class="row"><label>השם שלך *<input name="name" required maxlength="100"></label><label>הקשר ליצחק<input name="relation" maxlength="100" placeholder="למשל: נכדה, חבר מאבו רודיס"></label></div>
-    <label>הזיכרון שלך *<textarea name="memory" rows="6" required maxlength="10000"></textarea></label>
-    <label>קבצים (תמונות, סרטונים קצרים, מסמכים)<input type="file" name="files" multiple accept="image/*,video/*,application/pdf,.doc,.docx"></label>
-    <p class="hint">עד <span id="maxMb">25</span>MB בסך הכול. לסרטון ארוך אפשר להדביק קישור (יוטיוב, Google Drive וכו׳):</p>
-    <label>קישורים<input name="links" maxlength="1000" placeholder="https://…"></label>
-    <label>אימייל (לא יפורסם, רק כדי שנוכל לחזור אליך)<input name="email" type="email" maxlength="200"></label>
+    <div class="row"><label><span data-i18n="mem.name">השם שלך *</span><input name="name" required maxlength="100"></label><label><span data-i18n="mem.relation">הקשר ליצחק</span><input name="relation" maxlength="100" placeholder="למשל: נכדה, חבר מאבו רודיס" data-i18n-placeholder="mem.relation.ph"></label></div>
+    <label><span data-i18n="mem.memory">הזיכרון שלך *</span><textarea name="memory" rows="6" required maxlength="10000"></textarea></label>
+    <label><span data-i18n="mem.files">קבצים (תמונות, סרטונים קצרים, מסמכים)</span><input type="file" name="files" multiple accept="image/*,video/*,application/pdf,.doc,.docx"></label>
+    <p class="hint" data-i18n-html="mem.hint">עד <span id="maxMb">25</span>MB בסך הכול. לסרטון ארוך אפשר להדביק קישור (יוטיוב, Google Drive וכו׳):</p>
+    <label><span data-i18n="mem.links">קישורים</span><input name="links" maxlength="1000" placeholder="https://…"></label>
+    <label><span data-i18n="mem.email">אימייל (לא יפורסם, רק כדי שנוכל לחזור אליך)</span><input name="email" type="email" maxlength="200"></label>
     <label class="hp" aria-hidden="true">Website<input name="website" tabindex="-1" autocomplete="off"></label>
-    <label class="check"><input type="checkbox" name="consent" required> אני מסכים/ה שהמשפחה תפרסם באתר את מה ששלחתי (אחרי אישור)</label>
-    <button class="btn" type="submit">שליחה</button>
+    <label class="check"><input type="checkbox" name="consent" required> <span data-i18n="mem.consent">אני מסכים/ה שהמשפחה תפרסם באתר את מה ששלחתי (אחרי אישור)</span></label>
+    <button class="btn" type="submit" data-i18n="mem.submit">שליחה</button>
     <p id="memStatus" class="status" role="status"></p>
   </form>
 </section>
 </main>
 
 <footer class="footer">
-  <p>האתר נבנה לכבוד 100 שנה להולדתו של יצחק (ז׳אק) רוזנר, 25.11.2026.</p>
-  <p><a href="https://www.geni.com/people/Yitzkhak-Rosner/145344" target="_blank" rel="noopener">Geni</a> · <a href="https://youtu.be/Id7uz9Xt8M4" target="_blank" rel="noopener">עדות חלק א׳</a> · <a href="https://youtu.be/WQ14GO9kM6o" target="_blank" rel="noopener">עדות חלק ב׳</a></p>
+  <p data-i18n="footer.built">האתר נבנה לכבוד 100 שנה להולדתו של יצחק (ז׳אק) רוזנר, 25.11.2026.</p>
+  <p><a href="https://www.geni.com/people/Yitzkhak-Rosner/145344" target="_blank" rel="noopener">Geni</a> · <a href="https://youtu.be/Id7uz9Xt8M4" target="_blank" rel="noopener" data-i18n="footer.p1">עדות חלק א׳</a> · <a href="https://youtu.be/WQ14GO9kM6o" target="_blank" rel="noopener" data-i18n="footer.p2">עדות חלק ב׳</a></p>
 </footer>
 
-<div class="lb" id="lb" hidden><button class="lb-x" aria-label="סגירה">×</button><button class="lb-prev" aria-label="הקודם">›</button><figure><img id="lbImg" alt=""><figcaption id="lbCap"></figcaption><a id="lbOpen" target="_blank">פתיחה בגודל מלא ↗</a></figure><button class="lb-next" aria-label="הבא">‹</button></div>
+<div class="lb" id="lb" hidden><button class="lb-x" data-i18n-aria="lb.close" aria-label="סגירה">×</button><button class="lb-prev" data-i18n-aria="lb.prev" aria-label="הקודם">›</button><figure><img id="lbImg" alt=""><figcaption id="lbCap"></figcaption><a id="lbOpen" target="_blank" data-i18n="lb.open">פתיחה בגודל מלא ↗</a></figure><button class="lb-next" data-i18n-aria="lb.next" aria-label="הבא">‹</button></div>
 <script src="config.js"></script>
+<script src="js/i18n.js"></script>
 <script src="js/app.js"></script>
 <script src="js/tree.js"></script>
 </body>
