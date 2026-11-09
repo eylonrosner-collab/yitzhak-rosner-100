@@ -125,20 +125,30 @@
 
 <section id="memories" class="section narrow">
   <h2 class="sec-title" data-i18n="sec.memories">ספר זיכרונות</h2>
-  <p class="sec-lead" data-i18n="sec.memories.lead">הכרתם את יצחק (ז׳אק)? כתבו זיכרון, סיפור או פרט מעניין, וצרפו תמונות, סרטונים או מסמכים. כל פנייה מגיעה קודם למשפחה, ותתפרסם באתר רק אחרי אישור.</p>
+  <p class="sec-lead" data-i18n="sec.memories.lead">הכרתם את יצחק (ז׳אק)? כתבו זיכרון, סיפור או פרט מעניין, וצרפו תמונות, סרטונים או מסמכים.</p>
+  <p class="mem-add"><button type="button" class="btn" id="memOpen" data-i18n="mem.add">הוסף זיכרון</button></p>
+  <p id="memFlash" class="status" role="status"></p>
   <div id="memList" class="mem-list"></div>
-  <form id="memForm" class="mem-form" novalidate>
-    <div class="row"><label><span data-i18n="mem.name">השם שלך *</span><input name="name" required maxlength="100"></label><label><span data-i18n="mem.relation">הקשר ליצחק</span><input name="relation" maxlength="100" placeholder="למשל: נכדה, חבר מאבו רודיס" data-i18n-placeholder="mem.relation.ph"></label></div>
-    <label><span data-i18n="mem.memory">הזיכרון שלך *</span><textarea name="memory" rows="6" required maxlength="10000"></textarea></label>
-    <label><span data-i18n="mem.files">קבצים (תמונות, סרטונים קצרים, מסמכים)</span><input type="file" name="files" multiple accept="image/*,video/*,application/pdf,.doc,.docx"></label>
-    <p class="hint" data-i18n-html="mem.hint">עד <span id="maxMb">25</span>MB בסך הכול. לסרטון ארוך אפשר להדביק קישור (יוטיוב, Google Drive וכו׳):</p>
-    <label><span data-i18n="mem.links">קישורים</span><input name="links" maxlength="1000" placeholder="https://…"></label>
-    <label><span data-i18n="mem.email">אימייל (לא יפורסם, רק כדי שנוכל לחזור אליך)</span><input name="email" type="email" maxlength="200"></label>
-    <label class="hp" aria-hidden="true">Website<input name="website" tabindex="-1" autocomplete="off"></label>
-    <label class="check"><input type="checkbox" name="consent" required> <span data-i18n="mem.consent">אני מסכים/ה שהמשפחה תפרסם באתר את מה ששלחתי (אחרי אישור)</span></label>
-    <button class="btn" type="submit" data-i18n="mem.submit">שליחה</button>
-    <p id="memStatus" class="status" role="status"></p>
-  </form>
+  <div id="memModal" class="mem-modal" hidden>
+    <div class="mem-modal-box" role="dialog" aria-modal="true" aria-labelledby="memModalTitle">
+      <button type="button" class="mem-modal-x" id="memClose" data-i18n-aria="mem.close" aria-label="סגירה">×</button>
+      <h3 id="memModalTitle" data-i18n="mem.add">הוסף זיכרון</h3>
+      <p class="hint mem-edit-note" data-i18n="mem.editNote">אפשר לערוך את הזיכרון מאוחר יותר מאותו מכשיר.</p>
+      <form id="memForm" class="mem-form" novalidate>
+        <div class="row"><label><span data-i18n="mem.name">השם שלך *</span><input name="name" required maxlength="100"></label><label><span data-i18n="mem.relation">הקשר ליצחק</span><input name="relation" maxlength="100" placeholder="למשל: נכדה, חבר מאבו רודיס" data-i18n-placeholder="mem.relation.ph"></label></div>
+        <label><span data-i18n="mem.memory">הזיכרון שלך *</span><textarea name="memory" rows="6" required maxlength="10000"></textarea></label>
+        <div id="memExistingFiles" class="mem-existing" hidden></div>
+        <label><span data-i18n="mem.files">קבצים (תמונות, סרטונים קצרים, מסמכים)</span><input type="file" name="files" multiple accept="image/*,video/*,application/pdf,.doc,.docx"></label>
+        <p class="hint" data-i18n-html="mem.hint">עד <span id="maxMb">25</span>MB בסך הכול. לסרטון ארוך אפשר להדביק קישור (יוטיוב, Google Drive וכו׳):</p>
+        <label><span data-i18n="mem.links">קישורים</span><input name="links" maxlength="1000" placeholder="https://…"></label>
+        <label><span data-i18n="mem.email">אימייל (לא יפורסם, רק כדי שנוכל לחזור אליך)</span><input name="email" type="email" maxlength="200"></label>
+        <label class="hp" aria-hidden="true">Website<input name="website" tabindex="-1" autocomplete="off"></label>
+        <label class="check"><input type="checkbox" name="consent" required> <span data-i18n="mem.consent">אני מסכים/ה שהמשפחה תפרסם באתר את מה ששלחתי</span></label>
+        <button class="btn" type="submit" id="memSubmit" data-i18n="mem.submit">שליחה</button>
+        <p id="memStatus" class="status" role="status"></p>
+      </form>
+    </div>
+  </div>
 </section>
 </main>
 
