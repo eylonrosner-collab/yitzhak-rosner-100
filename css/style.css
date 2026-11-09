@@ -2,7 +2,7 @@
 *{box-sizing:border-box}
 html{scroll-behavior:smooth;scroll-padding-top:64px}
 body{margin:0;background:var(--bg);color:var(--ink);font-family:Assistant,Arial,sans-serif;font-size:18px;line-height:1.7}
-h1,h2,h3,.sec-title,.nav-brand{font-family:"Frank Ruhl Libre",Georgia,serif;font-weight:500}
+h1,h2,h3,h4,.sec-title,.nav-brand{font-family:inherit;font-weight:600}
 a{color:var(--accent2)}
 img{max-width:100%;display:block}
 .draft-ribbon{position:fixed;bottom:12px;left:12px;z-index:60;background:#a33;color:#fff;font-size:13px;padding:4px 10px;border-radius:4px;opacity:.85}
@@ -18,9 +18,9 @@ img{max-width:100%;display:block}
 .hero-photo img{width:300px;height:380px;object-fit:cover;object-position:50% 25%;border-radius:160px 160px 12px 12px;box-shadow:0 18px 40px rgba(60,40,20,.25);border:6px solid #fff}
 .eyebrow{color:var(--accent);letter-spacing:.08em;font-size:15px;margin:0 0 6px}
 .hero h1{font-size:clamp(38px,6vw,64px);margin:0;line-height:1.1}
-.latin{font-family:"Frank Ruhl Libre",serif;font-size:22px;color:var(--muted);margin:6px 0 18px;direction:ltr;text-align:right}
+.latin{font-size:22px;color:var(--muted);margin:6px 0 18px;direction:ltr;text-align:right}
 .hundred{font-size:26px;margin:0 0 8px}
-.hundred span{font-family:"Frank Ruhl Libre",serif;font-size:64px;color:var(--gold);vertical-align:middle;margin-inline-end:8px}
+.hundred span{font-size:64px;color:var(--gold);vertical-align:middle;margin-inline-end:8px}
 .dates{color:var(--muted);margin:0 0 22px}
 .btn{display:inline-block;background:var(--accent);color:#fff;text-decoration:none;padding:10px 22px;border-radius:999px;border:0;font:inherit;font-size:17px;cursor:pointer}
 .btn:hover{filter:brightness(1.08)}
@@ -34,7 +34,7 @@ img{max-width:100%;display:block}
 .sec-title:after{content:"";display:block;width:60px;height:2px;background:var(--gold);margin:12px auto 0}
 .sec-lead{text-align:center;color:var(--muted);max-width:720px;margin:0 auto 36px}
 .bio p{margin:0 0 1.1em;text-align:justify}
-.bio p:first-child:first-letter{font-family:"Frank Ruhl Libre",serif;font-size:3.2em;float:right;line-height:.9;margin:6px 0 0 10px;color:var(--accent)}
+.bio p:first-child:first-letter{font-size:3.2em;float:right;line-height:.9;margin:6px 0 0 10px;color:var(--accent)}
 /* timeline */
 .tl-filter{display:flex;flex-wrap:wrap;justify-content:center;gap:8px;margin-bottom:28px}
 .tl-filter button{background:#fff;border:1px solid var(--line);border-radius:999px;padding:4px 14px;font:inherit;font-size:15px;cursor:pointer;color:var(--muted)}
@@ -103,7 +103,7 @@ figcaption{font-size:16px;color:var(--muted);margin-top:8px}
 .doc .pages button{border:0;padding:0;background:none;cursor:pointer}
 .doc .pages img{height:150px;width:auto;border:1px solid var(--line);border-radius:6px}
 /* gallery */
-.g-period{font-family:"Frank Ruhl Libre",serif;font-size:24px;margin:30px 0 12px;color:var(--accent2)}
+.g-period{font-size:24px;font-weight:600;margin:30px 0 12px;color:var(--accent2)}
 .grid{columns:4 220px;column-gap:12px}
 .grid button{display:block;width:100%;margin:0 0 12px;padding:0;border:0;background:none;cursor:zoom-in;break-inside:avoid}
 .grid img{width:100%;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,.08)}
@@ -142,7 +142,7 @@ figcaption{font-size:16px;color:var(--muted);margin-top:8px}
 .byline{color:var(--accent);margin:6px 0 30px;font-size:17px}
 .story-text p{margin:0 0 1em;font-size:19px;line-height:1.85}
 .story-text[dir=ltr]{text-align:left;font-family:Georgia,serif}
-.story-text.poem{text-align:center;font-family:"Frank Ruhl Libre",serif}
+.story-text.poem{text-align:center}
 .story-text.poem p{margin:.2em 0;font-size:22px}
 .story-text .turn b{color:var(--accent2)}
 .story-text .cut{color:var(--muted);font-style:italic}
@@ -167,7 +167,7 @@ figcaption{font-size:16px;color:var(--muted);margin-top:8px}
 .tr-toc{background:#f8f3ea;border-radius:8px;padding:8px 14px;margin:8px 0 14px}
 .tr-toc ol{margin:4px 0 0;padding-inline-start:22px}
 .tr-toc li{margin:2px 0}
-.tr-body h4{font-family:"Frank Ruhl Libre",serif;font-size:20px;margin:22px 0 6px;color:var(--accent2);scroll-margin-top:70px}
+.tr-body h4{font-size:20px;margin:22px 0 6px;color:var(--accent2);scroll-margin-top:70px}
 .tr-body p{margin:0 0 8px}
 .tr-body p.q{color:#5b5148}
 .tr-body p.a b{color:var(--accent)}
@@ -186,7 +186,7 @@ figcaption{font-size:16px;color:var(--muted);margin-top:8px}
 .ctx-toggle{display:inline-flex;align-items:center;gap:6px;margin-inline-start:12px;font-size:15px;cursor:pointer;white-space:nowrap}
 /* history page */
 .hist h1{font-size:34px}
-.hist h3{font-family:"Frank Ruhl Libre",serif;font-size:26px;margin:36px 0 10px;color:var(--accent2);scroll-margin-top:20px}
+.hist h3{font-size:26px;margin:36px 0 10px;color:var(--accent2);scroll-margin-top:20px}
 .hist blockquote{border-inline-start:4px solid var(--gold);background:#f8f3ea;margin:14px 0;padding:10px 14px;border-radius:6px}
 .hist p{line-height:1.85}
 .htoc{background:#f8f3ea;border-radius:10px;padding:12px 18px;margin:18px 0}
