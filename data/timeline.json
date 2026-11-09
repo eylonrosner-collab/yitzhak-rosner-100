@@ -1,0 +1,615 @@
+{
+ "_readme": "Timeline data. Each event: date (display), year (sort key), title, text, optional note (לבדיקה), sources[] with type image|story|link|anchor, label, src, thumb. Add events here; the page sorts by year.",
+ "events": [
+  {
+   "date": "25.11.1926",
+   "year": 1926,
+   "title": "נולד ביאשי (Iași), רומניה",
+   "text": "יצחק (ז׳אק) רוזנר נולד לליטמן ולרגינה (גינה) רוזנר, אח צעיר לנלי. תאריך ומקום הלידה רשומים בתעודת המעבר הישראלית ובפרופיל ב־Geni.",
+   "note": "בתעודת המסע הרומנית מ־1968 תאריך הלידה בכתב יד נראה כמו ⁦15.II.1926⁩.",
+   "sources": [
+    {
+     "type": "image",
+     "label": "תעודת מעבר 1968: נולד ב־Iași, 25.11.1926",
+     "src": "img/docs/laissez-passer-israeli-1968-page-1.jpg",
+     "thumb": "img/docs/laissez-passer-israeli-1968-page-1-t.jpg"
+    },
+    {
+     "type": "link",
+     "label": "הפרופיל ב־Geni",
+     "src": "https://www.geni.com/people/Yitzkhak-Rosner/145344"
+    }
+   ],
+   "id": "e01"
+  },
+  {
+   "date": "1928–1930",
+   "year": 1928,
+   "title": "ילדות במולדוביצה (Moldovița), בוקובינה",
+   "text": "הבית במולדוביצה, כפר שחיו בו כ־400 עד 500 יהודים. \"הייתי בן 3\", כתב על התמונה בכניסה לבית מ־1929.",
+   "sources": [
+    {
+     "type": "image",
+     "label": "בכניסה לבית, 1929",
+     "src": "img/g/g_1929_house.jpg",
+     "thumb": "img/t/g_1929_house.jpg"
+    },
+    {
+     "type": "image",
+     "label": "ביקור ילדי רוזנר מווינה, 1928",
+     "src": "img/g/g_1928_visit.jpg",
+     "thumb": "img/t/g_1928_visit.jpg"
+    },
+    {
+     "type": "image",
+     "label": "משפחות רוזנר ווסרמן, 1930",
+     "src": "img/g/g_1930_families.jpg",
+     "thumb": "img/t/g_1930_families.jpg"
+    },
+    {
+     "type": "story",
+     "label": "הסיפור \"מי אני? וליאו שנאפ\"",
+     "src": "stories/leo.html"
+    }
+   ],
+   "id": "e02"
+  },
+  {
+   "date": "קיץ 1934 (או 1935)",
+   "year": 1934,
+   "title": "החתונה של פפי רוזנר ומנדל וסרמן",
+   "text": "החתונה נערכה בבית משפחת וסרמן במולדוביצה, ואחרי הטקס כל הנוכחים הצטלמו מול הבאר. ז׳אק הילד מופיע בתמונה.",
+   "sources": [
+    {
+     "type": "image",
+     "label": "תמונת החתונה ליד הבאר",
+     "src": "img/g/g_1934_wedding.jpg",
+     "thumb": "img/t/g_1934_wedding.jpg"
+    }
+   ],
+   "id": "e03"
+  },
+  {
+   "date": "קיץ 1937",
+   "year": 1937,
+   "title": "מכבי מולדוביצה נגד מכבי קימפולונג",
+   "text": "משחק חנוכת \"האצטדיון\" של קבוצת הכפר. ז׳אק שיחק קיצוני שמאלי, ובדקה ה־85 הבקיע בטעות לשער של קבוצתו.",
+   "sources": [
+    {
+     "type": "story",
+     "label": "הסיפור המלא, בכתיבתו",
+     "src": "stories/maccabi.html"
+    }
+   ],
+   "id": "e04"
+  },
+  {
+   "date": "1937/38–1940",
+   "year": 1938,
+   "title": "אביו, ראש הקהילה היהודית",
+   "text": "לדבריו, משנת 1937 או 1938 ועד הגירוש היה אביו ליטמן יו״ר הוועד היהודי במולדוביצה.",
+   "sources": [
+    {
+     "type": "story",
+     "label": "שיחה על שרגורוד",
+     "src": "stories/conversation.html"
+    }
+   ],
+   "id": "e05"
+  },
+  {
+   "date": "קיץ 1940",
+   "year": 1940,
+   "title": "גירוש מהכפר ומעבר לגורה הומור (Gura Humorului)",
+   "text": "חוק חדש אסר על יהודים לגור בכפרים. המשפחה קיבלה 3 ימים לעזוב ועברה לגורה הומור, כ־50 ק״מ ממולדוביצה, אל קרובי האם ממשפחת אלנבוגן.",
+   "sources": [
+    {
+     "type": "story",
+     "label": "הסיפור \"שארגורוד\"",
+     "src": "stories/shargorod.html"
+    }
+   ],
+   "id": "e06"
+  },
+  {
+   "date": "9.10.1941",
+   "year": 1941,
+   "title": "גירוש לטרנסניסטריה",
+   "text": "יחד עם כל יהודי גורה הומור גורשה המשפחה לטרנסניסטריה. אחרי כשבועיים של \"דרך ייסורים\" הם הגיעו לשרגורוד. אישור מעיריית מולדוביצה מ־1948 מעיד שגורש עם הוריו באוקטובר 1941.",
+   "sources": [
+    {
+     "type": "image",
+     "label": "אישור הגירוש, מולדוביצה 14.7.1948",
+     "src": "img/docs/adeverinta-deportare-transnistria-1948-page-1.jpg",
+     "thumb": "img/docs/adeverinta-deportare-transnistria-1948-page-1-t.jpg"
+    },
+    {
+     "type": "story",
+     "label": "הסיפור \"שארגורוד\"",
+     "src": "stories/shargorod.html"
+    }
+   ],
+   "id": "e07"
+  },
+  {
+   "date": "1941–1944",
+   "year": 1942,
+   "title": "גטו שרגורוד",
+   "text": "ארבעה בני משפחה גרו בחדר אחד בבית של סוניה שטרקמן. הוא הביא מים ממעיין במרחק כשלושה ק״מ, ושלושה ימים בשבוע קילף תפוחי אדמה במטבח הז׳נדרמריה. בגטו גם לימד אותו רופא זקן מהמשפחה דקדוק, פיזיקה וסטנוגרפיה גרמנית.",
+   "sources": [
+    {
+     "type": "image",
+     "label": "מפת שרגורוד בסימונו: בתי וסרמן, רוזנר וצימרמן",
+     "src": "img/g/s_map.jpg",
+     "thumb": "img/t/s_map.jpg"
+    },
+    {
+     "type": "image",
+     "label": "תרשים החדר בשרגורוד",
+     "src": "img/g/s_visio1.jpg",
+     "thumb": "img/t/s_visio1.jpg"
+    },
+    {
+     "type": "story",
+     "label": "שיחה על שרגורוד",
+     "src": "stories/conversation.html"
+    }
+   ],
+   "id": "e08"
+  },
+  {
+   "date": "1944",
+   "year": 1944,
+   "title": "השחרור בידי הצבא האדום",
+   "text": "קצין רוסי עלה על טנק ונאם ביידיש: \"אתם חופשיים\". אחרי כחודש יצאה המשפחה עם משפחת וסרמן ברגל לצ׳רנוביץ, ומשם ברחה לבוטושאני (Botoșani).",
+   "note": "בסיפור הכתוב: \"עד סוף חודש מאי 1944\". בתמלול האוטומטי של עדות 2009 נשמע \"21 במרץ 1944\".",
+   "sources": [
+    {
+     "type": "story",
+     "label": "שיחה על שרגורוד",
+     "src": "stories/conversation.html"
+    },
+    {
+     "type": "story",
+     "label": "הסיפור \"שארגורוד\"",
+     "src": "stories/shargorod.html"
+    }
+   ],
+   "id": "e09"
+  },
+  {
+   "date": "15.7–15.10.1944",
+   "year": 1944.5,
+   "title": "מתורגמן בחזית האוקראינית השנייה",
+   "text": "בבוטושאני התקבל כמתורגמן במפקדה הרוסית שניהלה את הטריטוריה הרומנית. את הרוסית לימד את עצמו, מספרים ומילון רוסי־גרמני. אישור רשמי מ־1946 מעיד על השירות.",
+   "sources": [
+    {
+     "type": "image",
+     "label": "אישור השירות כמתרגם (תרגום מרוסית, בוקרשט 1946)",
+     "src": "img/docs/adeverinta-traducator-frontul-2-ucrainian-1946-page-1.jpg",
+     "thumb": "img/docs/adeverinta-traducator-frontul-2-ucrainian-1946-page-1-t.jpg"
+    },
+    {
+     "type": "story",
+     "label": "שיחה על שרגורוד",
+     "src": "stories/conversation.html"
+    }
+   ],
+   "id": "e10"
+  },
+  {
+   "date": "1945",
+   "year": 1945,
+   "title": "בוקרשט: \"הגרדרובה\" של השגריר",
+   "text": "\"כל מה שאני לובש נושא מונוגרמה: MvK\". הבגדים הגיעו מהשגרירות הגרמנית הנאצית בבוקרשט, שנתפסה בידי הצבא הסובייטי באוגוסט 1944 (מתוך הכיתוב שכתב לתמונה).",
+   "sources": [
+    {
+     "type": "image",
+     "label": "בוקרשט 1945, עם האופניים",
+     "src": "img/g/g_1945_bike.jpg",
+     "thumb": "img/t/g_1945_bike.jpg"
+    }
+   ],
+   "id": "e11"
+  },
+  {
+   "date": "מאי 1945",
+   "year": 1945.3,
+   "title": "החזרה למולדוביצה",
+   "text": "לפי אישור העירייה מ־1948, שב עם הוריו למולדוביצה במאי 1945.",
+   "sources": [
+    {
+     "type": "image",
+     "label": "אישור העירייה, 1948",
+     "src": "img/docs/adeverinta-deportare-transnistria-1948-page-1.jpg",
+     "thumb": "img/docs/adeverinta-deportare-transnistria-1948-page-1-t.jpg"
+    },
+    {
+     "type": "image",
+     "label": "אישור נוטריוני להעתק, בוקרשט 1963",
+     "src": "img/docs/adeverinta-deportare-transnistria-1948-page-2.jpg",
+     "thumb": "img/docs/adeverinta-deportare-transnistria-1948-page-2-t.jpg"
+    }
+   ],
+   "id": "e12"
+  },
+  {
+   "date": "סתיו 1945",
+   "year": 1945.8,
+   "title": "הפוליטכניקה, והמפגש עם בן הדוד ביבי בויקו",
+   "text": "בבוקרשט התחיל ללמוד בפוליטכניקה. בין 3:00 ל־8:00 בבוקר עבד בחלוקת עיתונים בחברת Slova. יום אחד חיפש אותו קצין רומני, שהתברר שהוא בן דודו האגדי ביבי רוזנר (מיהאי בויקו).",
+   "sources": [
+    {
+     "type": "story",
+     "label": "המכתב \"Meeting Boico\"",
+     "src": "stories/boico.html"
+    },
+    {
+     "type": "image",
+     "label": "1945–1946, רחוב Pisoni 3",
+     "src": "img/g/g_1945_pisoni.jpg",
+     "thumb": "img/t/g_1945_pisoni.jpg"
+    }
+   ],
+   "id": "e13"
+  },
+  {
+   "date": "שנות ה־50",
+   "year": 1952,
+   "title": "קצין צעיר בבוקרשט",
+   "text": "גר ברחוב אורל ולאיקו (Aurel Vlaicu) והלך כל בוקר ברגל לעבודה במרכז העיר. בשנים האלה היה נשוי לברתה (בקה).",
+   "sources": [
+    {
+     "type": "story",
+     "label": "הסיפור \"הליכת בוקר לעבודה\"",
+     "src": "stories/boker.html"
+    }
+   ],
+   "id": "e14"
+  },
+  {
+   "date": "1954",
+   "year": 1954,
+   "title": "נולד בנו דן",
+   "text": "דן (ניקולאי) נולד בבוקרשט (לפי Geni).",
+   "sources": [
+    {
+     "type": "link",
+     "label": "דן ב־Geni",
+     "src": "https://www.geni.com/people/Dan-Rosner/4533044594980089318"
+    },
+    {
+     "type": "image",
+     "label": "בוקרשט, שנות ה־60",
+     "src": "img/g/g_buc_60s.jpg",
+     "thumb": "img/t/g_buc_60s.jpg"
+    }
+   ],
+   "id": "e15"
+  },
+  {
+   "date": "1962",
+   "year": 1962,
+   "title": "בחדר הבקרה של מפעל \"אלקטרוניקה\"",
+   "text": "כך כתוב על תמונה מ־1962, באלבום \"אבא 100\".",
+   "sources": [
+    {
+     "type": "image",
+     "label": "\"בחדר הבקרה, מפעל ׳אלקטרוניקה׳ 1962\"",
+     "src": "img/g/g_1962_lab.jpg",
+     "thumb": "img/t/g_1962_lab.jpg"
+    }
+   ],
+   "id": "e16"
+  },
+  {
+   "date": "יולי 1966",
+   "year": 1966,
+   "title": "בוקרשט, Str. Muzeul Zambaccian 14",
+   "text": "תמונה מבוקרשט, יולי 1966 (לפי התגובה ב־Geni).",
+   "sources": [
+    {
+     "type": "image",
+     "label": "בוקרשט, יולי 1966",
+     "src": "img/g/g_1966_zambaccian.jpg",
+     "thumb": "img/t/g_1966_zambaccian.jpg"
+    }
+   ],
+   "id": "e17"
+  },
+  {
+   "date": "26.2.1968",
+   "year": 1968.1,
+   "title": "תעודת מסע לחסר אזרחות על שם \"אדריאן רושקה\"",
+   "text": "משרד הפנים הרומני הנפיק תעודת מסע (Seria B 007368) על שם ROSCA ADRIAN, עם יעד: איטליה.",
+   "sources": [
+    {
+     "type": "image",
+     "label": "תעודת המסע, עמוד 1",
+     "src": "img/docs/certificat-calatorie-rosca-adrian-1968-page-1.jpg",
+     "thumb": "img/docs/certificat-calatorie-rosca-adrian-1968-page-1-t.jpg"
+    },
+    {
+     "type": "image",
+     "label": "אשרות וחותמות, עמוד 2",
+     "src": "img/docs/certificat-calatorie-rosca-adrian-1968-page-2.jpg",
+     "thumb": "img/docs/certificat-calatorie-rosca-adrian-1968-page-2-t.jpg"
+    }
+   ],
+   "id": "e18"
+  },
+  {
+   "date": "12–15.5.1968",
+   "year": 1968.3,
+   "title": "עלייה: דרך וינה ללוד",
+   "text": "חותמות בתעודת המסע: נמל התעופה של וינה ב־12.5.1968, יציאה ב־15.5.1968, ובאותו יום כניסה לישראל בנמל התעופה לוד.",
+   "sources": [
+    {
+     "type": "image",
+     "label": "החותמות של וינה ולוד",
+     "src": "img/docs/certificat-calatorie-rosca-adrian-1968-page-2.jpg",
+     "thumb": "img/docs/certificat-calatorie-rosca-adrian-1968-page-2-t.jpg"
+    }
+   ],
+   "id": "e19"
+  },
+  {
+   "date": "4.8.1968",
+   "year": 1968.5,
+   "title": "שינוי השם ליצחק רוזנר",
+   "text": "לשכת העלייה והמרשם בירושלים הנפיקה את תעודת שינוי השם: אדריאן רושקה ← יצחק רוזנר, ברתה רושקה ← ברתה רוזנר, ניקולאי רושקה ← דן רוזנר. הכתובת: שמואל הנביא 5/9, ירושלים.",
+   "sources": [
+    {
+     "type": "image",
+     "label": "תעודת שינוי השם, 4.8.1968",
+     "src": "img/docs/teudat-shinui-shem-1968-page-1.jpg",
+     "thumb": "img/docs/teudat-shinui-shem-1968-page-1-t.jpg"
+    }
+   ],
+   "id": "e20"
+  },
+  {
+   "date": "25.8–24.10.1968",
+   "year": 1968.7,
+   "title": "תעודת מעבר ישראלית ומסע לקנדה ולארה״ב",
+   "text": "תעודת מעבר ישראלית מ־25.8.1968, על שם יצחק רוזנר \"לשעבר אדריאן רוסקה\". יצא מלוד ב־12.9.1968, נכנס לארה״ב בשמפליין, ניו יורק (11.10), עבר בטורונטו (18.10) ובפריז־אורלי (20–22.10), וחזר ללוד ב־24.10.1968.",
+   "sources": [
+    {
+     "type": "image",
+     "label": "תעודת המעבר, עמוד 1",
+     "src": "img/docs/laissez-passer-israeli-1968-page-1.jpg",
+     "thumb": "img/docs/laissez-passer-israeli-1968-page-1-t.jpg"
+    },
+    {
+     "type": "image",
+     "label": "אשרות, עמוד 2",
+     "src": "img/docs/laissez-passer-israeli-1968-page-2.jpg",
+     "thumb": "img/docs/laissez-passer-israeli-1968-page-2-t.jpg"
+    },
+    {
+     "type": "image",
+     "label": "חותמות, עמוד 3",
+     "src": "img/docs/laissez-passer-israeli-1968-page-3.jpg",
+     "thumb": "img/docs/laissez-passer-israeli-1968-page-3-t.jpg"
+    },
+    {
+     "type": "image",
+     "label": "\"Montreal 1968\"",
+     "src": "img/g/g_1968_montreal.jpg",
+     "thumb": "img/t/g_1968_montreal.jpg"
+    }
+   ],
+   "id": "e21"
+  },
+  {
+   "date": "ראשית שנות ה־70",
+   "year": 1971,
+   "title": "אבו רודיס: הפגישה עם רות",
+   "text": "באבו רודיס הציע טרמפ לבחורה צעירה שהגיעה חדשה לשדה. \"ובו במקום החלטתי החלטה גורלית: זאת היא האישה שאני רוצה להתעורר בבוקר ולראותה על ידי\".",
+   "sources": [
+    {
+     "type": "story",
+     "label": "הסיפור \"הליכת בוקר לעבודה\"",
+     "src": "stories/boker.html"
+    }
+   ],
+   "id": "e22"
+  },
+  {
+   "date": "1974–1975",
+   "year": 1974,
+   "title": "נולדים שרון ואילון",
+   "text": "שרון נולד ב־1974 ואילון ב־1975, שניהם בתל אביב (לפי Geni).",
+   "sources": [
+    {
+     "type": "link",
+     "label": "שרון ב־Geni",
+     "src": "https://www.geni.com/people/Sharon-Rosner/145338"
+    },
+    {
+     "type": "link",
+     "label": "אילון ב־Geni",
+     "src": "https://www.geni.com/people/Eylon-Rosner/328969"
+    }
+   ],
+   "id": "e23"
+  },
+  {
+   "date": "1985",
+   "year": 1985,
+   "title": "טיול משפחתי בספרד",
+   "text": "\"המשפחה מטיילת בספרד – 1985\" (כיתוב על התמונה).",
+   "sources": [
+    {
+     "type": "image",
+     "label": "ספרד 1985",
+     "src": "img/g/g_1985_spain.jpg",
+     "thumb": "img/t/g_1985_spain.jpg"
+    }
+   ],
+   "id": "e24"
+  },
+  {
+   "date": "מאי 2000",
+   "year": 2000,
+   "title": "ביקור שורשים במולדוביצה",
+   "text": "קבוצה מהמשפחה ביקרה בבוקובינה והצטלמה במולדוביצה ליד אותה באר שבחצר בית וסרמן. ב־2008, כשביקר שם שוב, הבאר כבר לא הייתה קיימת.",
+   "sources": [
+    {
+     "type": "image",
+     "label": "ליד הבאר, 2000",
+     "src": "img/g/g_2000_well.jpg",
+     "thumb": "img/t/g_2000_well.jpg"
+    },
+    {
+     "type": "image",
+     "label": "אותה באר, 1934",
+     "src": "img/g/g_1934_wedding.jpg",
+     "thumb": "img/t/g_1934_wedding.jpg"
+    }
+   ],
+   "id": "e25"
+  },
+  {
+   "date": "9.3.2009",
+   "year": 2009,
+   "title": "עדות ביד ושם",
+   "text": "עדות מצולמת ליד ושם, בבית בבאר שבע, באורך כשעתיים וחצי.",
+   "sources": [
+    {
+     "type": "anchor",
+     "label": "לצפייה בעדות",
+     "src": "#testimony"
+    }
+   ],
+   "id": "e26"
+  },
+  {
+   "date": "ספטמבר 2009",
+   "year": 2009.7,
+   "title": "יצחק ורות במסצ׳וסטס",
+   "text": "",
+   "sources": [
+    {
+     "type": "image",
+     "label": "מסצ׳וסטס, 2009",
+     "src": "img/g/g_2009_mass.jpg",
+     "thumb": "img/t/g_2009_mass.jpg"
+    },
+    {
+     "type": "image",
+     "label": "מסצ׳וסטס, 2009",
+     "src": "img/g/s_massach.jpg",
+     "thumb": "img/t/s_massach.jpg"
+    }
+   ],
+   "id": "e27"
+  },
+  {
+   "date": "15.5.2010",
+   "year": 2010,
+   "title": "\"Meeting of the Seniors\" בווינה",
+   "text": "",
+   "sources": [
+    {
+     "type": "image",
+     "label": "וינה, 2010",
+     "src": "img/g/g_2010_vienna.jpg",
+     "thumb": "img/t/g_2010_vienna.jpg"
+    }
+   ],
+   "id": "e28"
+  },
+  {
+   "date": "מאי 2011",
+   "year": 2011.4,
+   "title": "כתב את \"שארגורוד\"",
+   "text": "את זיכרונות הגירוש כתב בעברית ובאנגלית.",
+   "sources": [
+    {
+     "type": "story",
+     "label": "שארגורוד",
+     "src": "stories/shargorod.html"
+    },
+    {
+     "type": "story",
+     "label": "Shargorod (English)",
+     "src": "stories/shargorod-en.html"
+    }
+   ],
+   "id": "e29"
+  },
+  {
+   "date": "26.11.2011",
+   "year": 2011.9,
+   "title": "יום ההולדת ה־85",
+   "text": "\"My 85th Anniversary – יום הולדת 85 שלי\" (Geni).",
+   "sources": [
+    {
+     "type": "image",
+     "label": "יום ההולדת ה־85",
+     "src": "img/g/g_2011_85.jpg",
+     "thumb": "img/t/g_2011_85.jpg"
+    },
+    {
+     "type": "image",
+     "label": "נובמבר 2011",
+     "src": "img/g/g_2011_85b.jpg",
+     "thumb": "img/t/g_2011_85b.jpg"
+    }
+   ],
+   "id": "e30"
+  },
+  {
+   "date": "23.11.2013",
+   "year": 2013,
+   "title": "\"החבר הנעלם\"",
+   "text": "טקסט קצר שכתב.",
+   "sources": [
+    {
+     "type": "story",
+     "label": "החבר הנעלם",
+     "src": "stories/haver.html"
+    }
+   ],
+   "id": "e31"
+  },
+  {
+   "date": "6.5.2016",
+   "year": 2016.3,
+   "title": "\"אבא מספר את סיפור ילדותו בשואה\"",
+   "text": "הקלטה ביתית שבה סיפר את סיפור ילדותו.",
+   "note": "ההקלטה עדיין בתמלול.",
+   "sources": [],
+   "id": "e32"
+  },
+  {
+   "date": "13.8.2016",
+   "year": 2016.6,
+   "title": "נפטר בכפר יונה",
+   "text": "יצחק רוזנר נפטר בגיל 89 (לפי Geni).",
+   "sources": [
+    {
+     "type": "link",
+     "label": "הפרופיל ב־Geni",
+     "src": "https://www.geni.com/people/Yitzkhak-Rosner/145344"
+    },
+    {
+     "type": "image",
+     "label": "יולי 2016",
+     "src": "img/g/g_2016_jul.jpg",
+     "thumb": "img/t/g_2016_jul.jpg"
+    }
+   ],
+   "id": "e33"
+  },
+  {
+   "date": "25.11.2026",
+   "year": 2026,
+   "title": "100 שנה להולדתו",
+   "text": "המשפחה מתכנסת לציין 100 שנה להולדתו.",
+   "sources": [],
+   "id": "e34"
+  }
+ ]
+}

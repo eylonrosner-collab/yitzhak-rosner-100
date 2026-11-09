@@ -1,0 +1,572 @@
+[
+ {
+  "id": "g_1928_visit",
+  "full": "img/g/g_1928_visit.jpg",
+  "thumb": "img/t/g_1928_visit.jpg",
+  "caption": "ביקור ילדי משפחת רוזנר מווינה במולדוביצה, 1928 (Geni)",
+  "period": "1926–1940 · ילדות במולדוביצה",
+  "source": "media/08_visit-in-moldovita.jpg",
+  "w": 690,
+  "h": 768
+ },
+ {
+  "id": "g_1929_house",
+  "full": "img/g/g_1929_house.jpg",
+  "thumb": "img/t/g_1929_house.jpg",
+  "caption": "בכניסה לבית המשפחה במולדוביצה, 1929: \"הייתי בן 3\" (כיתוב שלו ב־Geni)",
+  "period": "1926–1940 · ילדות במולדוביצה",
+  "source": "media/03_family-home-moldovitza.jpg",
+  "w": 317,
+  "h": 480
+ },
+ {
+  "id": "g_1930_families",
+  "full": "img/g/g_1930_families.jpg",
+  "thumb": "img/t/g_1930_families.jpg",
+  "caption": "משפחות רוזנר ווסרמן, 1930 (Geni)",
+  "period": "1926–1940 · ילדות במולדוביצה",
+  "source": "media/09_rosner-wassermann-families.jpg",
+  "w": 1024,
+  "h": 732
+ },
+ {
+  "id": "g_1934_wedding",
+  "full": "img/g/g_1934_wedding.jpg",
+  "thumb": "img/t/g_1934_wedding.jpg",
+  "caption": "חתונת פפי רוזנר ומנדל וסרמן במולדוביצה, קיץ 1934 (או 1935), ליד הבאר בבית וסרמן",
+  "period": "1926–1940 · ילדות במולדוביצה",
+  "source": "media/17_pepi-rosner-mendel-wassermann-wedding.bmp",
+  "w": 1600,
+  "h": 1016
+ },
+ {
+  "id": "g_wedding_moldovitza",
+  "full": "img/g/g_wedding_moldovitza.jpg",
+  "thumb": "img/t/g_wedding_moldovitza.jpg",
+  "caption": "\"חתונה במולדוביצה\" (Geni, ללא תאריך)",
+  "period": "1926–1940 · ילדות במולדוביצה",
+  "source": "media/16_wedding-moldowitza.jpg",
+  "w": 929,
+  "h": 652
+ },
+ {
+  "id": "g_store_30s",
+  "full": "img/g/g_store_30s.jpg",
+  "thumb": "img/t/g_store_30s.jpg",
+  "caption": "החנות של אהרון לייב וסרמן במולדוביצה בשנות ה־30 (מתוך המצגת המשפחתית)",
+  "period": "1926–1940 · ילדות במולדוביצה",
+  "source": "stories/rw_family_images/image97.jpg",
+  "w": 800,
+  "h": 534
+ },
+ {
+  "id": "g_family_portraits",
+  "full": "img/g/g_family_portraits.jpg",
+  "thumb": "img/t/g_family_portraits.jpg",
+  "caption": "מתוך שקף \"רגינה, נלי, ז׳אק וליטמן\" במצגת המשפחתית (זיהוי מדויק – לבדיקה)",
+  "period": "1926–1940 · ילדות במולדוביצה",
+  "source": "stories/rw_family_images/image52.jpg",
+  "w": 572,
+  "h": 800
+ },
+ {
+  "id": "g_young_portrait",
+  "full": "img/g/g_young_portrait.jpg",
+  "thumb": "img/t/g_young_portrait.jpg",
+  "caption": "דיוקן צעיר מתוך שקף משפחת ליטמן רוזנר במצגת (כנראה ז׳אק – לבדיקה)",
+  "period": "1941–1945 · מלחמה ושחרור",
+  "source": "stories/rw_family_images/image53.jpeg",
+  "w": 232,
+  "h": 296
+ },
+ {
+  "id": "g_1945_bike",
+  "full": "img/g/g_1945_bike.jpg",
+  "thumb": "img/t/g_1945_bike.jpg",
+  "caption": "בוקרשט, 1945: הבגדים עם המונוגרמה MvK מהשגרירות הגרמנית שנתפסה באוגוסט 1944, והאופניים מדירת נציג האקדמיה הגרמנית (כיתוב שלו ב־Geni)",
+  "period": "1941–1945 · מלחמה ושחרור",
+  "source": "media/02_nazi-embassy-clothes.jpg",
+  "w": 322,
+  "h": 480
+ },
+ {
+  "id": "g_1945_pisoni",
+  "full": "img/g/g_1945_pisoni.jpg",
+  "thumb": "img/t/g_1945_pisoni.jpg",
+  "caption": "1945–1946, מול הבית ברחוב Ing. Pisoni 3: נלי, רגינה, ליטמן ויצחק (Geni)",
+  "period": "1945–1968 · בוקרשט",
+  "source": "media/18_pisoni-street-family.jpg",
+  "w": 817,
+  "h": 1199
+ },
+ {
+  "id": "g_group_boico",
+  "full": "img/g/g_group_boico.jpg",
+  "thumb": "img/t/g_group_boico.jpg",
+  "caption": "תמונה משפחתית מאלבום אנדרה בויקו (ללא תאריך)",
+  "period": "1945–1968 · בוקרשט",
+  "source": "media/22_family-group-andre-boico.jpg",
+  "w": 1592,
+  "h": 956
+ },
+ {
+  "id": "g_old_1",
+  "full": "img/g/g_old_1.jpg",
+  "thumb": "img/t/g_old_1.jpg",
+  "caption": "תצלום ישן, ללא תאריך (אלבום \"אבא 100\")",
+  "period": "1945–1968 · בוקרשט",
+  "source": "photos_album2/010.jpg",
+  "w": 1264,
+  "h": 840
+ },
+ {
+  "id": "g_old_2",
+  "full": "img/g/g_old_2.jpg",
+  "thumb": "img/t/g_old_2.jpg",
+  "caption": "תצלום ישן, ללא תאריך (אלבום \"אבא 100\")",
+  "period": "1945–1968 · בוקרשט",
+  "source": "photos_album2/012.jpg",
+  "w": 1260,
+  "h": 840
+ },
+ {
+  "id": "g_1962_lab",
+  "full": "img/g/g_1962_lab.jpg",
+  "thumb": "img/t/g_1962_lab.jpg",
+  "caption": "\"בחדר הבקרה, מפעל ׳אלקטרוניקה׳ 1962\" (כיתוב על התמונה)",
+  "period": "1945–1968 · בוקרשט",
+  "source": "photos_album2/051.jpg",
+  "w": 1600,
+  "h": 1059
+ },
+ {
+  "id": "g_buc_60s",
+  "full": "img/g/g_buc_60s.jpg",
+  "thumb": "img/t/g_buc_60s.jpg",
+  "caption": "בוקרשט, שנות ה־60, עם דן, ביבי בויקו והרמן וסרמן (Geni)",
+  "period": "1945–1968 · בוקרשט",
+  "source": "media/20_bucarest-60s.jpg",
+  "w": 1252,
+  "h": 840
+ },
+ {
+  "id": "g_1966_zambaccian",
+  "full": "img/g/g_1966_zambaccian.jpg",
+  "thumb": "img/t/g_1966_zambaccian.jpg",
+  "caption": "בוקרשט, יולי 1966, Str. Muzeul Zambaccian 14 (Geni)",
+  "period": "1945–1968 · בוקרשט",
+  "source": "media/21_muzeul-zambaccian-14.jpg",
+  "w": 1244,
+  "h": 836
+ },
+ {
+  "id": "g_old_3",
+  "full": "img/g/g_old_3.jpg",
+  "thumb": "img/t/g_old_3.jpg",
+  "caption": "אירוע משפחתי, ללא תאריך (אלבום \"אבא 100\")",
+  "period": "1945–1968 · בוקרשט",
+  "source": "photos_album2/013.jpg",
+  "w": 1592,
+  "h": 956
+ },
+ {
+  "id": "g_old_4",
+  "full": "img/g/g_old_4.jpg",
+  "thumb": "img/t/g_old_4.jpg",
+  "caption": "אירוע משפחתי, ללא תאריך (אלבום \"אבא 100\")",
+  "period": "1945–1968 · בוקרשט",
+  "source": "photos_album2/014.jpg",
+  "w": 1600,
+  "h": 1016
+ },
+ {
+  "id": "g_1968_montreal",
+  "full": "img/g/g_1968_montreal.jpg",
+  "thumb": "img/t/g_1968_montreal.jpg",
+  "caption": "\"Montreal 1968\" (כיתוב על התמונה), בזמן המסע לקנדה ולארה״ב בסתיו 1968",
+  "period": "1968– · בישראל",
+  "source": "photos_album2/052.jpg",
+  "w": 1600,
+  "h": 1050
+ },
+ {
+  "id": "g_1968_zimmerman",
+  "full": "img/g/g_1968_zimmerman.jpg",
+  "thumb": "img/t/g_1968_zimmerman.jpg",
+  "caption": "\"1968 עם פייג׳י/ציפורה צימרמן ובנה מארק\" (כיתוב על התמונה)",
+  "period": "1968– · בישראל",
+  "source": "photos_album2/049.jpg",
+  "w": 1600,
+  "h": 1599
+ },
+ {
+  "id": "g_old_5",
+  "full": "img/g/g_old_5.jpg",
+  "thumb": "img/t/g_old_5.jpg",
+  "caption": "ללא תאריך (אלבום \"אבא 100\")",
+  "period": "1968– · בישראל",
+  "source": "photos_album2/053.jpg",
+  "w": 1117,
+  "h": 1600
+ },
+ {
+  "id": "g_old_6",
+  "full": "img/g/g_old_6.jpg",
+  "thumb": "img/t/g_old_6.jpg",
+  "caption": "ללא תאריך (אלבום \"אבא 100\")",
+  "period": "1968– · בישראל",
+  "source": "photos_album2/050.jpg",
+  "w": 1600,
+  "h": 1061
+ },
+ {
+  "id": "g_kiss_1",
+  "full": "img/g/g_kiss_1.jpg",
+  "thumb": "img/t/g_kiss_1.jpg",
+  "caption": "תצלום ישן, ללא תאריך (אלבום \"סבא ז׳ק\")",
+  "period": "1968– · בישראל",
+  "source": "photos_album/017.jpg",
+  "w": 900,
+  "h": 1600
+ },
+ {
+  "id": "g_kiss_2",
+  "full": "img/g/g_kiss_2.jpg",
+  "thumb": "img/t/g_kiss_2.jpg",
+  "caption": "תצלום ישן, ללא תאריך (אלבום \"סבא ז׳ק\")",
+  "period": "1968– · בישראל",
+  "source": "photos_album/010.jpg",
+  "w": 900,
+  "h": 1600
+ },
+ {
+  "id": "g_baby_1",
+  "full": "img/g/g_baby_1.jpg",
+  "thumb": "img/t/g_baby_1.jpg",
+  "caption": "עם תינוק, ללא תאריך (אלבום \"אבא 100\")",
+  "period": "1968– · בישראל",
+  "source": "photos_album2/048.jpg",
+  "w": 1600,
+  "h": 1194
+ },
+ {
+  "id": "g_baby_2",
+  "full": "img/g/g_baby_2.jpg",
+  "thumb": "img/t/g_baby_2.jpg",
+  "caption": "ללא תאריך (אלבום \"אבא 100\")",
+  "period": "1968– · בישראל",
+  "source": "photos_album2/008.jpg",
+  "w": 754,
+  "h": 504
+ },
+ {
+  "id": "g_family_70s",
+  "full": "img/g/g_family_70s.jpg",
+  "thumb": "img/t/g_family_70s.jpg",
+  "caption": "ללא תאריך (אלבום \"אבא 100\")",
+  "period": "1968– · בישראל",
+  "source": "photos_album2/047.jpg",
+  "w": 1600,
+  "h": 1057
+ },
+ {
+  "id": "g_kids",
+  "full": "img/g/g_kids.jpg",
+  "thumb": "img/t/g_kids.jpg",
+  "caption": "ללא תאריך (אלבום \"אבא 100\")",
+  "period": "1968– · בישראל",
+  "source": "photos_album2/046.jpg",
+  "w": 1600,
+  "h": 1059
+ },
+ {
+  "id": "g_brit_old",
+  "full": "img/g/g_brit_old.jpg",
+  "thumb": "img/t/g_brit_old.jpg",
+  "caption": "ברית, ללא תאריך (אלבום \"אבא 100\")",
+  "period": "1968– · בישראל",
+  "source": "photos_album2/057.jpg",
+  "w": 1600,
+  "h": 1202
+ },
+ {
+  "id": "g_garden",
+  "full": "img/g/g_garden.jpg",
+  "thumb": "img/t/g_garden.jpg",
+  "caption": "ללא תאריך (אלבום \"סבא ז׳ק\")",
+  "period": "1968– · בישראל",
+  "source": "photos_album/007.jpg",
+  "w": 1600,
+  "h": 900
+ },
+ {
+  "id": "g_1985_spain",
+  "full": "img/g/g_1985_spain.jpg",
+  "thumb": "img/t/g_1985_spain.jpg",
+  "caption": "\"המשפחה מטיילת בספרד – 1985\" (כיתוב על התמונה)",
+  "period": "1968– · בישראל",
+  "source": "photos_album2/045.jpg",
+  "w": 1600,
+  "h": 1107
+ },
+ {
+  "id": "g_trip_1",
+  "full": "img/g/g_trip_1.jpg",
+  "thumb": "img/t/g_trip_1.jpg",
+  "caption": "ללא תאריך (אלבום \"אבא 100\")",
+  "period": "1968– · בישראל",
+  "source": "photos_album2/054.jpg",
+  "w": 1600,
+  "h": 1064
+ },
+ {
+  "id": "g_trip_2",
+  "full": "img/g/g_trip_2.jpg",
+  "thumb": "img/t/g_trip_2.jpg",
+  "caption": "ללא תאריך (אלבום \"אבא 100\")",
+  "period": "1968– · בישראל",
+  "source": "photos_album2/055.jpg",
+  "w": 1600,
+  "h": 1058
+ },
+ {
+  "id": "g_trip_3",
+  "full": "img/g/g_trip_3.jpg",
+  "thumb": "img/t/g_trip_3.jpg",
+  "caption": "ללא תאריך (אלבום \"אבא 100\")",
+  "period": "1968– · בישראל",
+  "source": "photos_album2/060.jpg",
+  "w": 1483,
+  "h": 1485
+ },
+ {
+  "id": "g_study",
+  "full": "img/g/g_study.jpg",
+  "thumb": "img/t/g_study.jpg",
+  "caption": "ללא תאריך (אלבום \"אבא 100\")",
+  "period": "1968– · בישראל",
+  "source": "photos_album2/059.jpg",
+  "w": 1600,
+  "h": 1115
+ },
+ {
+  "id": "g_2000_well",
+  "full": "img/g/g_2000_well.jpg",
+  "thumb": "img/t/g_2000_well.jpg",
+  "caption": "מאי 2000: ביקור משפחתי במולדוביצה, ליד אותה באר בבית וסרמן (כיתוב שלו ב־Geni)",
+  "period": "2000–2016",
+  "source": "media/19_wassermann-well-2000.jpg",
+  "w": 960,
+  "h": 720
+ },
+ {
+  "id": "g_2004",
+  "full": "img/g/g_2004.jpg",
+  "thumb": "img/t/g_2004.jpg",
+  "caption": "אוקטובר 2004 (אלבום \"סבא ז׳ק\")",
+  "period": "2000–2016",
+  "source": "photos_album/401.jpg",
+  "w": 1600,
+  "h": 1067
+ },
+ {
+  "id": "g_2005",
+  "full": "img/g/g_2005.jpg",
+  "thumb": "img/t/g_2005.jpg",
+  "caption": "מאי 2005 (אלבום \"סבא ז׳ק\")",
+  "period": "2000–2016",
+  "source": "photos_album/391.jpg",
+  "w": 1024,
+  "h": 768
+ },
+ {
+  "id": "g_2005b",
+  "full": "img/g/g_2005b.jpg",
+  "thumb": "img/t/g_2005b.jpg",
+  "caption": "מרץ 2005 (אלבום \"סבא ז׳ק\")",
+  "period": "2000–2016",
+  "source": "photos_album/393.jpg",
+  "w": 640,
+  "h": 480
+ },
+ {
+  "id": "g_2008",
+  "full": "img/g/g_2008.jpg",
+  "thumb": "img/t/g_2008.jpg",
+  "caption": "דצמבר 2008 (אלבום \"סבא ז׳ק\")",
+  "period": "2000–2016",
+  "source": "photos_album/348.jpg",
+  "w": 1600,
+  "h": 1200
+ },
+ {
+  "id": "g_2009_july",
+  "full": "img/g/g_2009_july.jpg",
+  "thumb": "img/t/g_2009_july.jpg",
+  "caption": "יולי 2009 (Geni)",
+  "period": "2000–2016",
+  "source": "media/15_july-2009.jpg",
+  "w": 506,
+  "h": 691
+ },
+ {
+  "id": "g_2009_mass",
+  "full": "img/g/g_2009_mass.jpg",
+  "thumb": "img/t/g_2009_mass.jpg",
+  "caption": "יצחק ורות במסצ׳וסטס, ספטמבר 2009 (Geni)",
+  "period": "2000–2016",
+  "source": "media/10_yitkhak-ruth-massachusetts-1.jpg",
+  "w": 480,
+  "h": 425
+ },
+ {
+  "id": "g_2009_mass2",
+  "full": "img/g/g_2009_mass2.jpg",
+  "thumb": "img/t/g_2009_mass2.jpg",
+  "caption": "יצחק ורות במסצ׳וסטס, ספטמבר 2009 (Geni)",
+  "period": "2000–2016",
+  "source": "media/14_yitkhak-ruth-massachusetts-5.jpg",
+  "w": 1600,
+  "h": 1200
+ },
+ {
+  "id": "g_2010_vienna",
+  "full": "img/g/g_2010_vienna.jpg",
+  "thumb": "img/t/g_2010_vienna.jpg",
+  "caption": "\"Meeting of the Seniors\", וינה, 15 במאי 2010 (Geni)",
+  "period": "2000–2016",
+  "source": "media/06_meeting-of-seniors.jpg",
+  "w": 1600,
+  "h": 1200
+ },
+ {
+  "id": "g_2010_shola",
+  "full": "img/g/g_2010_shola.jpg",
+  "thumb": "img/t/g_2010_shola.jpg",
+  "caption": "עם שולמית בסמן ביום הולדתה ה־80, אפריל 2010 (Geni)",
+  "period": "2000–2016",
+  "source": "media/07_shola-80th-birthday.jpg",
+  "w": 320,
+  "h": 480
+ },
+ {
+  "id": "g_2011_omri",
+  "full": "img/g/g_2011_omri.jpg",
+  "thumb": "img/t/g_2011_omri.jpg",
+  "caption": "ברית המילה של עמרי, ינואר 2011 (Geni)",
+  "period": "2000–2016",
+  "source": "media/05_omri-brit-mila.jpg",
+  "w": 1600,
+  "h": 1200
+ },
+ {
+  "id": "g_2011_85",
+  "full": "img/g/g_2011_85.jpg",
+  "thumb": "img/t/g_2011_85.jpg",
+  "caption": "יום הולדת 85, 26 בנובמבר 2011 (Geni: \"On my 85th Anniversary\")",
+  "period": "2000–2016",
+  "source": "media/04_85th-anniversary.jpg",
+  "w": 1600,
+  "h": 1200
+ },
+ {
+  "id": "g_2011_85b",
+  "full": "img/g/g_2011_85b.jpg",
+  "thumb": "img/t/g_2011_85b.jpg",
+  "caption": "נובמבר 2011, יום ההולדת ה־85 (לפי תאריך הצילום)",
+  "period": "2000–2016",
+  "source": "photos_album/224.jpg",
+  "w": 1600,
+  "h": 1200
+ },
+ {
+  "id": "g_2011_aug",
+  "full": "img/g/g_2011_aug.jpg",
+  "thumb": "img/t/g_2011_aug.jpg",
+  "caption": "אוגוסט 2011 (אלבום \"סבא ז׳ק\")",
+  "period": "2000–2016",
+  "source": "photos_album/258.jpg",
+  "w": 1600,
+  "h": 1200
+ },
+ {
+  "id": "g_2012",
+  "full": "img/g/g_2012.jpg",
+  "thumb": "img/t/g_2012.jpg",
+  "caption": "נובמבר 2012 (אלבום \"סבא ז׳ק\")",
+  "period": "2000–2016",
+  "source": "photos_album/212.jpg",
+  "w": 1600,
+  "h": 1200
+ },
+ {
+  "id": "g_2013",
+  "full": "img/g/g_2013.jpg",
+  "thumb": "img/t/g_2013.jpg",
+  "caption": "מאי 2013 (אלבום \"סבא ז׳ק\")",
+  "period": "2000–2016",
+  "source": "photos_album/197.jpg",
+  "w": 1200,
+  "h": 1600
+ },
+ {
+  "id": "g_2014_brit",
+  "full": "img/g/g_2014_brit.jpg",
+  "thumb": "img/t/g_2014_brit.jpg",
+  "caption": "אוקטובר 2014 (אלבום \"סבא ז׳ק\")",
+  "period": "2000–2016",
+  "source": "photos_album/137.jpg",
+  "w": 1200,
+  "h": 1600
+ },
+ {
+  "id": "g_2014_sep",
+  "full": "img/g/g_2014_sep.jpg",
+  "thumb": "img/t/g_2014_sep.jpg",
+  "caption": "ספטמבר 2014 (אלבום \"סבא ז׳ק\")",
+  "period": "2000–2016",
+  "source": "photos_album/153.jpg",
+  "w": 1600,
+  "h": 1200
+ },
+ {
+  "id": "g_2014_fam",
+  "full": "img/g/g_2014_fam.jpg",
+  "thumb": "img/t/g_2014_fam.jpg",
+  "caption": "נובמבר 2014 (אלבום \"סבא ז׳ק\")",
+  "period": "2000–2016",
+  "source": "photos_album/086.jpg",
+  "w": 1600,
+  "h": 1067
+ },
+ {
+  "id": "g_2016_feb",
+  "full": "img/g/g_2016_feb.jpg",
+  "thumb": "img/t/g_2016_feb.jpg",
+  "caption": "פברואר 2016 (אלבום \"אבא 100\")",
+  "period": "2000–2016",
+  "source": "photos_album2/088.jpg",
+  "w": 1200,
+  "h": 1600
+ },
+ {
+  "id": "g_2016_mar",
+  "full": "img/g/g_2016_mar.jpg",
+  "thumb": "img/t/g_2016_mar.jpg",
+  "caption": "מרץ 2016 (אלבום \"סבא ז׳ק\")",
+  "period": "2000–2016",
+  "source": "photos_album/034.jpg",
+  "w": 1600,
+  "h": 900
+ },
+ {
+  "id": "g_2016_jul",
+  "full": "img/g/g_2016_jul.jpg",
+  "thumb": "img/t/g_2016_jul.jpg",
+  "caption": "יולי 2016 (אלבום \"סבא ז׳ק\")",
+  "period": "2000–2016",
+  "source": "photos_album/028.jpg",
+  "w": 720,
+  "h": 1280
+ }
+]
