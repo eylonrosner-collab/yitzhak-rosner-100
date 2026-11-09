@@ -45,13 +45,15 @@ function ensureSchema_() {
     sh.setFrozenRows(1);
   }
   const headers = headerNames_(sh);
-  const last = Math.max(sh.getMaxRows(), 2);
-  ['approved', 'hidden'].forEach(function (name) {
-    const c = col_(headers, name);
-    if (c) {
-      try { sh.getRange(2, c, last - 1, 1).insertCheckboxes(); } catch (e) {}
-    }
-  });
+  const last = lastDataRow_(sh);
+  if (last >= 2) {
+    ['approved', 'hidden'].forEach(function (name) {
+      const c = col_(headers, name);
+      if (c) {
+        try { sh.getRange(2, c, last - 1, 1).insertCheckboxes(); } catch (e) {}
+      }
+    });
+  }
   return sh;
 }
 
@@ -207,9 +209,23 @@ function writeRow_(sh, headers, rowIndex, obj) {
   });
 }
 
+// Last row that has a timestamp in column A (ignores rows that only hold empty checkboxes).
+function lastDataRow_(sh) {
+  const n = sh.getLastRow();
+  if (n < 1) return 0;
+  const vals = sh.getRange(1, 1, n, 1).getValues();
+  for (let i = vals.length - 1; i >= 0; i--) {
+    if (String(vals[i][0] || '').trim() !== '') return i + 1;
+  }
+  return 1;
+}
+
 function appendRowObj_(sh, headers, obj) {
-  sh.appendRow(headers.map(function (h) { return Object.prototype.hasOwnProperty.call(obj, h) ? obj[h] : ''; }));
-  return sh.getLastRow();
+  const rowIndex = lastDataRow_(sh) + 1;
+  if (rowIndex > sh.getMaxRows()) sh.insertRowsAfter(sh.getMaxRows(), rowIndex - sh.getMaxRows());
+  const values = headers.map(function (h) { return Object.prototype.hasOwnProperty.call(obj, h) ? obj[h] : ''; });
+  sh.getRange(rowIndex, 1, 1, values.length).setValues([values]);
+  return rowIndex;
 }
 
 function doPost(e) {
