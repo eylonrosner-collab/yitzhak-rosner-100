@@ -85,28 +85,22 @@
 <section id="family" class="section alt">
   <h2 class="sec-title">עץ המשפחה</h2>
   <p class="sec-lead">לפי הפרופילים ב־Geni. לבני משפחה בחיים מוצגים רק שמות.</p>
-  <div class="tree" id="tree">
-    <div class="gen gen-gp">
-      <div class="couple"><div class="p">יצחק רוזנר<small>1850 – בערך 1910 · פוטילה</small></div><div class="p">חיה רוזנר (שרף)<small>בערך 1850 – 1935 · מולדוביצה</small></div></div>
-      <div class="couple"><div class="p">נתן מרקוביץ׳</div><div class="p">לואיז מרקוביץ׳ (טאובס)<small>1873 – 1940</small></div></div>
-    </div>
-    <div class="vline"></div>
-    <div class="gen"><div class="couple main-parents"><div class="p">ליטמן רוזנר<small>13.1.1886 – 3.3.1979 · נפטר בירושלים</small></div><div class="p">רגינה (גינה) רוזנר (מרקוביץ׳)<small>15.8.1898 – 23.9.1987 · נפטרה בירושלים</small></div></div></div>
-    <div class="vline"></div>
-    <div class="gen siblings">
-      <div class="branch"><div class="p">נלי גודאנו (רוזנר)<small>אשת הרמן גודאנו · אם זאב (אנדי)</small></div></div>
-      <div class="branch me"><div class="p star">יצחק (ז׳אק) רוזנר<small>25.11.1926 – 13.8.2016</small></div>
-        <div class="spouses"><div class="p sp">ברתה רוזנר (רוזנטל)<small>בערך 1914 – 2002 · אשתו לשעבר</small></div><div class="p sp">רות רוזנר (וולד)<small>אשתו</small></div></div>
-      </div>
-    </div>
-    <div class="vline"></div>
-    <div class="gen kids">
-      <div class="kid"><div class="p">דן רוזנר<small>נולד בבוקרשט · בנם של יצחק וברתה</small></div><div class="gk"><span>בן</span><span>עדי</span><span>ערן</span></div></div>
-      <div class="kid"><div class="p">שרון רוזנר<small>בנם של יצחק ורות · ובת זוגו זהר שפי</small></div><div class="gk"><span>עמנואל</span><span>נועה</span></div></div>
-      <div class="kid"><div class="p">אילון רוזנר<small>בנם של יצחק ורות · ואשתו שרון (לולאצ׳י)</small></div><div class="gk"><span>יהלי</span><span>מאיה</span><span>עמרי</span><span>בר</span></div></div>
-    </div>
+  <p class="tree-hint">לחצו על אדם לפרטים. אפשר לזום ולגרור את העץ.</p>
+  <div class="tree-toolbar" dir="ltr">
+    <button type="button" id="treeZoomOut" aria-label="הקטנה">−</button>
+    <button type="button" id="treeZoomFit">התאמה</button>
+    <button type="button" id="treeZoomIn" aria-label="הגדלה">+</button>
   </div>
-  <p class="center"><a class="btn big" href="https://www.geni.com/people/Yitzkhak-Rosner/145344" target="_blank" rel="noopener">🌳 לעץ המשפחה המלא ב־Geni</a></p>
+  <div class="tree-viewport" id="treeViewport">
+    <div class="tree-canvas" id="treeCanvas"></div>
+  </div>
+  <div class="tree-info" id="treeInfo" hidden></div>
+  <p class="center"><a class="btn big" href="https://www.geni.com/people/Yitzkhak-Rosner/145344" target="_blank" rel="noopener">לעץ המלא בג׳ני</a></p>
+  <div class="geni-embed">
+    <h3 class="geni-embed-title">העץ מג׳ני</h3>
+    <iframe src="https://www.geni.com/family-tree/embed/6000000000591046927" style="width:100%;max-width:700px;height:450px;border:0" loading="lazy" title="עץ המשפחה באתר ג׳ני"></iframe>
+    <p class="fine"><a href="https://www.geni.com/family-tree/share/6000000000591046927" target="_blank" rel="noopener">העץ המלא בג׳ני</a></p>
+  </div>
 </section>
 
 <section id="documents" class="section">
@@ -148,5 +142,6 @@
 <div class="lb" id="lb" hidden><button class="lb-x" aria-label="סגירה">×</button><button class="lb-prev" aria-label="הקודם">›</button><figure><img id="lbImg" alt=""><figcaption id="lbCap"></figcaption><a id="lbOpen" target="_blank">פתיחה בגודל מלא ↗</a></figure><button class="lb-next" aria-label="הבא">‹</button></div>
 <script src="config.js"></script>
 <script src="js/app.js"></script>
+<script src="js/tree.js"></script>
 </body>
 </html>
