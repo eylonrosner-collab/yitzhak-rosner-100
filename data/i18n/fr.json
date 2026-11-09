@@ -45,7 +45,7 @@
   "tr.part2": "Transcription de la 2e partie · transcription automatique revue – pas encore relue par la famille",
   "tr.rec": "Transcription de l’enregistrement · transcription automatique – pas encore relue",
   "tr.pending": "Transcription en préparation.",
-  "rec.download": "Télécharger l’enregistrement (MP3, 37 Mo)",
+  "rec.download": "Télécharger l’enregistrement (MP3, 45 Mo)",
   "tree.hint": "Cliquez sur une personne pour voir les détails. Vous pouvez zoomer et faire glisser l’arbre.",
   "tree.fit": "Ajuster",
   "tree.zoomOut": "Réduire",
@@ -799,5 +799,6 @@
   "history.b114": "<code>13-dniester-mohyliv-podilskyi.jpg</code>: Gikü, CC0 (<a href=\"https://creativecommons.org/publicdomain/zero/1.0/deed.en\" target=\"_blank\" rel=\"noopener\">licence</a>), via <a href=\"https://commons.wikimedia.org/wiki/File:UA.AB.Mohyliv-Podilskyi_-_view_from_the_bridge_-_jun_2015.jpg\" target=\"_blank\" rel=\"noopener\">Wikimedia Commons</a>",
   "history.b115": "<code>14-shargorod-synagogue.jpg</code>: V1snyk, CC BY-SA 4.0 (<a href=\"https://creativecommons.org/licenses/by-sa/4.0\" target=\"_blank\" rel=\"noopener\">licence</a>), via <a href=\"https://commons.wikimedia.org/wiki/File:Shargorod_synagogue.jpg\" target=\"_blank\" rel=\"noopener\">Wikimedia Commons</a>",
   "history.b116": "<code>15-transnistria-ghetto-exit-permit.jpg</code>: The government of the Kingdom of Romania., Public domain, via <a href=\"https://commons.wikimedia.org/wiki/File:Transnistria_Governorate_Jewish_Ghetto_exit_permit.jpg\" target=\"_blank\" rel=\"noopener\">Wikimedia Commons</a>",
-  "history.b117": "<code>16-transnistria-orphans-1944.jpg</code>: Unknown author (Bucharest, 1944; Yad Vashem source cited on Commons), Public domain, via <a href=\"https://commons.wikimedia.org/wiki/File:Transnisteria_orphans_1944.jpg\" target=\"_blank\" rel=\"noopener\">Wikimedia Commons</a>"
+  "history.b117": "<code>16-transnistria-orphans-1944.jpg</code>: Unknown author (Bucharest, 1944; Yad Vashem source cited on Commons), Public domain, via <a href=\"https://commons.wikimedia.org/wiki/File:Transnisteria_orphans_1944.jpg\" target=\"_blank\" rel=\"noopener\">Wikimedia Commons</a>",
+  "rec.cleaned": "Bruit de fond réduit"
 }
