@@ -35,7 +35,9 @@ Promise.all([getJSON('data/timeline.json'),getJSON('data/timeline_context.json')
 /* ---------- stories ---------- */
 getJSON('data/stories.json').then(st=>{$('#storyCards').innerHTML=st.map(s=>`<a class="card" href="${esc(s.url)}"><span class="period">${esc(s.period)}</span><h3 ${s.lang==='en'?'dir="ltr" style="text-align:right"':''}>${esc(s.title)}</h3><p>${esc(s.summary)}</p><span class="by">${esc(s.author)} · לקריאה ←</span></a>`).join('')});
 /* ---------- transcript ---------- */
-document.querySelectorAll('.tr-text[data-src]').forEach(el=>fetch(el.dataset.src).then(r=>r.ok?r.text():Promise.reject()).then(h=>{el.innerHTML=h}).catch(()=>{el.textContent='תמלול בהכנה.'}));
+document.querySelectorAll('.tr-text[data-src]').forEach(el=>fetch(el.dataset.src).then(r=>r.ok?r.text():Promise.reject()).then(h=>{el.innerHTML=h;const t=location.hash&&el.querySelector(location.hash.replace(/[^#\w-]/g,''));if(t){el.closest('details').open=true;setTimeout(()=>t.scrollIntoView({block:'start'}),50)}}).catch(()=>{el.textContent='תמלול בהכנה.'}));
+document.addEventListener('click',e=>{const b=e.target.closest('button.ts[data-t]');if(!b)return;const a=$('#rec2016');a.currentTime=+b.dataset.t;a.play();a.scrollIntoView({behavior:'smooth',block:'center'})});
+if(/^#rec-/.test(location.hash)){const d=$('#tr-rec2016');if(d)d.open=true}
 if(/^#(part[12])-/.test(location.hash)){const d=document.getElementById('tr-'+location.hash.slice(1).split('-')[0]);if(d)d.open=true}
 /* ---------- documents ---------- */
 getJSON('data/documents.json').then(ds=>{$('#docs').innerHTML=ds.map((d,i)=>`<div class="doc"><h3>${esc(d.title)}</h3><div class="meta">${esc(d.date)} · ${esc(d.lang)}</div><p>${esc(d.caption)}</p><div class="pages">${d.images.map((p,k)=>`<button data-d="${i}" data-k="${k}"><img loading="lazy" src="${esc(p.thumb)}" alt="${esc(p.label)}"></button>`).join('')}</div></div>`).join('');
