@@ -306,7 +306,7 @@
    "date": "אוקטובר–נובמבר 1941",
    "year": 1941.833,
    "title": "גטו שרגורוד מתמלא במגורשים",
-   "text": "אלפי מגורשים, רובם מבוקובינה, מצטרפים לכ־1,800 יהודי שרגורוד. בנובמבר 1941 הוקמה מועצה יהודית בראשות מאיר טייך.",
+   "text": "אלפי מגורשים, רובם מבוקובינה, מצטרפים לכ־1,800 יהודי שרגורוד. בנובמבר 1941 הוקמה מועצה יהודית בראשות מאיר טייך. ובמשפחה: יצחק (Isaak) שרף, שהיה מראשי המועצה היהודית בגטו לצד מאיר טייך, השתייך למשפחת שרף הקשורה למשפחתנו; אחד מבניו מילא אחר כך תפקיד בכיר בממשלת ישראל הראשונה (אישור המשפחה, 9.11.2026).",
    "context": true,
    "sources": [
     {
@@ -318,6 +318,11 @@
      "type": "story",
      "label": "הקשר בסיפור שלו",
      "src": "stories/conversation.html"
+    },
+    {
+     "type": "link",
+     "label": "Nationalities Papers – The Shargorod ghetto",
+     "src": "https://www.cambridge.org/core/journals/nationalities-papers/article/institutions-for-survival-the-shargorod-ghetto-during-the-holocaust-in-romanian-transnistria/9051870E2DA989D1EE898509B2E65389"
     }
    ]
   },
