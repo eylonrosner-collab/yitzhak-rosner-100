@@ -45,7 +45,7 @@ function fillDocTr(id){
   const data=DOC_TR&&DOC_TR[id];
   if(!data)return;
   const lang=(window.I18N&&I18N.lang)||'he';
-  $('#docTrTitle').textContent=T('doc.'+id+'.tr.title','תרגום אישור הגירוש');
+  $('#docTrTitle').textContent=T('doc.'+id+'.tr.title',{dep:'תרגום אישור הגירוש',tr:'תרגום אישור השירות כמתורגמן'}[id]||'תרגום המסמך');
   const xbtn=$('#docTrX');
   if(xbtn) xbtn.setAttribute('aria-label',T('doc.'+id+'.tr.close','סגירה'));
   $('#docTrBody').innerHTML=data.pages.map((p,i)=>{
@@ -54,7 +54,7 @@ function fillDocTr(id){
     return `<section class="doc-tr-page">
       <h4>${esc(pageLabel)}</h4>
       <div class="doc-tr-text">${esc(tr).replace(/\n/g,'<br>')}</div>
-      <h5>${esc(T('doc.'+id+'.tr.orig','המקור ברומנית'))}</h5>
+      <h5>${esc(T('doc.'+id+'.tr.orig',{tr:'המקור ברומנית (תרגום מרוסית)'}[id]||'המקור ברומנית'))}</h5>
       <pre class="doc-tr-orig" dir="ltr" lang="ro">${esc(p.original)}</pre>
       <p class="doc-tr-scan"><a href="${esc(p.scan)}" target="_blank" rel="noopener">${esc(T('doc.'+id+'.tr.scan','לצפייה בסריקה'))}</a></p>
     </section>`;
@@ -88,7 +88,7 @@ Promise.all([getJSON('data/timeline.json'),getJSON('data/timeline_context.json')
       if(s.type==='anchor')return `<a class="src-link" href="${esc(s.src)}">▶ ${esc(s.label)}</a>`;
       if(s.type==='video')return `<a class="src-link vid" href="${esc(s.src)}" target="_blank" rel="noopener">🎥 ${esc(s.label)}</a>`;
       return `<a class="src-link" href="${esc(s.src)}" target="_blank" rel="noopener">🔗 ${esc(s.label)}</a>`}).join('');
-    return `<li class="ev${e.context?' ev-ctx':''}" data-year="${e.year}" id="${e.id}"><div class="ev-card">${e.context?'<span class="ctx-tag">'+esc(T('tl.ctxTag','רקע היסטורי'))+'</span>':''}<div class="ev-date">${esc(e.date)}</div><h3>${esc(e.title)}</h3>${e.text?`<p>${esc(e.text)}</p>`:''}${e.note?`<p class="note${e.check===false?' note-info':''}">${e.check===false?'':esc(T('ui.to_check','לבדיקה'))+': '}${esc(e.note)}</p>`:''}${e.translateDoc?`<p class="ev-tr"><button type="button" class="btn ev-tr-btn" data-doc="${esc(e.translateDoc)}">${esc(T('doc.'+e.translateDoc+'.tr.btn','תרגום התעודה'))}</button></p>`:''}${e.sources.length?`<div class="srcs">${srcHtml}</div>`:''}</div></li>`}).join('');
+    return `<li class="ev${e.context?' ev-ctx':''}" data-year="${e.year}" id="${e.id}"><div class="ev-card">${e.context?'<span class="ctx-tag">'+esc(T('tl.ctxTag','רקע היסטורי'))+'</span>':''}<div class="ev-date">${esc(e.date)}</div><h3>${esc(e.title)}</h3>${e.text?`<p>${esc(e.text)}</p>`:''}${e.note?`<p class="note${e.check===false?' note-info':''}">${e.check===false?'':esc(T('ui.to_check','לבדיקה'))+': '}${esc(e.note)}</p>`:''}${e.translateDoc?`<p class="ev-tr"><button type="button" class="btn ev-tr-btn" data-doc="${esc(e.translateDoc)}">${esc(T('doc.'+e.translateDoc+'.tr.btn',{dep:'תרגום התעודה'}[e.translateDoc]||'תרגום המסמך'))}</button></p>`:''}${e.sources.length?`<div class="srcs">${srcHtml}</div>`:''}</div></li>`}).join('');
   tl.addEventListener('click',x=>{
     const trb=x.target.closest('.ev-tr-btn');
     if(trb){openDocTr(trb.dataset.doc);return;}

@@ -818,5 +818,11 @@
   "doc.dep.tr.scan": "Voir le document numérisé",
   "doc.dep.tr.page1": "Page 1",
   "doc.dep.tr.page2": "Page 2 (verso – certification notariale de la copie)",
-  "doc.dep.tr.close": "Fermer"
+  "doc.dep.tr.close": "Fermer",
+  "doc.tr.tr.btn": "Traduction",
+  "doc.tr.tr.title": "Traduction de l’attestation d’interprète",
+  "doc.tr.tr.orig": "Original en roumain (traduit du russe)",
+  "doc.tr.tr.scan": "Voir le document numérisé",
+  "doc.tr.tr.page1": "Page 1",
+  "doc.tr.tr.close": "Fermer"
 }

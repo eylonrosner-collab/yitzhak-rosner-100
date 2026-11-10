@@ -818,5 +818,11 @@
   "doc.dep.tr.scan": "View the scan",
   "doc.dep.tr.page1": "Page 1",
   "doc.dep.tr.page2": "Page 2 (reverse – notarial certification of the copy)",
-  "doc.dep.tr.close": "Close"
+  "doc.dep.tr.close": "Close",
+  "doc.tr.tr.btn": "Translation",
+  "doc.tr.tr.title": "Translation of the interpreter certificate",
+  "doc.tr.tr.orig": "Original in Romanian (translated from Russian)",
+  "doc.tr.tr.scan": "View the scan",
+  "doc.tr.tr.page1": "Page 1",
+  "doc.tr.tr.close": "Close"
 }
