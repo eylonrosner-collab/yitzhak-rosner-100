@@ -32,6 +32,48 @@ $('.lb-x').onclick=closeLB;$('#lb').addEventListener('click',e=>{if(e.target.id=
 $('.lb-prev').onclick=()=>{LI=(LI-1+LB.length)%LB.length;showLB()};
 $('.lb-next').onclick=()=>{LI=(LI+1)%LB.length;showLB()};
 document.addEventListener('keydown',e=>{if($('#lb').hidden)return;if(e.key==='Escape')closeLB();if(e.key==='ArrowLeft')$('.lb-next').click();if(e.key==='ArrowRight')$('.lb-prev').click()});
+/* ---------- document translation modal ---------- */
+let DOC_TR=null;
+function loadDocTr(){return DOC_TR?Promise.resolve(DOC_TR):getJSON('data/doc_translations.json').then(d=>DOC_TR=d)}
+function closeDocTr(){
+  const m=$('#docTr');
+  if(!m||m.hidden)return;
+  m.hidden=true;
+  if($('#lb').hidden) document.body.style.overflow='';
+}
+function fillDocTr(id){
+  const data=DOC_TR&&DOC_TR[id];
+  if(!data)return;
+  const lang=(window.I18N&&I18N.lang)||'he';
+  $('#docTrTitle').textContent=T('doc.'+id+'.tr.title','תרגום אישור הגירוש');
+  const xbtn=$('#docTrX');
+  if(xbtn) xbtn.setAttribute('aria-label',T('doc.'+id+'.tr.close','סגירה'));
+  $('#docTrBody').innerHTML=data.pages.map((p,i)=>{
+    const tr=(p.tr&&(p.tr[lang]||p.tr.he))||'';
+    const pageLabel=T('doc.'+id+'.tr.page'+(i+1), i?'עמוד 2':'עמוד 1');
+    return `<section class="doc-tr-page">
+      <h4>${esc(pageLabel)}</h4>
+      <div class="doc-tr-text">${esc(tr).replace(/\n/g,'<br>')}</div>
+      <h5>${esc(T('doc.'+id+'.tr.orig','המקור ברומנית'))}</h5>
+      <pre class="doc-tr-orig" dir="ltr" lang="ro">${esc(p.original)}</pre>
+      <p class="doc-tr-scan"><a href="${esc(p.scan)}" target="_blank" rel="noopener">${esc(T('doc.'+id+'.tr.scan','לצפייה בסריקה'))}</a></p>
+    </section>`;
+  }).join('');
+}
+function openDocTr(id){
+  loadDocTr().then(()=>{
+    fillDocTr(id);
+    $('#docTr').hidden=false;
+    document.body.style.overflow='hidden';
+    const x=$('#docTrX'); if(x) x.focus();
+  }).catch(err=>console.error(err));
+}
+(function(){
+  const m=$('#docTr'); if(!m)return;
+  const x=$('#docTrX'); if(x) x.onclick=closeDocTr;
+  m.addEventListener('click',e=>{if(e.target.id==='docTr')closeDocTr()});
+  document.addEventListener('keydown',e=>{if(m.hidden)return;if(e.key==='Escape'){e.preventDefault();closeDocTr();}});
+})();
 /* ---------- timeline ---------- */
 const ERAS=[[T('tl.era.all','הכול'),0,9999],['1926–1940',0,1940.99],['1941–1945',1941,1945.99],['1946–1968',1946,1968.99],['1969–2016',1969,2016.99]];
 Promise.all([getJSON('data/timeline.json'),getJSON('data/timeline_context.json').catch(()=>({events:[]}))]).then(([d,c])=>{
@@ -46,8 +88,15 @@ Promise.all([getJSON('data/timeline.json'),getJSON('data/timeline_context.json')
       if(s.type==='anchor')return `<a class="src-link" href="${esc(s.src)}">▶ ${esc(s.label)}</a>`;
       if(s.type==='video')return `<a class="src-link vid" href="${esc(s.src)}" target="_blank" rel="noopener">🎥 ${esc(s.label)}</a>`;
       return `<a class="src-link" href="${esc(s.src)}" target="_blank" rel="noopener">🔗 ${esc(s.label)}</a>`}).join('');
-    return `<li class="ev${e.context?' ev-ctx':''}" data-year="${e.year}" id="${e.id}"><div class="ev-card">${e.context?'<span class="ctx-tag">'+esc(T('tl.ctxTag','רקע היסטורי'))+'</span>':''}<div class="ev-date">${esc(e.date)}</div><h3>${esc(e.title)}</h3>${e.text?`<p>${esc(e.text)}</p>`:''}${e.note?`<p class="note">${esc(T('ui.to_check','לבדיקה'))}: ${esc(e.note)}</p>`:''}${e.sources.length?`<div class="srcs">${srcHtml}</div>`:''}</div></li>`}).join('');
-  tl.addEventListener('click',x=>{const b=x.target.closest('.src-img');if(!b)return;const e=ev.find(q=>q.id===b.dataset.ev);openLB(e.sources.filter(s=>s.type==='image'),+b.dataset.k)});
+    return `<li class="ev${e.context?' ev-ctx':''}" data-year="${e.year}" id="${e.id}"><div class="ev-card">${e.context?'<span class="ctx-tag">'+esc(T('tl.ctxTag','רקע היסטורי'))+'</span>':''}<div class="ev-date">${esc(e.date)}</div><h3>${esc(e.title)}</h3>${e.text?`<p>${esc(e.text)}</p>`:''}${e.note?`<p class="note${e.check===false?' note-info':''}">${e.check===false?'':esc(T('ui.to_check','לבדיקה'))+': '}${esc(e.note)}</p>`:''}${e.translateDoc?`<p class="ev-tr"><button type="button" class="btn ev-tr-btn" data-doc="${esc(e.translateDoc)}">${esc(T('doc.'+e.translateDoc+'.tr.btn','תרגום התעודה'))}</button></p>`:''}${e.sources.length?`<div class="srcs">${srcHtml}</div>`:''}</div></li>`}).join('');
+  tl.addEventListener('click',x=>{
+    const trb=x.target.closest('.ev-tr-btn');
+    if(trb){openDocTr(trb.dataset.doc);return;}
+    const b=x.target.closest('.src-img');
+    if(!b)return;
+    const e=ev.find(q=>q.id===b.dataset.ev);
+    openLB(e.sources.filter(s=>s.type==='image'),+b.dataset.k);
+  });
   const f=$('#tlFilter');f.innerHTML=ERAS.map((r,i)=>`<button data-i="${i}" class="${i?'':'on'}">${r[0]}</button>`).join('')+'<label class="ctx-toggle"><input type="checkbox" id="ctxToggle"> '+esc(T('tl.showCtx','הצג אירועי רקע היסטורי'))+'</label>';
   const ctx=()=>tl.classList.toggle('show-ctx',$('#ctxToggle').checked);$('#ctxToggle').onchange=ctx;
   f.onclick=x=>{const b=x.target.closest('button[data-i]');if(!b)return;f.querySelectorAll('button').forEach(q=>q.classList.toggle('on',q===b));const r=ERAS[+b.dataset.i];

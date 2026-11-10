@@ -449,7 +449,7 @@
   "tl.e06.src.2": "2009 testimony, part 1 52:32 – Gura Humorului",
   "tl.e07.title": "Deportation to Transnistria",
   "tl.e07.text": "Together with all the Jews of Gura Humorului the family was deported to Transnistria. After about two weeks of a “road of suffering” they reached Shargorod. A certificate from the Moldovița municipality from 1948 attests that he was deported with his parents in October 1941.",
-  "tl.e07.note": "In the 2009 testimony (part 1, 56:02): “On the ninth of October we received an order… on the tenth of October to come.” That is, the deportation itself may have been on 10.10.1941.",
+  "tl.e07.note": "In the 2009 testimony he said that on 9 October they received an order to come on 10 October 1941.",
   "tl.e07.src.0": "The deportation certificate, Moldovița 14.7.1948",
   "tl.e07.src.1": "The story “Shargorod”",
   "tl.e07.src.2": "2009 testimony, part 1 56:02 – the deportation",
@@ -811,5 +811,12 @@
   "mem.removeFile": "Remove",
   "mem.empty": "No memories yet. Be the first to write one.",
   "mem.file": "File",
-  "gallery.album": "Full photo album"
+  "gallery.album": "Full photo album",
+  "doc.dep.tr.btn": "Translation",
+  "doc.dep.tr.title": "Translation of the deportation certificate",
+  "doc.dep.tr.orig": "Original in Romanian",
+  "doc.dep.tr.scan": "View the scan",
+  "doc.dep.tr.page1": "Page 1",
+  "doc.dep.tr.page2": "Page 2 (reverse – notarial certification of the copy)",
+  "doc.dep.tr.close": "Close"
 }
