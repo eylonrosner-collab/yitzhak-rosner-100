@@ -26,8 +26,9 @@
 | `data/timeline.json` | אירועי ציר הזמן האישיים (41 אירועים) |
 | `data/timeline_context.json` | אירועי רקע היסטורי (30 אירועים, מוצגים רק כשמסמנים «הצג אירועי רקע היסטורי») |
 | `data/i18n/en.json`, `data/i18n/fr.json` | תרגומי ממשק ותוכן לאנגלית ולצרפתית |
-| `data/documents.json` | חמש התעודות בפרק «מסמכים ותעודות» |
-| `data/doc_translations.json` | תמלול ותרגום של סריקות (כיום `dep` ו-`tr`) שמוצגים בחלון קופץ מציר הזמן |
+| `data/documents.json` | התעודות בפרק «מסמכים ותעודות» (שדה `tr` רשות: מזהי תרגום לכפתור) |
+| `data/album.json` | כרטיסי הכיתוב והתמונות בפרק «מהאלבום המשפחתי» (EN/FR במפתחות `album.{id}.title` / `album.{id}.text`) |
+| `data/doc_translations.json` | תמלול ותרגום של סריקות שמוצגים בחלון קופץ מציר הזמן ומפרק המסמכים. רשומה יכולה לכלול `meta` עם `btn` / `title` / `orig` / `pages` בשלוש השפות ו-`lang` של המקור, ואז אין צורך במפתחות `doc.{id}.tr.*` |
 | `data/stories.json` | כרטיסי הסיפורים (קישור לדפי `stories/*.html`) |
 | `data/gallery.json` | פריטי הגלריה |
 | `data/memories.json` | מערך ריק `[]` — גיבוי סטטי בלבד; הזיכרונות החיים לא נשמרים כאן |
@@ -53,7 +54,7 @@
 - `title`, `text` — כותרת וגוף בעברית (זו שפת המקור).
 - `sources` — מערך מקורות. **לכל אירוע צריך להיות לפחות מקור אחד.**
 - `note` (רשות) — הערה שמופיעה מתחת לגוף. כברירת מחדל מתווספת לפניה המילה «לבדיקה». אם ההערה אינפורמטיבית בלבד, מוסיפים גם `"check": false` (כמו באירוע `e07`) והקידומת לא תופיע.
-- `translateDoc` (רשות) — מזהה ב-`data/doc_translations.json` שפותח כפתור תרגום בחלון קופץ (`"dep"` ב-`e07`, `"tr"` ב-`e10`).
+- `translateDoc` (רשות) — מזהה, או מערך מזהים, ב-`data/doc_translations.json` שפותח כפתור תרגום בחלון קופץ (`"dep"` ב-`e07`, `["tr","spr"]` ב-`e10`).
 
 שדות בכל פריט ב-`sources`:
 
@@ -87,7 +88,7 @@
 
 ### מסמכים, תמונות, עדות, היסטוריה
 
-**מסמכים.** חמש התעודות מוגדרות ב-`data/documents.json` (`dep`, `tr`, `cc`, `nm`, `lp`). כל רשומה כוללת `id`, `name` (של התיקייה/הסלאג), `pages`, `title`, `date`, `lang`, `caption` ומערך `images` עם `src`, `thumb`, `label`. הקבצים עצמם ב-`img/docs/`, בשמות כמו `adeverinta-traducator-frontul-2-ucrainian-1946-page-1.jpg` והממוזערת `…-page-1-t.jpg`.
+**מסמכים.** התעודות מוגדרות ב-`data/documents.json`. לפני פרסום סריקה משחירים מספרי זהות, כתובות רחוב, מספרי תעודות זהות רומניות ומספרי תיק גרמניים. כל רשומה כוללת `id`, `name` (של התיקייה/הסלאג), `pages`, `title`, `date`, `lang`, `caption` ומערך `images` עם `src`, `thumb`, `label`. הקבצים עצמם ב-`img/docs/`, בשמות כמו `adeverinta-traducator-frontul-2-ucrainian-1946-page-1.jpg` והממוזערת `…-page-1-t.jpg`.
 
 **תמונות.** הגלריה נטענת מ-`data/gallery.json`: `id`, `full` (`img/g/…`), `thumb` (`img/t/…`), `caption`, `period`, וגם `source` / `w` / `h`. כפתור «לאלבום התמונות המלא» נמצא ב-`index.html` ומצביע לאלבום Google Photos.
 

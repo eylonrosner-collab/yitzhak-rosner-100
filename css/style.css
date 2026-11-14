@@ -304,3 +304,17 @@ html[dir=ltr] .doc-tr-box h3{margin:0 0 16px 36px}
   .doc-tr-box{padding:18px 14px 22px;border-radius:12px}
   .doc-tr-box h3{font-size:20px}
 }
+
+/* family album */
+.album{display:grid;grid-template-columns:repeat(auto-fill,minmax(340px,1fr));gap:22px}
+.album-card{background:#fff;border:1px solid var(--line);border-radius:12px;padding:16px;scroll-margin-top:80px}
+.album-card h3{margin:0 0 10px;font-size:21px}
+.album-imgs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:12px}
+.album-imgs button{border:0;padding:0;background:none;cursor:pointer}
+.album-imgs img{height:120px;width:auto;border:1px solid var(--line);border-radius:6px}
+.album-imgs .is-card img{height:170px}
+.album-text{font-size:17px;line-height:1.7;white-space:normal}
+.album-orig{margin-top:10px;font-size:15px;color:var(--muted)}
+.album-orig summary{cursor:pointer}
+.doc .ev-tr .btn{font-size:15px;padding:6px 14px;margin:2px 0}
+.doc{scroll-margin-top:80px}

@@ -41,22 +41,39 @@ function closeDocTr(){
   m.hidden=true;
   if($('#lb').hidden) document.body.style.overflow='';
 }
+const LANG=()=>(window.I18N&&I18N.lang)||'he';
+const PAGE_W={he:'עמוד',en:'Page',fr:'Page'};
+const SCAN_W={he:'לצפייה בסריקה',en:'View the scan',fr:'Voir le document numérisé'};
+function trBtnLabel(id){
+  const m=DOC_TR&&DOC_TR[id]&&DOC_TR[id].meta;
+  if(m&&m.btn)return m.btn[LANG()]||m.btn.he;
+  return T('doc.'+id+'.tr.btn',{dep:'תרגום התעודה'}[id]||'תרגום המסמך');
+}
+function trButtons(ids,cls){
+  if(!ids)return '';
+  if(!Array.isArray(ids))ids=[ids];
+  return ids.filter(id=>!DOC_TR||DOC_TR[id]).map(id=>`<button type="button" class="btn ${cls}" data-doc="${esc(id)}">${esc(trBtnLabel(id))}</button>`).join(' ');
+}
 function fillDocTr(id){
   const data=DOC_TR&&DOC_TR[id];
   if(!data)return;
-  const lang=(window.I18N&&I18N.lang)||'he';
-  $('#docTrTitle').textContent=T('doc.'+id+'.tr.title',{dep:'תרגום אישור הגירוש',tr:'תרגום אישור השירות כמתורגמן'}[id]||'תרגום המסמך');
+  const lang=LANG();const m=data.meta||null;
+  const pick=o=>o?(o[lang]||o.he):'';
+  $('#docTrTitle').textContent=m?pick(m.title):T('doc.'+id+'.tr.title',{dep:'תרגום אישור הגירוש',tr:'תרגום אישור השירות כמתורגמן'}[id]||'תרגום המסמך');
   const xbtn=$('#docTrX');
-  if(xbtn) xbtn.setAttribute('aria-label',T('doc.'+id+'.tr.close','סגירה'));
+  if(xbtn) xbtn.setAttribute('aria-label',T('doc.'+id+'.tr.close',T('doc.dep.tr.close','סגירה')));
+  const origLabel=m?pick(m.orig):T('doc.'+id+'.tr.orig',{tr:'המקור ברומנית (תרגום מרוסית)'}[id]||'המקור ברומנית');
+  const olang=(m&&m.lang)||'ro';
   $('#docTrBody').innerHTML=data.pages.map((p,i)=>{
     const tr=(p.tr&&(p.tr[lang]||p.tr.he))||'';
-    const pageLabel=T('doc.'+id+'.tr.page'+(i+1), i?'עמוד 2':'עמוד 1');
+    const pageLabel=m?((m.pages&&m.pages[i])?pick(m.pages[i]):(PAGE_W[lang]||PAGE_W.he)+' '+(i+1)):T('doc.'+id+'.tr.page'+(i+1), 'עמוד '+(i+1));
+    const scanLabel=m?(SCAN_W[lang]||SCAN_W.he):T('doc.'+id+'.tr.scan','לצפייה בסריקה');
     return `<section class="doc-tr-page">
-      <h4>${esc(pageLabel)}</h4>
+      ${data.pages.length>1||!m?`<h4>${esc(pageLabel)}</h4>`:''}
       <div class="doc-tr-text">${esc(tr).replace(/\n/g,'<br>')}</div>
-      <h5>${esc(T('doc.'+id+'.tr.orig',{tr:'המקור ברומנית (תרגום מרוסית)'}[id]||'המקור ברומנית'))}</h5>
-      <pre class="doc-tr-orig" dir="ltr" lang="ro">${esc(p.original)}</pre>
-      <p class="doc-tr-scan"><a href="${esc(p.scan)}" target="_blank" rel="noopener">${esc(T('doc.'+id+'.tr.scan','לצפייה בסריקה'))}</a></p>
+      <h5>${esc(origLabel)}</h5>
+      <pre class="doc-tr-orig" dir="${olang==='he'?'rtl':'ltr'}" lang="${esc(olang)}">${esc(p.original)}</pre>
+      <p class="doc-tr-scan"><a href="${esc(p.scan)}" target="_blank" rel="noopener">${esc(scanLabel)}</a></p>
     </section>`;
   }).join('');
 }
@@ -76,7 +93,7 @@ function openDocTr(id){
 })();
 /* ---------- timeline ---------- */
 const ERAS=[[T('tl.era.all','הכול'),0,9999],['1926–1940',0,1940.99],['1941–1945',1941,1945.99],['1946–1968',1946,1968.99],['1969–2016',1969,2016.99]];
-Promise.all([getJSON('data/timeline.json'),getJSON('data/timeline_context.json').catch(()=>({events:[]}))]).then(([d,c])=>{
+Promise.all([getJSON('data/timeline.json'),getJSON('data/timeline_context.json').catch(()=>({events:[]})),loadDocTr().catch(()=>null)]).then(([d,c])=>{
   const ev=d.events.concat(c.events).sort((a,b)=>a.year-b.year).map(locEv);
   const raw=d.events.concat(c.events);
   const tl=$('#tl');
@@ -88,7 +105,7 @@ Promise.all([getJSON('data/timeline.json'),getJSON('data/timeline_context.json')
       if(s.type==='anchor')return `<a class="src-link" href="${esc(s.src)}">▶ ${esc(s.label)}</a>`;
       if(s.type==='video')return `<a class="src-link vid" href="${esc(s.src)}" target="_blank" rel="noopener">🎥 ${esc(s.label)}</a>`;
       return `<a class="src-link" href="${esc(s.src)}" target="_blank" rel="noopener">🔗 ${esc(s.label)}</a>`}).join('');
-    return `<li class="ev${e.context?' ev-ctx':''}" data-year="${e.year}" id="${e.id}"><div class="ev-card">${e.context?'<span class="ctx-tag">'+esc(T('tl.ctxTag','רקע היסטורי'))+'</span>':''}<div class="ev-date">${esc(e.date)}</div><h3>${esc(e.title)}</h3>${e.text?`<p>${esc(e.text)}</p>`:''}${e.note?`<p class="note${e.check===false?' note-info':''}">${e.check===false?'':esc(T('ui.to_check','לבדיקה'))+': '}${esc(e.note)}</p>`:''}${e.translateDoc?`<p class="ev-tr"><button type="button" class="btn ev-tr-btn" data-doc="${esc(e.translateDoc)}">${esc(T('doc.'+e.translateDoc+'.tr.btn',{dep:'תרגום התעודה'}[e.translateDoc]||'תרגום המסמך'))}</button></p>`:''}${e.sources.length?`<div class="srcs">${srcHtml}</div>`:''}</div></li>`}).join('');
+    return `<li class="ev${e.context?' ev-ctx':''}" data-year="${e.year}" id="${e.id}"><div class="ev-card">${e.context?'<span class="ctx-tag">'+esc(T('tl.ctxTag','רקע היסטורי'))+'</span>':''}<div class="ev-date">${esc(e.date)}</div><h3>${esc(e.title)}</h3>${e.text?`<p>${esc(e.text)}</p>`:''}${e.note?`<p class="note${e.check===false?' note-info':''}">${e.check===false?'':esc(T('ui.to_check','לבדיקה'))+': '}${esc(e.note)}</p>`:''}${e.translateDoc?`<p class="ev-tr">${trButtons(e.translateDoc,'ev-tr-btn')}</p>`:''}${e.sources.length?`<div class="srcs">${srcHtml}</div>`:''}</div></li>`}).join('');
   tl.addEventListener('click',x=>{
     const trb=x.target.closest('.ev-tr-btn');
     if(trb){openDocTr(trb.dataset.doc);return;}
@@ -117,15 +134,32 @@ document.addEventListener('click',e=>{const b=e.target.closest('button.ts[data-t
 if(/^#rec-/.test(location.hash)){const d=$('#tr-rec2016');if(d)d.open=true}
 if(/^#(part[12])-/.test(location.hash)){const d=document.getElementById('tr-'+location.hash.slice(1).split('-')[0]);if(d)d.open=true}
 /* ---------- documents ---------- */
-getJSON('data/documents.json').then(ds=>{
+Promise.all([getJSON('data/documents.json'),loadDocTr().catch(()=>null)]).then(([ds])=>{
   const loc=ds.map(d=>Object.assign({},d,{
     title:T('doc.'+d.id+'.title',d.title),
     lang:T('doc.'+d.id+'.lang',d.lang),
     caption:T('doc.'+d.id+'.caption',d.caption),
     images:d.images.map((im,k)=>Object.assign({},im,{label:T('doc.'+d.id+'.img.'+k,im.label)}))
   }));
-  $('#docs').innerHTML=loc.map((d,i)=>`<div class="doc"><h3>${esc(d.title)}</h3><div class="meta">${esc(d.date)} · ${esc(d.lang)}</div><p>${esc(d.caption)}</p><div class="pages">${d.images.map((p,k)=>`<button data-d="${i}" data-k="${k}"><img loading="lazy" src="${esc(p.thumb)}" alt="${esc(p.label)}"></button>`).join('')}</div></div>`).join('');
-  $('#docs').onclick=x=>{const b=x.target.closest('button');if(!b)return;openLB(loc[+b.dataset.d].images,+b.dataset.k)}});
+  $('#docs').innerHTML=loc.map((d,i)=>`<div class="doc" id="doc-${esc(d.id)}"><h3>${esc(d.title)}</h3><div class="meta">${esc(d.date)} · ${esc(d.lang)}</div><p>${esc(d.caption)}</p><div class="pages">${d.images.map((p,k)=>`<button data-d="${i}" data-k="${k}"><img loading="lazy" src="${esc(p.thumb)}" alt="${esc(p.label)}"></button>`).join('')}</div>${d.tr?`<p class="ev-tr">${trButtons(d.tr,'doc-tr-btn')}</p>`:''}</div>`).join('');
+  $('#docs').onclick=x=>{const t=x.target.closest('.doc-tr-btn');if(t){openDocTr(t.dataset.doc);return;}const b=x.target.closest('button[data-d]');if(!b)return;openLB(loc[+b.dataset.d].images,+b.dataset.k)}});
+/* ---------- family album ---------- */
+getJSON('data/album.json').then(al=>{
+  const wrap=$('#albumWrap');if(!wrap)return;
+  const lang=LANG();
+  const gl=id=>T('gallery.'+id,'');
+  const cards=al.map(a=>{
+    const title=T('album.'+a.id+'.title',a.title);
+    const tr=lang==='he'?a.text:T('album.'+a.id+'.text',a.text);
+    const imgs=[];
+    if(a.card)imgs.push({src:a.card.full,thumb:a.card.thumb,label:title});
+    a.photos.forEach(p=>imgs.push({src:p.full,thumb:p.thumb,label:gl(p.id)||title}));
+    return {a,title,tr,imgs};
+  });
+  wrap.innerHTML=cards.map((c,i)=>`<article class="album-card" id="album-${esc(c.a.id)}"><h3>${esc(c.title)}</h3><div class="album-imgs">${c.imgs.map((m,k)=>`<button data-a="${i}" data-k="${k}" class="${c.a.card&&k===0?'is-card':''}"><img loading="lazy" src="${esc(m.thumb)}" alt="${esc(m.label)}"></button>`).join('')}</div><div class="album-text${c.a.nocard?' muted':''}">${esc(c.tr).replace(/\n/g,'<br>')}</div>${lang!=='he'&&!c.a.nocard?`<details class="album-orig"><summary>${esc(T('album.orig','המקור בעברית'))}</summary><div lang="he" dir="rtl">${esc(c.a.text).replace(/\n/g,'<br>')}</div></details>`:''}</article>`).join('');
+  wrap.onclick=x=>{const b=x.target.closest('button[data-a]');if(!b)return;openLB(cards[+b.dataset.a].imgs,+b.dataset.k)};
+  if(/^#album-/.test(location.hash)){const t=document.getElementById(location.hash.slice(1));if(t)setTimeout(()=>t.scrollIntoView({block:'start'}),60)}
+}).catch(e=>console.error(e));
 /* ---------- gallery ---------- */
 const PERIOD_KEY={
   '1926–1940 · ילדות במולדוביצה':'gallery.period.1',

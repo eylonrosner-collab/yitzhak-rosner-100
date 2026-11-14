@@ -1,5 +1,48 @@
 [
  {
+  "id": "spr",
+  "name": "spravka-unitatea-25837-1944",
+  "pages": 1,
+  "title": "אישור (ספרבקה) מהיחידה הצבאית הסובייטית 25837",
+  "date": "13.9.1944",
+  "lang": "רוסית",
+  "caption": "אישור רוסי מקורי, דואר שדה 25837, 13 בספטמבר 1944, מס׳ 275: \"רוזנר ז׳אק\" עובד ביחידה הצבאית 25837 כמתורגמן. חתום: מפקד היחידה, קולונל (גוורדיה) סידורוב. האישור אינו מציין תאריכי שירות.",
+  "images": [
+   {
+    "src": "img/docs/spravka-unitatea-25837-1944-page-1.jpg",
+    "thumb": "img/docs/spravka-unitatea-25837-1944-page-1-t.jpg",
+    "label": "אישור (ספרבקה) מהיחידה הצבאית הסובייטית 25837 · עמוד 1"
+   }
+  ],
+  "tr": [
+   "spr"
+  ]
+ },
+ {
+  "id": "tr",
+  "name": "adeverinta-traducator-frontul-2-ucrainian-1946",
+  "pages": 2,
+  "title": "אישור על שירות כמתרגם בחזית האוקראינית השנייה",
+  "date": "10.10.1946",
+  "lang": "רומנית (תרגום מרוסית)",
+  "caption": "אישור שתורגם מרוסית ואומת במשרד החוץ הרומני (1946): ז׳אק רוזנר שירת כמתרגם בפיקוד המיוחד של החזית האוקראינית השנייה בין 15.7 ל־15.10.1944. עמוד 2: עותק בכתב יד של אותו תרגום (מס׳ 6341/946).",
+  "images": [
+   {
+    "src": "img/docs/adeverinta-traducator-frontul-2-ucrainian-1946-page-1.jpg",
+    "thumb": "img/docs/adeverinta-traducator-frontul-2-ucrainian-1946-page-1-t.jpg",
+    "label": "אישור על שירות כמתרגם בחזית האוקראינית השנייה · עמוד 1"
+   },
+   {
+    "src": "img/docs/adeverinta-traducere-spravka-1946-page-1.jpg",
+    "thumb": "img/docs/adeverinta-traducere-spravka-1946-page-1-t.jpg",
+    "label": "אישור על שירות כמתרגם בחזית האוקראינית השנייה · עמוד 2"
+   }
+  ],
+  "tr": [
+   "tr"
+  ]
+ },
+ {
   "id": "dep",
   "name": "adeverinta-deportare-transnistria-1948",
   "pages": 2,
@@ -18,22 +61,71 @@
     "thumb": "img/docs/adeverinta-deportare-transnistria-1948-page-2-t.jpg",
     "label": "אישור על הגירוש לטרנסניסטריה · עמוד 2"
    }
+  ],
+  "tr": [
+   "dep"
   ]
  },
  {
-  "id": "tr",
-  "name": "adeverinta-traducator-frontul-2-ucrainian-1946",
-  "pages": 1,
-  "title": "אישור על שירות כמתרגם בחזית האוקראינית השנייה",
-  "date": "10.10.1946",
-  "lang": "רומנית (תרגום מרוסית)",
-  "caption": "אישור מתורגם ומאומת במשרד החוץ הרומני (1946): ז׳אק רוזנר שימש כמתרגם עבור ההנהגה המיוחדת של החזית האוקראינית השנייה בין 15.7 ל־15.10.1944.",
+  "id": "bac",
+  "name": "diploma-bacalaureat-1946-1947",
+  "pages": 2,
+  "title": "תעודת בגרות (Bacalaureat) וגיליון ציונים",
+  "date": "10.3.1947",
+  "lang": "רומנית",
+  "caption": "תעודת בגרות עיונית ממשרד התרבות הלאומית והדתות: \"Rosner L. Jaques\", בוגר התיכון \"Cultura A\" בבוקרשט, עבר את הבחינות במושב ספטמבר 1946 בציון ממוצע 6.20, ודורג במקום ה־22 מתוך 164. התעודה ניתנה ב־10.3.1947. עמוד 2: גיליון הציונים.",
   "images": [
    {
-    "src": "img/docs/adeverinta-traducator-frontul-2-ucrainian-1946-page-1.jpg",
-    "thumb": "img/docs/adeverinta-traducator-frontul-2-ucrainian-1946-page-1-t.jpg",
-    "label": "אישור על שירות כמתרגם בחזית האוקראינית השנייה · עמוד 1"
+    "src": "img/docs/diploma-bacalaureat-1946-1947-page-1.jpg",
+    "thumb": "img/docs/diploma-bacalaureat-1946-1947-page-1-t.jpg",
+    "label": "תעודת בגרות (Bacalaureat) וגיליון ציונים · עמוד 1"
+   },
+   {
+    "src": "img/docs/diploma-bacalaureat-1946-1947-page-2.jpg",
+    "thumb": "img/docs/diploma-bacalaureat-1946-1947-page-2-t.jpg",
+    "label": "תעודת בגרות (Bacalaureat) וגיליון ציונים · עמוד 2"
    }
+  ],
+  "tr": [
+   "bac"
+  ]
+ },
+ {
+  "id": "tc65",
+  "name": "certificat-traducator-1965",
+  "pages": 1,
+  "title": "תעודת מתרגם מגרמנית לרומנית",
+  "date": "10.2.1965",
+  "lang": "רומנית",
+  "caption": "תעודת מתרגם מס׳ 317 ממשרד החינוך והתרבות, על שם \"Rosca Adrian\": מגרמנית לרומנית, בהתמחות ספרות יפה, על סמך בחינה במושב אוקטובר 1960. בוקרשט, 10.2.1965. מספר תעודת הזהות הרומנית הושחר.",
+  "images": [
+   {
+    "src": "img/docs/certificat-traducator-1965-page-1.jpg",
+    "thumb": "img/docs/certificat-traducator-1965-page-1-t.jpg",
+    "label": "תעודת מתרגם מגרמנית לרומנית · עמוד 1"
+   }
+  ],
+  "tr": [
+   "tc65"
+  ]
+ },
+ {
+  "id": "tc67",
+  "name": "certificat-traducator-1967",
+  "pages": 1,
+  "title": "תעודת מתרגם מצרפתית ומאנגלית לרומנית",
+  "date": "18.12.1967",
+  "lang": "רומנית",
+  "caption": "תעודת מתרגם מס׳ 01586 מהוועדה הממלכתית לתרבות ולאמנות, על שם \"ROSCA ADRIAN\": מצרפתית לרומנית בהתמחות אלקטרוניקה, ומאנגלית לרומנית בהתמחות גאוגרפיה, על סמך בחינה במושב אפריל 1967. בוקרשט, 18.12.1967. מספר תעודת הזהות הרומנית הושחר.",
+  "images": [
+   {
+    "src": "img/docs/certificat-traducator-1967-page-1.jpg",
+    "thumb": "img/docs/certificat-traducator-1967-page-1-t.jpg",
+    "label": "תעודת מתרגם מצרפתית ומאנגלית לרומנית · עמוד 1"
+   }
+  ],
+  "tr": [
+   "tc67"
   ]
  },
  {
@@ -43,7 +135,7 @@
   "title": "תעודת מסע לחסר אזרחות: אדריאן רושקה",
   "date": "26.2.1968",
   "lang": "רומנית, צרפתית, אנגלית, גרמנית",
-  "caption": "תעודת מסע רומנית לחסר אזרחות על שם אדריאן רושקה (Seria B 007368), פברואר 1968: מסמך היציאה מרומניה, עם אשרות מעבר לאיטליה ולאוסטריה וחותמת הכניסה לישראל ב־15 במאי 1968.",
+  "caption": "תעודת מסע רומנית לחסר אזרחות על שם אדריאן רושקה (Seria B 007368), 26.2.1968: מסמך היציאה מרומניה, עם אשרות מעבר לאיטליה ולאוסטריה, חותמות נמל התעופה של וינה, וחותמת \"קבל תעודת עולה 23916 15/5/1968\". הכתובת בבוקרשט הושחרה.",
   "images": [
    {
     "src": "img/docs/certificat-calatorie-rosca-adrian-1968-page-1.jpg",
@@ -64,7 +156,7 @@
   "title": "תעודה המעידה על שינוי שם",
   "date": "4.8.1968",
   "lang": "עברית",
-  "caption": "תעודת שינוי שם ממשרד הפנים, ירושלים, 4.8.1968: אדריאן רושקה ← יצחק רוזנר; ברתה רושקה ← ברתה רוזנר; ניקולאי רושקה ← דן רוזנר.",
+  "caption": "תעודת שינוי שם ממשרד הפנים, ירושלים, 4.8.1968: אדריאן רושקה ← יצחק רוזנר; ברתה רושקה ← ברתה רוזנר; ניקולאי רושקה ← דן רוזנר. מספרי הזהות והכתובת הושחרו.",
   "images": [
    {
     "src": "img/docs/teudat-shinui-shem-1968-page-1.jpg",
@@ -80,7 +172,7 @@
   "title": "תעודת מעבר ישראלית (Laissez-Passer)",
   "date": "25.8.1968",
   "lang": "עברית וצרפתית",
-  "caption": "תעודת מעבר ישראלית של יצחק רוזנר (לשעבר אדריאן רוסקה), ירושלים 25.8.1968, ובה אשרות וחותמות ממסע לקנדה ולארה״ב בסתיו 1968. התעודה מבוטלת.",
+  "caption": "תעודת מעבר ישראלית של יצחק רוזנר (לשעבר אדריאן רוסקה), ירושלים 25.8.1968, ובה אשרות וחותמות ממסע לקנדה ולארה״ב בסתיו 1968. התעודה מבוטלת. מספר הזהות הושחר.",
   "images": [
    {
     "src": "img/docs/laissez-passer-israeli-1968-page-1.jpg",
@@ -96,6 +188,222 @@
     "src": "img/docs/laissez-passer-israeli-1968-page-3.jpg",
     "thumb": "img/docs/laissez-passer-israeli-1968-page-3-t.jpg",
     "label": "תעודת מעבר ישראלית (Laissez-Passer) · עמוד 3"
+   }
+  ]
+ },
+ {
+  "id": "gerushin",
+  "name": "teudat-gerushin-1973",
+  "pages": 1,
+  "title": "תעודת גירושין",
+  "date": "22.3.1973",
+  "lang": "עברית",
+  "caption": "תעודת גירושין מס׳ 53072, בית הדין הרבני האזורי בחיפה: גירושי יצחק וברתה רוזנר, 22.3.1973. מספרי הזהות והכתובות הושחרו.",
+  "images": [
+   {
+    "src": "img/docs/teudat-gerushin-1973-page-1.jpg",
+    "thumb": "img/docs/teudat-gerushin-1973-page-1-t.jpg",
+    "label": "תעודת גירושין · עמוד 1"
+   }
+  ]
+ },
+ {
+  "id": "nisuin",
+  "name": "teudat-nisuin-1973",
+  "pages": 1,
+  "title": "תעודת נישואין",
+  "date": "12.4.1973",
+  "lang": "עברית",
+  "caption": "תעודת נישואין מס׳ 174841 א ממשרד הדתות: יצחק רוזנר, מהנדס חשמל, ורות – בתעודה בשמה הרשמי רנה אלכסנדרה ולד – מהנדסת כימיה. הנישואין נערכו בתל אביב–יפו, באור ליום שישי, י״א בניסן תשל״ג (12.4.1973). מספרי הזהות, הכתובות ותאריך הלידה של הכלה הושחרו.",
+  "images": [
+   {
+    "src": "img/docs/teudat-nisuin-1973-page-1.jpg",
+    "thumb": "img/docs/teudat-nisuin-1973-page-1-t.jpg",
+    "label": "תעודת נישואין · עמוד 1"
+   }
+  ]
+ },
+ {
+  "id": "mivrakim",
+  "name": "mivrakim-chatuna-1973",
+  "pages": 3,
+  "title": "מברקי ברכה לחתונה",
+  "date": "12.4.1973",
+  "lang": "עברית",
+  "caption": "שלושה מברקי ברכה ל\"ולד + רוזנר\", באולמי הרבנות הראשית בתל אביב: מאיר גירון (\"מזל טוב ורב אשר לנשואיכם\"); מברק שחתימתו אינה קריאה בוודאות (\"[לא קריא] מאחלים לכם אושר [ב]נשואיכם\"); ואיתן איזנברג, מנהל נתיבי נפט (\"מזל טוב לנשואיכם\"). לפי המשפחה, איזנברג לא רצה בתחילה לקבל את רות לעבודה בנתיבי נפט משום שהיא אישה, וקיבל אותה אחרי ראיון איתו.",
+  "images": [
+   {
+    "src": "img/docs/mivrakim-chatuna-1973-page-1.jpg",
+    "thumb": "img/docs/mivrakim-chatuna-1973-page-1-t.jpg",
+    "label": "מברקי ברכה לחתונה · עמוד 1"
+   },
+   {
+    "src": "img/docs/mivrakim-chatuna-1973-page-2.jpg",
+    "thumb": "img/docs/mivrakim-chatuna-1973-page-2-t.jpg",
+    "label": "מברקי ברכה לחתונה · עמוד 2"
+   },
+   {
+    "src": "img/docs/mivrakim-chatuna-1973-page-3.jpg",
+    "thumb": "img/docs/mivrakim-chatuna-1973-page-3-t.jpg",
+    "label": "מברקי ברכה לחתונה · עמוד 3"
+   }
+  ]
+ },
+ {
+  "id": "toda73",
+  "name": "netivei-neft-michtav-toda-1973",
+  "pages": 1,
+  "title": "מכתב תודה מנתיבי נפט אחרי מלחמת יום הכיפורים",
+  "date": "23.10.1973",
+  "lang": "עברית",
+  "caption": "מכתב מחיים צוקר, מנהל השדה באבו רודס, ליצחק רוזנר: \"אני פונה אליך בהבעת תודה והערכה היוצאת מקרב לב\". \"עברנו בצוותא זמן קשה, פגיעה בשדה, היתקלות, הפצצה, כוננות מתמדת, שמירה בתצפית\".",
+  "images": [
+   {
+    "src": "img/docs/netivei-neft-michtav-toda-1973-page-1.jpg",
+    "thumb": "img/docs/netivei-neft-michtav-toda-1973-page-1-t.jpg",
+    "label": "מכתב תודה מנתיבי נפט אחרי מלחמת יום הכיפורים · עמוד 1"
+   }
+  ]
+ },
+ {
+  "id": "ruth73",
+  "name": "michtav-le-ruth-1973",
+  "pages": 2,
+  "title": "מכתב לרות (בגרמנית)",
+  "date": "1973",
+  "lang": "גרמנית",
+  "caption": "מכתב בכתב יד שכתב יצחק לרות על נייר מכתבים של נתיבי נפט, ב־1973, אחרי מלחמת יום הכיפורים ובזמן היריונה: על הגעגועים, על המאבק על מקום עבודתה ועל הפרשי השכר. על המכתב כתוב רק \"Freitag\" (יום שישי). לפי המשפחה, המכתב קשור לבקשתו לפנסיה מגרמניה, כעדות לתרבותו הגרמנית.",
+  "images": [
+   {
+    "src": "img/docs/michtav-le-ruth-1973-page-1.jpg",
+    "thumb": "img/docs/michtav-le-ruth-1973-page-1-t.jpg",
+    "label": "מכתב לרות (בגרמנית) · עמוד 1"
+   },
+   {
+    "src": "img/docs/michtav-le-ruth-1973-page-2.jpg",
+    "thumb": "img/docs/michtav-le-ruth-1973-page-2-t.jpg",
+    "label": "מכתב לרות (בגרמנית) · עמוד 2"
+   }
+  ],
+  "tr": [
+   "ruth73"
+  ]
+ },
+ {
+  "id": "nn",
+  "name": "netivei-neft-ishur-avoda-1975",
+  "pages": 2,
+  "title": "אישור העסקה מנתיבי נפט, אבו רודס",
+  "date": "1975",
+  "lang": "אנגלית ועברית",
+  "caption": "אישור בחתימת ר. זק, ראש אגף שרותים טכניים בנתיבי נפט: יצחק רוזנר עבד בחברה מ־23.8.1970 עד 30.11.1975 כראש מדור החשמל בשדה הנפט של אבו רודס – תכנון מתקני חשמל במתח נמוך ובינוני, שלוש תחנות כוח בהספק כולל של 6.5 מגוואט, רשת חלוקה באורך 25 ק״מ, וצוות של 40 עובדים מקצועיים. עבודתו הסתיימה עם סיום פעילות החברה באבו רודס. עמוד 1 באנגלית, עמוד 2 בעברית. מספר הזהות הושחר.",
+  "images": [
+   {
+    "src": "img/docs/netivei-neft-ishur-avoda-1975-page-1.jpg",
+    "thumb": "img/docs/netivei-neft-ishur-avoda-1975-page-1-t.jpg",
+    "label": "אישור העסקה מנתיבי נפט, אבו רודס · עמוד 1"
+   },
+   {
+    "src": "img/docs/netivei-neft-ishur-avoda-1975-page-2.jpg",
+    "thumb": "img/docs/netivei-neft-ishur-avoda-1975-page-2-t.jpg",
+    "label": "אישור העסקה מנתיבי נפט, אבו רודס · עמוד 2"
+   }
+  ],
+  "tr": [
+   "nn"
+  ]
+ },
+ {
+  "id": "cit76",
+  "name": "teudat-ezrachut-1976",
+  "pages": 1,
+  "title": "תעודת אזרחות",
+  "date": "18.7.1976",
+  "lang": "עברית וגרמנית",
+  "caption": "תעודת אזרחות ממשרד הפנים (לפי חוק האזרחות, 1952): רוזנר יצחק / ROSNER YIZHAK, יליד יאשי, הוא אזרח ישראלי. תל אביב, 18.7.1976. מספר הזהות הושחר.",
+  "images": [
+   {
+    "src": "img/docs/teudat-ezrachut-1976-page-1.jpg",
+    "thumb": "img/docs/teudat-ezrachut-1976-page-1-t.jpg",
+    "label": "תעודת אזרחות · עמוד 1"
+   }
+  ]
+ },
+ {
+  "id": "cv91",
+  "name": "brief-berufsweg-1991",
+  "pages": 2,
+  "title": "מכתב בגרמנית על דרכו המקצועית ברומניה",
+  "date": "14.12.1991",
+  "lang": "גרמנית",
+  "caption": "מכתב מודפס שכתב יצחק ב־14.12.1991, בתשובה למכתב מ־12.3.1991 (לפי המשפחה, בעניין פנסיה מגרמניה): העבודה בעיתון România Liberă ‏(1944–1948), הבגרות, הלימודים, ההכשרה כטכנאי רדיו, מפעל ELECTRONICA ומעבדת תיקוני הטלוויזיה (1963–1968). הכתובת ומספרי התיק הושחרו. העמוד השני אינו ממשיך ישירות את הראשון.",
+  "images": [
+   {
+    "src": "img/docs/brief-berufsweg-1991-page-1.jpg",
+    "thumb": "img/docs/brief-berufsweg-1991-page-1-t.jpg",
+    "label": "מכתב בגרמנית על דרכו המקצועית ברומניה · עמוד 1"
+   },
+   {
+    "src": "img/docs/brief-berufsweg-1991-page-2.jpg",
+    "thumb": "img/docs/brief-berufsweg-1991-page-2-t.jpg",
+    "label": "מכתב בגרמנית על דרכו המקצועית ברומניה · עמוד 2"
+   }
+  ],
+  "tr": [
+   "cv91"
+  ]
+ },
+ {
+  "id": "abb",
+  "name": "abb-course-1992",
+  "pages": 1,
+  "title": "תעודת קורס של ABB",
+  "date": "14.8.1992",
+  "lang": "אנגלית",
+  "caption": "ABB Process Automation: יצחק רוזנר (\"Ytzkhak Rosner\") השתתף בקורס ‎#2210 ACCURAY 1190 – חומרה ותחזוקה. 14 באוגוסט 1992.",
+  "images": [
+   {
+    "src": "img/docs/abb-course-1992-page-1.jpg",
+    "thumb": "img/docs/abb-course-1992-page-1-t.jpg",
+    "label": "תעודת קורס של ABB · עמוד 1"
+   }
+  ],
+  "tr": [
+   "abb"
+  ]
+ },
+ {
+  "id": "intel",
+  "name": "intel-fab18-1998",
+  "pages": 1,
+  "title": "תעודת הוקרה מאינטל, Fab 18",
+  "date": "1.1998",
+  "lang": "אנגלית",
+  "caption": "אינטל F18 ישראל (אינטל לכיש, קרית גת), ינואר 1998: הוקרה ל\"I.ROZNER\" על תרומתו יוצאת הדופן להשגת אבן הדרך \"מוכנות מבצעית\" של F18.",
+  "images": [
+   {
+    "src": "img/docs/intel-fab18-1998-page-1.jpg",
+    "thumb": "img/docs/intel-fab18-1998-page-1-t.jpg",
+    "label": "תעודת הוקרה מאינטל, Fab 18 · עמוד 1"
+   }
+  ],
+  "tr": [
+   "intel"
+  ]
+ },
+ {
+  "id": "petira",
+  "name": "teudat-petira-2016",
+  "pages": 1,
+  "title": "תעודת פטירה",
+  "date": "28.8.2016",
+  "lang": "עברית",
+  "caption": "תעודת פטירה ממשרד הפנים (לשכת נתניה, 28.8.2016): יצחק רוזנר, בן ליטמן וגינה, נפטר ב־13 באוגוסט 2016 (ט׳ באב התשע״ו) בכפר יונה. מספר הזהות הושחר, וחלק הנמען הוסר.",
+  "images": [
+   {
+    "src": "img/docs/teudat-petira-2016-page-1.jpg",
+    "thumb": "img/docs/teudat-petira-2016-page-1-t.jpg",
+    "label": "תעודת פטירה · עמוד 1"
    }
   ]
  }
