@@ -143,23 +143,6 @@ Promise.all([getJSON('data/documents.json'),loadDocTr().catch(()=>null)]).then((
   }));
   $('#docs').innerHTML=loc.map((d,i)=>`<div class="doc" id="doc-${esc(d.id)}"><h3>${esc(d.title)}</h3><div class="meta">${esc(d.date)} · ${esc(d.lang)}</div><p>${esc(d.caption)}</p><div class="pages">${d.images.map((p,k)=>`<button data-d="${i}" data-k="${k}"><img loading="lazy" src="${esc(p.thumb)}" alt="${esc(p.label)}"></button>`).join('')}</div>${d.tr?`<p class="ev-tr">${trButtons(d.tr,'doc-tr-btn')}</p>`:''}</div>`).join('');
   $('#docs').onclick=x=>{const t=x.target.closest('.doc-tr-btn');if(t){openDocTr(t.dataset.doc);return;}const b=x.target.closest('button[data-d]');if(!b)return;openLB(loc[+b.dataset.d].images,+b.dataset.k)}});
-/* ---------- family album ---------- */
-getJSON('data/album.json').then(al=>{
-  const wrap=$('#albumWrap');if(!wrap)return;
-  const lang=LANG();
-  const gl=id=>T('gallery.'+id,'');
-  const cards=al.map(a=>{
-    const title=T('album.'+a.id+'.title',a.title);
-    const tr=lang==='he'?a.text:T('album.'+a.id+'.text',a.text);
-    const imgs=[];
-    if(a.card)imgs.push({src:a.card.full,thumb:a.card.thumb,label:title});
-    a.photos.forEach(p=>imgs.push({src:p.full,thumb:p.thumb,label:gl(p.id)||title}));
-    return {a,title,tr,imgs};
-  });
-  wrap.innerHTML=cards.map((c,i)=>`<article class="album-card" id="album-${esc(c.a.id)}"><h3>${esc(c.title)}</h3><div class="album-imgs">${c.imgs.map((m,k)=>`<button data-a="${i}" data-k="${k}" class="${c.a.card&&k===0?'is-card':''}"><img loading="lazy" src="${esc(m.thumb)}" alt="${esc(m.label)}"></button>`).join('')}</div><div class="album-text${c.a.nocard?' muted':''}">${esc(c.tr).replace(/\n/g,'<br>')}</div>${lang!=='he'&&!c.a.nocard?`<details class="album-orig"><summary>${esc(T('album.orig','המקור בעברית'))}</summary><div lang="he" dir="rtl">${esc(c.a.text).replace(/\n/g,'<br>')}</div></details>`:''}</article>`).join('');
-  wrap.onclick=x=>{const b=x.target.closest('button[data-a]');if(!b)return;openLB(cards[+b.dataset.a].imgs,+b.dataset.k)};
-  if(/^#album-/.test(location.hash)){const t=document.getElementById(location.hash.slice(1));if(t)setTimeout(()=>t.scrollIntoView({block:'start'}),60)}
-}).catch(e=>console.error(e));
 /* ---------- gallery ---------- */
 const PERIOD_KEY={
   '1926–1940 · ילדות במולדוביצה':'gallery.period.1',

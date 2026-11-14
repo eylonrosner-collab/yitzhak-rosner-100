@@ -27,7 +27,6 @@
 | `data/timeline_context.json` | אירועי רקע היסטורי (30 אירועים, מוצגים רק כשמסמנים «הצג אירועי רקע היסטורי») |
 | `data/i18n/en.json`, `data/i18n/fr.json` | תרגומי ממשק ותוכן לאנגלית ולצרפתית |
 | `data/documents.json` | התעודות בפרק «מסמכים ותעודות» (שדה `tr` רשות: מזהי תרגום לכפתור) |
-| `data/album.json` | כרטיסי הכיתוב והתמונות בפרק «מהאלבום המשפחתי» (EN/FR במפתחות `album.{id}.title` / `album.{id}.text`) |
 | `data/doc_translations.json` | תמלול ותרגום של סריקות שמוצגים בחלון קופץ מציר הזמן ומפרק המסמכים. רשומה יכולה לכלול `meta` עם `btn` / `title` / `orig` / `pages` בשלוש השפות ו-`lang` של המקור, ואז אין צורך במפתחות `doc.{id}.tr.*` |
 | `data/stories.json` | כרטיסי הסיפורים (קישור לדפי `stories/*.html`) |
 | `data/gallery.json` | פריטי הגלריה |
