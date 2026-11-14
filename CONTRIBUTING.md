@@ -88,7 +88,7 @@
 
 ### מסמכים, תמונות, עדות, היסטוריה
 
-**מסמכים.** התעודות מוגדרות ב-`data/documents.json`. לפני פרסום סריקה משחירים מספרי זהות, כתובות רחוב, מספרי תעודות זהות רומניות ומספרי תיק גרמניים. כל רשומה כוללת `id`, `name` (של התיקייה/הסלאג), `pages`, `title`, `date`, `lang`, `caption` ומערך `images` עם `src`, `thumb`, `label`. הקבצים עצמם ב-`img/docs/`, בשמות כמו `adeverinta-traducator-frontul-2-ucrainian-1946-page-1.jpg` והממוזערת `…-page-1-t.jpg`.
+**מסמכים.** התעודות מוגדרות ב-`data/documents.json`. לפני פרסום סריקה משחירים מספרי זהות ישראליים, סדרות ומספרי תעודות זהות רומניות ומספרי תיק גרמניים. כתובות במסמכים ובטקסטים מותר לפרסם (לפי החלטת אילון, 14.11.2026), למעט מקום מגוריה הנוכחי של רות. בתעודת הנישואין מוסתר גם תאריך הלידה של רות, ובתעודת הפטירה הוסר חלק הנמען עד להחלטת אילון. את תעודת הלידה של רות לא מפרסמים. כל רשומה כוללת `id`, `name` (של התיקייה/הסלאג), `pages`, `title`, `date`, `lang`, `caption` ומערך `images` עם `src`, `thumb`, `label`. הקבצים עצמם ב-`img/docs/`, בשמות כמו `adeverinta-traducator-frontul-2-ucrainian-1946-page-1.jpg` והממוזערת `…-page-1-t.jpg`.
 
 **תמונות.** הגלריה נטענת מ-`data/gallery.json`: `id`, `full` (`img/g/…`), `thumb` (`img/t/…`), `caption`, `period`, וגם `source` / `w` / `h`. כפתור «לאלבום התמונות המלא» נמצא ב-`index.html` ומצביע לאלבום Google Photos.
 
@@ -218,8 +218,9 @@ git push origin main
 - **אל תמציאו עובדות.** אם משהו לא ודאי — סמנו זאת (הערת `note`, `[לא ברור]`, `[לא קריא]`, ניסוח זהיר), ואל תשלימו פרטים «הגיוניים».
 - **לכל אירוע בציר הזמן צריך מקור** — תעודה, תמונה, סיפור שכתב, רגע בעדות, או קישור למקור חיצוני.
 - **תרגום סריקות:** קראו את הסריקה עצמה. אל תמציאו מילים. קטע לא קריא: `[לא קריא]`. שדה ריק בטופס: `____`. מסמך ברוסית או ברומנית — תמלול בכתב המקור, כולל שגיאות הקלדה כפי שהן כתובות.
-- **בני משפחה בחיים — שם בלבד.** כך גם כתוב באתר («לבני משפחה בחיים מוצגים רק שמות»), וכך בנוי `js/tree.js` (`living: true` בלי תאריכים). אין להוסיף תאריכי לידה, כתובות, מקומות עבודה או פרטים מזהים אחרים.
-- **אין לפרסם את מקום מגוריה של רות.**
+- **בני משפחה בחיים — שם בלבד.** כך גם כתוב באתר («לבני משפחה בחיים מוצגים רק שמות»), וכך בנוי `js/tree.js` (`living: true` בלי תאריכים). אין להוסיף תאריכי לידה, כתובות מגורים נוכחיות, מקומות עבודה או פרטים מזהים אחרים. כתובות היסטוריות שמופיעות במסמכים ובאלבום מותר לפרסם.
+- **אין לפרסם את מקום מגוריה הנוכחי של רות.** כתובות היסטוריות (למשל בתעודת הנישואין מ־1973) מותרות.
+- **כתובות אינן מושחרות.** משחירים רק מספרי זהות, סדרות תעודות זהות רומניות ומספרי תיק גרמניים.
 
 ---
 
@@ -231,4 +232,4 @@ To add a timeline event with a source document: put the scan (and a `-t.jpg` thu
 
 You can edit in the GitHub web UI (pencil icon, commit to `main`) or locally. Eylon’s assistant also pushes to `main`, so always `git pull origin main` before you start and again before every `git push`. GitHub Pages usually updates in 1–2 minutes; check the Actions tab for `pages build and deployment`.
 
-Memories are stored in a Google Sheet owned by Eylon, not in this repo. Do not edit `backend/Code.gs` or redeploy the Apps Script without coordinating with him (current deployment: version 6 at the existing URL). Do not change `config.js` without coordinating either. Living relatives are listed by name only; do not publish Ruth’s place of residence.
+Memories are stored in a Google Sheet owned by Eylon, not in this repo. Do not edit `backend/Code.gs` or redeploy the Apps Script without coordinating with him (current deployment: version 6 at the existing URL). Do not change `config.js` without coordinating either. Living relatives are listed by name only; do not publish Ruth’s current place of residence. Addresses are not redacted (Eylon’s decision, 14.11.2026): black out only Israeli ID numbers, Romanian identity-card series/numbers and German file numbers. Ruth’s birth date on the marriage certificate stays hidden, her birth certificate stays unpublished, and the death certificate’s addressee section stays cropped pending Eylon’s decision.
