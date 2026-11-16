@@ -24,7 +24,7 @@ const PEOPLE=[
   {id:'sharonL',x:1298,y:534,sex:'f',living:true,name:'שרון רוזנר (לולאצ׳י)',dates:'',role:'אשת אילון',detail:'אשתו של אילון רוזנר.'},
   {id:'zeev',x:1520,y:534,sex:'m',living:true,name:'זאב (אנדי)',dates:'',role:'אחיין',detail:'בנם של נלי והרמן גודאנו. אנדי הוא כינוי הבית.'},
   {id:'ben',x:16,y:708,sex:'m',living:true,name:'בן',dates:'',role:'נכד',detail:'בנו של דן רוזנר.'},
-  {id:'ady',x:196,y:708,sex:null,living:true,name:'עדי',dates:'',role:'נכד/ה',detail:'ילדו/ה של דן רוזנר.'},
+  {id:'ady',x:196,y:708,sex:'f',living:true,name:'עדי',dates:'',role:'נכדה',detail:'בתו של דן רוזנר.'},
   {id:'eran',x:376,y:708,sex:'m',living:true,name:'ערן',dates:'',role:'נכד',detail:'בנו של דן רוזנר.'},
   {id:'emanuel',x:560,y:708,sex:'m',living:true,name:'עמנואל',dates:'',role:'נכד',detail:'בנם של שרון רוזנר וזהר שפי.'},
   {id:'noa',x:744,y:708,sex:'f',living:true,name:'נועה',dates:'',role:'נכדה',detail:'בתם של שרון רוזנר וזהר שפי.'},
