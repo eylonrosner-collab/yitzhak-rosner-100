@@ -17,7 +17,7 @@ const PEOPLE=[
   {id:'yitzhak',x:574,y:360,sex:'m',living:false,focus:true,name:'יצחק (ז׳אק) רוזנר',dates:'25.11.1926 – 13.8.2016',role:'',detail:'נולד ב־25.11.1926 ביאשי, רומניה. נפטר ב־13.8.2016 בכפר יונה. בנם של ליטמן ורגינה, אחיה של נלי.',photo:'img/hero.jpg'},
   {id:'ruth',x:758,y:360,sex:'f',living:true,name:'רות רוזנר (וולד)',dates:'',role:'אשתו',detail:'אשתו של יצחק ואמם של שרון ואילון.'},
   {id:'nelly',x:1520,y:360,sex:'f',living:false,name:'נלי גודאנו (רוזנר)',dates:'',role:'אחות',detail:'בתם של ליטמן ורגינה, אחותו של יצחק. אשת הרמן גודאנו ואמו של זאב (אנדי).'},
-  {id:'dan',x:196,y:534,sex:'m',living:true,name:'דן רוזנר',dates:'',role:'בן',detail:'בנם של יצחק וברתה.'},
+  {id:'dan',x:196,y:534,sex:'m',living:true,name:'דן רוזנר',dates:'',role:'בן',detail:'בנם של יצחק ושל אשתו הראשונה, ברתה (בקה).'},
   {id:'sharon',x:560,y:534,sex:'m',living:true,name:'שרון רוזנר',dates:'',role:'בן',detail:'בנם של יצחק ורות. בן זוגה של זהר שפי.'},
   {id:'zohar',x:744,y:534,sex:'f',living:true,name:'זהר שפי',dates:'',role:'בת זוג של שרון',detail:'בת זוגו של שרון רוזנר.'},
   {id:'eylon',x:1114,y:534,sex:'m',living:true,name:'אילון רוזנר',dates:'',role:'בן',detail:'בנם של יצחק ורות. בעלה של שרון (לולאצ׳י).'},
