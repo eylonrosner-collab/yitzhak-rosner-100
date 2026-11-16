@@ -91,6 +91,8 @@
 
 **תמונות.** הגלריה נטענת מ-`data/gallery.json`: `id`, `full` (`img/g/…`), `thumb` (`img/t/…`), `caption`, `period`, וגם `source` / `w` / `h`. כפתור «לאלבום התמונות המלא» נמצא ב-`index.html` ומצביע לאלבום Google Photos.
 
+**חיתוך תמונות של הדפסים (כלל קבוע, אילון, 16.11.2026).** כל תמונה שצולמה בטלפון מהדפסה על נייר נחתכת עד גבול ההדפסה עצמה: מסירים את השולחן, הרקע, דף האלבום, אצבעות וצללים, ומיישרים צילום בזווית (תיקון פרספקטיבה). שוליים לבנים או מעוטרים של ההדפסה עצמה נשארים, ולא חותכים לתוך התמונה. הכלל לא חל על סריקות מסמכים או על תמונות שכבר סרוקות נקי. שומרים את המקור כגיבוי, בודקים כל תוצאה בעין (שאף קצה של ההדפסה לא נחתך ושלא נשאר רקע), מייצרים מחדש את הממוזערת ב-`img/t/` ומעדכנים את `w`/`h` ב-`data/gallery.json` לפי הגודל החדש.
+
 **עדות ותמלולים.** באתר נטענים `data/testimony_part1.html` ו-`data/testimony_part2.html` (ו-`data/recording2016.html` להקלטה). קובצי ה-`.md` המקבילים הם מקור העריכה. בעדות: `[לא ברור]` לקטע שלא זוהה, `[מילה?]` להשערה.
 
 **רקע היסטורי.** התוכן העברי כתוב ב-`history.html`; התרגומים במפתחות `history.*`. התמונות ב-`img/hist/`. אירועי הרקע שמופיעים בציר הזמן (באפור) מגיעים מ-`data/timeline_context.json`.
@@ -232,3 +234,5 @@ To add a timeline event with a source document: put the scan (and a `-t.jpg` thu
 You can edit in the GitHub web UI (pencil icon, commit to `main`) or locally. Eylon’s assistant also pushes to `main`, so always `git pull origin main` before you start and again before every `git push`. GitHub Pages usually updates in 1–2 minutes; check the Actions tab for `pages build and deployment`.
 
 Memories are stored in a Google Sheet owned by Eylon, not in this repo. Do not edit `backend/Code.gs` or redeploy the Apps Script without coordinating with him (current deployment: version 6 at the existing URL). Do not change `config.js` without coordinating either. Living relatives are listed by name only; do not publish Ruth’s current place of residence. Addresses are not redacted (Eylon’s decision, 14.11.2026): black out only Israeli ID numbers, Romanian identity-card series/numbers and German file numbers. Ruth’s birth date on the marriage certificate stays hidden, her birth certificate stays unpublished, and the death certificate’s addressee section stays cropped pending Eylon’s decision.
+
+Photos of paper prints (standing rule, Eylon, 16.11.2026): any phone snapshot of a print is cropped to the print’s own border — remove table, background, album page, fingers and shadows, and deskew angled shots. Keep the print’s own white or decorative border; never crop into the image. Not for document scans or already-clean digital scans. Keep the original as a backup, check every result by eye (no print edge cut, no background left), regenerate the `img/t/` thumbnail and update `w`/`h` in `data/gallery.json`.
