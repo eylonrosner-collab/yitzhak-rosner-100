@@ -26,8 +26,10 @@ ready.then(()=>{
 let LB=[],LI=0;
 function openLB(list,i){LB=list;LI=i;showLB();$('#lb').hidden=false;document.body.style.overflow='hidden'}
 function showLB(){const it=LB[LI];$('#lbImg').src=it.src;$('#lbImg').alt=it.label||'';$('#lbCap').textContent=it.label||'';$('#lbOpen').href=it.src;
-  $('.lb-prev').style.display=$('.lb-next').style.display=LB.length>1?'':'none'}
-function closeLB(){$('#lb').hidden=true;document.body.style.overflow='';$('#lbImg').src=''}
+  $('.lb-prev').style.display=$('.lb-next').style.display=LB.length>1?'':'none';
+  if(window.PhotoTags){PhotoTags.ready.then(()=>PhotoTags.decorateLightbox(it.src))}
+}
+function closeLB(){$('#lb').hidden=true;document.body.style.overflow='';$('#lbImg').src='';if(window.PhotoTags)PhotoTags.clearLightbox()}
 $('.lb-x').onclick=closeLB;$('#lb').addEventListener('click',e=>{if(e.target.id==='lb')closeLB()});
 $('.lb-prev').onclick=()=>{LI=(LI-1+LB.length)%LB.length;showLB()};
 $('.lb-next').onclick=()=>{LI=(LI+1)%LB.length;showLB()};
@@ -100,19 +102,43 @@ Promise.all([getJSON('data/timeline.json'),getJSON('data/timeline_context.json')
   tl.innerHTML=ev.map(e=>{
     const imgs=e.sources.filter(s=>s.type==='image');
     const srcHtml=e.sources.map(s=>{
-      if(s.type==='image'){const k=imgs.indexOf(s);return `<button class="src-img" data-ev="${e.id}" data-k="${k}" title="${esc(s.label)}"><img loading="lazy" src="${esc(s.thumb||s.src)}" alt="${esc(s.label)}"><span>${esc(s.label)}</span></button>`}
+      if(s.type==='image'){
+        const k=imgs.indexOf(s);
+        if(s.tagged) return '';
+        return `<button class="src-img" data-ev="${e.id}" data-k="${k}" title="${esc(s.label)}"><img loading="lazy" src="${esc(s.thumb||s.src)}" alt="${esc(s.label)}"><span>${esc(s.label)}</span></button>`
+      }
       if(s.type==='story')return `<a class="src-link" href="${esc(withLang(s.src))}">📖 ${esc(s.label)}</a>`;
       if(s.type==='anchor')return `<a class="src-link" href="${esc(s.src)}">▶ ${esc(s.label)}</a>`;
       if(s.type==='video')return `<a class="src-link vid" href="${esc(s.src)}" target="_blank" rel="noopener">🎥 ${esc(s.label)}</a>`;
       return `<a class="src-link" href="${esc(s.src)}" target="_blank" rel="noopener">🔗 ${esc(s.label)}</a>`}).join('');
-    return `<li class="ev${e.context?' ev-ctx':''}" data-year="${e.year}" id="${e.id}"><div class="ev-card">${e.context?'<span class="ctx-tag">'+esc(T('tl.ctxTag','רקע היסטורי'))+'</span>':''}<div class="ev-date">${esc(e.date)}</div><h3>${esc(e.title)}</h3>${e.text?`<p>${esc(e.text)}</p>`:''}${e.note?`<p class="note${e.check===false?' note-info':''}">${e.check===false?'':esc(T('ui.to_check','לבדיקה'))+': '}${esc(e.note)}</p>`:''}${e.translateDoc?`<p class="ev-tr">${trButtons(e.translateDoc,'ev-tr-btn')}</p>`:''}${e.sources.length?`<div class="srcs">${srcHtml}</div>`:''}</div></li>`}).join('');
+    const tagged=e.sources.find(s=>s.type==='image'&&s.tagged);
+    const taggedSlot=tagged?`<div class="ev-tagged" data-ev="${e.id}" data-src="${esc(tagged.src)}" data-alt="${esc(tagged.label)}"></div>`:'';
+    return `<li class="ev${e.context?' ev-ctx':''}" data-year="${e.year}" id="${e.id}"><div class="ev-card">${e.context?'<span class="ctx-tag">'+esc(T('tl.ctxTag','רקע היסטורי'))+'</span>':''}<div class="ev-date">${esc(e.date)}</div><h3>${esc(e.title)}</h3>${e.text?`<p>${esc(e.text)}</p>`:''}${taggedSlot}${e.note?`<p class="note${e.check===false?' note-info':''}">${e.check===false?'':esc(T('ui.to_check','לבדיקה'))+': '}${esc(e.note)}</p>`:''}${e.translateDoc?`<p class="ev-tr">${trButtons(e.translateDoc,'ev-tr-btn')}</p>`:''}${e.sources.length&&srcHtml.trim()?`<div class="srcs">${srcHtml}</div>`:''}</div></li>`}).join('');
+  if(window.PhotoTags){
+    PhotoTags.ready.then(()=>{
+      tl.querySelectorAll('.ev-tagged').forEach(slot=>{
+        const fig=PhotoTags.render({src:slot.dataset.src,alt:slot.dataset.alt,featured:true});
+        if(!fig)return;
+        fig.dataset.ev=slot.dataset.ev;
+        slot.replaceWith(fig);
+      });
+    });
+  }
   tl.addEventListener('click',x=>{
     const trb=x.target.closest('.ev-tr-btn');
     if(trb){openDocTr(trb.dataset.doc);return;}
     const b=x.target.closest('.src-img');
-    if(!b)return;
-    const e=ev.find(q=>q.id===b.dataset.ev);
-    openLB(e.sources.filter(s=>s.type==='image'),+b.dataset.k);
+    if(b){
+      const e=ev.find(q=>q.id===b.dataset.ev);
+      openLB(e.sources.filter(s=>s.type==='image'),+b.dataset.k);
+      return;
+    }
+    const frame=x.target.closest('.tp-featured .tp-frame');
+    if(frame && !x.target.closest('.tp-hot')){
+      const fig=frame.closest('.tagged-photo');
+      const e=ev.find(q=>q.id===fig.dataset.ev);
+      if(e) openLB(e.sources.filter(s=>s.type==='image'),0);
+    }
   });
   const f=$('#tlFilter');f.innerHTML=ERAS.map((r,i)=>`<button data-i="${i}" class="${i?'':'on'}">${r[0]}</button>`).join('')+'<label class="ctx-toggle"><input type="checkbox" id="ctxToggle"> '+esc(T('tl.showCtx','הצג אירועי רקע היסטורי'))+'</label>';
   const ctx=()=>tl.classList.toggle('show-ctx',$('#ctxToggle').checked);$('#ctxToggle').onchange=ctx;
