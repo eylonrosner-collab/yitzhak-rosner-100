@@ -785,7 +785,7 @@
   "tl.e41.src.5": "Le récit « Une marche matinale vers le travail »",
   "tl.e51.date": "Octobre 1973",
   "tl.e51.title": "La guerre de Kippour à Abou Rudeis",
-  "tl.e51.text": "Le 23.10.1973, le directeur du champ, Haïm Zucker, lui écrivit une lettre de remerciement : « Je m’adresse à toi pour t’exprimer des remerciements et une reconnaissance qui viennent du cœur » ; « nous avons traversé ensemble une période difficile : une frappe sur le champ, un accrochage, un bombardement, une alerte permanente, la garde au poste d’observation ». Il ajoutait : « le temps n’est pas encore venu de se reposer sur nos lauriers ; l’heure est venue de remettre le champ en état. »",
+  "tl.e51.text": "Le 23.10.1973, le directeur du champ, Haïm Zucker, lui écrivit une lettre de remerciement : « Je m’adresse à toi pour t’exprimer des remerciements et une reconnaissance qui viennent du cœur » ; « nous avons traversé ensemble une période difficile : une frappe sur le champ, un accrochage, un bombardement, une alerte permanente, la garde au poste d’observation ». Il ajoutait : « le temps n’est pas encore venu de se reposer sur nos lauriers ; l’heure est venue de remettre le champ en état. » Pendant la guerre, des commandos égyptiens attaquèrent le champ sans succès. Les forces restées pour garder le champ firent des prisonniers égyptiens.",
   "tl.e51.src.0": "La lettre de remerciement, 23.10.1973",
   "tl.e51.src.1": "Un hélicoptère soulevant des tuyaux",
   "tl.e51.src.2": "Jacques avec les débris d’un hélicoptère de commando égyptien (à l’arrière-plan, un hélicoptère dans l’eau)",
@@ -1014,5 +1014,6 @@
   "search.g.people": "Personnes de l’arbre généalogique",
   "search.g.bio": "Sa vie",
   "search.g.stories": "Récits",
-  "search.g.history": "Contexte historique"
+  "search.g.history": "Contexte historique",
+  "tl.e51.src.3": "Abou Rudeis sur Wikipédia (hébreu)"
 }

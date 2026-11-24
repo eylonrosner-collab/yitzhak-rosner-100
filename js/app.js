@@ -17,7 +17,7 @@ function locEv(e){
     title:T(p+'.title',e.title),
     text:T(p+'.text',e.text||''),
     note:e.note?T(p+'.note',e.note):e.note,
-    sources:(e.sources||[]).map((s,i)=>Object.assign({},s,{label:T(p+'.src.'+i,s.label)}))
+    sources:(e.sources||[]).map((s,i)=>Object.assign({},s,{label:T(p+'.src.'+i,s.label)},s.type==='link'?{src:T(p+'.src.'+i+'.url',s.src)}:{}))
   });
 }
 const ready=(window.I18N&&I18N.ready)?I18N.ready:Promise.resolve();

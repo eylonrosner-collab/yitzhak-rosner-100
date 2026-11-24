@@ -785,7 +785,7 @@
   "tl.e41.src.5": "The story “A morning walk to work”",
   "tl.e51.date": "October 1973",
   "tl.e51.title": "The Yom Kippur War at Abu Rudeis",
-  "tl.e51.text": "On 23.10.1973 the field manager, Haim Zucker, wrote him a letter of thanks: “I turn to you with an expression of thanks and appreciation from the heart”; “together we went through a hard time: a strike on the field, a clash, bombing, constant readiness, guard duty at the lookout.” He added: “the time has not yet come to rest on our laurels; the hour has come to rehabilitate the field.”",
+  "tl.e51.text": "On 23.10.1973 the field manager, Haim Zucker, wrote him a letter of thanks: “I turn to you with an expression of thanks and appreciation from the heart”; “together we went through a hard time: a strike on the field, a clash, bombing, constant readiness, guard duty at the lookout.” He added: “the time has not yet come to rest on our laurels; the hour has come to rehabilitate the field.” During the war Egyptian commando forces raided the field without success. The forces that had stayed behind to guard the field took Egyptian prisoners.",
   "tl.e51.src.0": "The letter of thanks, 23.10.1973",
   "tl.e51.src.1": "A helicopter lifting pipes",
   "tl.e51.src.2": "Jacques with the wreckage of an Egyptian commando helicopter (a helicopter in the water in the background)",
@@ -1014,5 +1014,7 @@
   "search.g.people": "People in the family tree",
   "search.g.bio": "His life",
   "search.g.stories": "Stories",
-  "search.g.history": "Historical background"
+  "search.g.history": "Historical background",
+  "tl.e51.src.3": "Abu Rudeis on Wikipedia",
+  "tl.e51.src.3.url": "https://en.wikipedia.org/wiki/Abou_Redis"
 }
