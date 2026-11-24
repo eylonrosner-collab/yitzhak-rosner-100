@@ -668,13 +668,13 @@
     },
     {
      "type": "image",
-     "label": "שלושה גברים ליד מבנה מודרני (אלבום, עמוד 10)",
+     "label": "שלושה גברים ליד מבנה מודרני",
      "src": "img/g/g_ap10_1.jpg",
      "thumb": "img/t/g_ap10_1.jpg"
     },
     {
      "type": "image",
-     "label": "גבר, אישה וילד על צלע גבעה (אלבום, עמוד 10)",
+     "label": "גבר, אישה וילד על צלע גבעה",
      "src": "img/g/g_ap10_3.jpg",
      "thumb": "img/t/g_ap10_3.jpg"
     }
@@ -706,13 +706,13 @@
     },
     {
      "type": "image",
-     "label": "ארבעה גברים על אסדת קידוח (אלבום, עמוד 10)",
+     "label": "ארבעה גברים על אסדת קידוח",
      "src": "img/g/g_ap10_4.jpg",
      "thumb": "img/t/g_ap10_4.jpg"
     },
     {
      "type": "image",
-     "label": "גבר ואישה (אלבום, עמוד 10)",
+     "label": "גבר ואישה",
      "src": "img/g/g_ap10_5.jpg",
      "thumb": "img/t/g_ap10_5.jpg"
     }
@@ -755,7 +755,7 @@
     },
     {
      "type": "image",
-     "label": "הרמת כוסית (אלבום, עמוד 11)",
+     "label": "הרמת כוסית",
      "src": "img/g/g_ap11_1.jpg",
      "thumb": "img/t/g_ap11_1.jpg"
     },
@@ -781,13 +781,13 @@
     },
     {
      "type": "image",
-     "label": "מסוק מרים צינורות (אלבום, עמוד 11)",
+     "label": "מסוק מרים צינורות",
      "src": "img/g/g_ap11_3.jpg",
      "thumb": "img/t/g_ap11_3.jpg"
     },
     {
      "type": "image",
-     "label": "גבר על חוף הים (אלבום, עמוד 11)",
+     "label": "גבר על חוף הים",
      "src": "img/g/g_ap11_2.jpg",
      "thumb": "img/t/g_ap11_2.jpg"
     }
@@ -827,19 +827,19 @@
    "sources": [
     {
      "type": "image",
-     "label": "זוג עם תינוק (אלבום, עמוד 12)",
+     "label": "זוג עם תינוק",
      "src": "img/g/g_ap12_1.jpg",
      "thumb": "img/t/g_ap12_1.jpg"
     },
     {
      "type": "image",
-     "label": "משפחה עם תינוק (אלבום, עמוד 12)",
+     "label": "משפחה עם תינוק",
      "src": "img/g/g_ap12_2.jpg",
      "thumb": "img/t/g_ap12_2.jpg"
     },
     {
      "type": "image",
-     "label": "מפגש משפחתי (אלבום, עמוד 12)",
+     "label": "מפגש משפחתי",
      "src": "img/g/g_ap12_3.jpg",
      "thumb": "img/t/g_ap12_3.jpg"
     },
@@ -977,7 +977,7 @@
    "sources": [
     {
      "type": "image",
-     "label": "ז׳אק ליד פירמידה (אלבום, עמוד 17)",
+     "label": "ז׳אק ליד פירמידה",
      "src": "img/g/g_ap17_1.jpg",
      "thumb": "img/t/g_ap17_1.jpg"
     }
@@ -1012,19 +1012,19 @@
     },
     {
      "type": "image",
-     "label": "אסדת נפט בוערת (אלבום, עמוד 13)",
+     "label": "אסדת נפט בוערת",
      "src": "img/g/g_ap13_2.jpg",
      "thumb": "img/t/g_ap13_2.jpg"
     },
     {
      "type": "image",
-     "label": "שני פעוטות בעריסה (אלבום, עמוד 13)",
+     "label": "שני פעוטות בעריסה",
      "src": "img/g/g_ap13_3.jpg",
      "thumb": "img/t/g_ap13_3.jpg"
     },
     {
      "type": "image",
-     "label": "קהל בטקס דגל (אלבום, עמוד 13)",
+     "label": "קהל בטקס דגל",
      "src": "img/g/g_ap13_1.jpg",
      "thumb": "img/t/g_ap13_1.jpg"
     }
@@ -1072,13 +1072,13 @@
     },
     {
      "type": "image",
-     "label": "החצר המוזנחת (אלבום, עמוד 15)",
+     "label": "החצר המוזנחת",
      "src": "img/g/g_ap15_1.jpg",
      "thumb": "img/t/g_ap15_1.jpg"
     },
     {
      "type": "image",
-     "label": "הבית והגינה (אלבום, עמוד 15)",
+     "label": "הבית והגינה",
      "src": "img/g/g_ap15_2.jpg",
      "thumb": "img/t/g_ap15_2.jpg"
     }
