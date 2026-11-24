@@ -519,27 +519,16 @@
   {
    "id": "e47",
    "year": 1960.5,
-   "date": "קיץ 1960",
-   "title": "מפעל ELECTRONICA: קו הרכבה לטלוויזיות עם צוות צרפתי",
-   "text": "לפי המכתב מ־1991, במפעל ELECTRONICA, שהמנהל הכללי שלו היה אחד ממוריו לשעבר בבית הספר המקצועי, נרשם כפועל אך עבד בהנהלה הטכנית של המפעל. בקיץ 1960 עבד עם צוות צרפתי בהקמת קו הרכבה למקלטי טלוויזיה, ואחרי שהצרפתים עזבו נשאר אחראי לטכנולוגיית הייצור של המחלקה.",
+   "date": "1960–1962",
+   "title": "עבודה במפעל ELECTRONICA (\"אלקטרוניקה\")",
+   "text": "לפי המכתב מ־1991, במפעל ELECTRONICA, שהמנהל הכללי שלו היה אחד ממוריו לשעבר בבית הספר המקצועי, נרשם כפועל אך עבד בהנהלה הטכנית של המפעל. בקיץ 1960 עבד עם צוות צרפתי בהקמת קו הרכבה למקלטי טלוויזיה, ואחרי שהצרפתים עזבו נשאר אחראי לטכנולוגיית הייצור של המחלקה. תמונה מ־1962 מראה אותו בחדר הבקרה של המפעל (\"בחדר הבקרה, מפעל ׳אלקטרוניקה׳ 1962\", כך כתוב עליה באלבום \"אבא 100\").",
    "sources": [
     {
      "type": "image",
      "label": "המכתב מ־1991, עמוד 2",
      "src": "img/docs/brief-berufsweg-1991-page-2.jpg",
      "thumb": "img/docs/brief-berufsweg-1991-page-2-t.jpg"
-    }
-   ],
-   "translateDoc": [
-    "cv91"
-   ]
-  },
-  {
-   "date": "1962",
-   "year": 1962,
-   "title": "בחדר הבקרה של מפעל \"אלקטרוניקה\"",
-   "text": "כך כתוב על תמונה מ־1962, באלבום \"אבא 100\".",
-   "sources": [
+    },
     {
      "type": "image",
      "label": "\"בחדר הבקרה, מפעל ׳אלקטרוניקה׳ 1962\"",
@@ -550,15 +539,11 @@
      "type": "video",
      "label": "עדות 2009, חלק ב׳ 21:38 – טכנולוג טלוויזיה",
      "src": "https://youtu.be/WQ14GO9kM6o?t=1298"
-    },
-    {
-     "type": "image",
-     "label": "המכתב מ־1991, עמוד 2",
-     "src": "img/docs/brief-berufsweg-1991-page-2.jpg",
-     "thumb": "img/docs/brief-berufsweg-1991-page-2-t.jpg"
     }
    ],
-   "id": "e16"
+   "translateDoc": [
+    "cv91"
+   ]
   },
   {
    "id": "e36",
@@ -614,70 +599,6 @@
    "translateDoc": [
     "tc65"
    ]
-  },
-  {
-   "date": "יולי 1966",
-   "year": 1966,
-   "title": "בוקרשט, Str. Muzeul Zambaccian 14",
-   "text": "תמונה מבוקרשט, יולי 1966 (לפי התגובה ב־Geni).",
-   "sources": [
-    {
-     "type": "image",
-     "label": "בוקרשט, יולי 1966",
-     "src": "img/g/g_1966_zambaccian.jpg",
-     "thumb": "img/t/g_1966_zambaccian.jpg"
-    }
-   ],
-   "id": "e17"
-  },
-  {
-   "id": "e50",
-   "year": 1967.9,
-   "date": "18.12.1967",
-   "title": "תעודת מתרגם מצרפתית ומאנגלית",
-   "text": "תעודת מתרגם מס׳ 01586 מהוועדה הממלכתית לתרבות ולאמנות, על סמך בחינה במושב אפריל 1967: מצרפתית לרומנית בהתמחות אלקטרוניקה, ומאנגלית לרומנית בהתמחות גאוגרפיה.",
-   "sources": [
-    {
-     "type": "image",
-     "label": "תעודת המתרגם מס׳ 01586",
-     "src": "img/docs/certificat-traducator-1967-page-1.jpg",
-     "thumb": "img/docs/certificat-traducator-1967-page-1-t.jpg"
-    }
-   ],
-   "translateDoc": [
-    "tc67"
-   ]
-  },
-  {
-   "date": "26.2.1968",
-   "year": 1968.1,
-   "title": "תעודת מסע לחסר אזרחות על שם \"אדריאן רושקה\"",
-   "text": "משרד הפנים הרומני הנפיק תעודת מסע (Seria B 007368) על שם ROSCA ADRIAN, עם יעד: איטליה.",
-   "sources": [
-    {
-     "type": "image",
-     "label": "תעודת המסע, עמוד 1",
-     "src": "img/docs/certificat-calatorie-rosca-adrian-1968-page-1.jpg",
-     "thumb": "img/docs/certificat-calatorie-rosca-adrian-1968-page-1-t.jpg"
-    },
-    {
-     "type": "image",
-     "label": "אשרות וחותמות, עמוד 2",
-     "src": "img/docs/certificat-calatorie-rosca-adrian-1968-page-2.jpg",
-     "thumb": "img/docs/certificat-calatorie-rosca-adrian-1968-page-2-t.jpg"
-    },
-    {
-     "type": "video",
-     "label": "עדות 2009, חלק ב׳ 22:00 – הדרך לעלייה",
-     "src": "https://youtu.be/WQ14GO9kM6o?t=1320"
-    },
-    {
-     "type": "video",
-     "label": "עדות 2009, חלק ב׳ 24:53 – הבקשות והסירובים",
-     "src": "https://youtu.be/WQ14GO9kM6o?t=1493"
-    }
-   ],
-   "id": "e18"
   },
   {
    "date": "12–15.5.1968",
@@ -975,66 +896,6 @@
    ]
   },
   {
-   "id": "e57",
-   "year": 1984.5,
-   "date": "תאריכים מדויקים לא ידועים",
-   "title": "טיולים, חגים וחברים",
-   "text": "",
-   "sources": [
-    {
-     "type": "image",
-     "label": "זוג על מדרגות ארמון (אלבום, עמוד 16)",
-     "src": "img/g/g_ap16_1.jpg",
-     "thumb": "img/t/g_ap16_1.jpg"
-    },
-    {
-     "type": "image",
-     "label": "מסיבת ילדים (אלבום, עמוד 16)",
-     "src": "img/g/g_ap16_2.jpg",
-     "thumb": "img/t/g_ap16_2.jpg"
-    },
-    {
-     "type": "image",
-     "label": "פיקניק (אלבום, עמוד 16)",
-     "src": "img/g/g_ap16_3.jpg",
-     "thumb": "img/t/g_ap16_3.jpg"
-    }
-   ]
-  },
-  {
-   "date": "1985",
-   "year": 1985,
-   "title": "טיול משפחתי בספרד",
-   "text": "\"המשפחה מטיילת בספרד – 1985\" (כיתוב על התמונה).",
-   "sources": [
-    {
-     "type": "image",
-     "label": "ספרד 1985",
-     "src": "img/g/g_1985_spain.jpg",
-     "thumb": "img/t/g_1985_spain.jpg"
-    }
-   ],
-   "id": "e24"
-  },
-  {
-   "id": "e59",
-   "year": 1992.6,
-   "date": "14.8.1992",
-   "title": "קורס של ABB",
-   "text": "ABB Process Automation העניקה ליצחק רוזנר (\"Ytzkhak Rosner\") תעודה על השתתפות בקורס ‎#2210 ACCURAY 1190 – חומרה ותחזוקה, בכיתה ובסדנה.",
-   "sources": [
-    {
-     "type": "image",
-     "label": "תעודת הקורס",
-     "src": "img/docs/abb-course-1992-page-1.jpg",
-     "thumb": "img/docs/abb-course-1992-page-1-t.jpg"
-    }
-   ],
-   "translateDoc": [
-    "abb"
-   ]
-  },
-  {
    "id": "e60",
    "year": 1998.05,
    "date": "ינואר 1998",
@@ -1098,115 +959,6 @@
    "id": "e26"
   },
   {
-   "date": "ספטמבר 2009",
-   "year": 2009.7,
-   "title": "יצחק ורות במסצ׳וסטס",
-   "text": "",
-   "sources": [
-    {
-     "type": "image",
-     "label": "מסצ׳וסטס, 2009",
-     "src": "img/g/g_2009_mass.jpg",
-     "thumb": "img/t/g_2009_mass.jpg"
-    },
-    {
-     "type": "image",
-     "label": "מסצ׳וסטס, 2009",
-     "src": "img/g/s_massach.jpg",
-     "thumb": "img/t/s_massach.jpg"
-    }
-   ],
-   "id": "e27"
-  },
-  {
-   "date": "15.5.2010",
-   "year": 2010,
-   "title": "\"Meeting of the Seniors\" בווינה",
-   "text": "",
-   "sources": [
-    {
-     "type": "image",
-     "label": "וינה, 2010",
-     "src": "img/g/g_2010_vienna.jpg",
-     "thumb": "img/t/g_2010_vienna.jpg"
-    }
-   ],
-   "id": "e28"
-  },
-  {
-   "date": "מאי 2011",
-   "year": 2011.4,
-   "title": "כתב את \"שארגורוד\"",
-   "text": "את זיכרונות הגירוש כתב בעברית ובאנגלית.",
-   "sources": [
-    {
-     "type": "story",
-     "label": "שארגורוד",
-     "src": "stories/shargorod.html"
-    },
-    {
-     "type": "story",
-     "label": "Shargorod (English)",
-     "src": "stories/shargorod-en.html"
-    }
-   ],
-   "id": "e29"
-  },
-  {
-   "date": "26.11.2011",
-   "year": 2011.9,
-   "title": "יום ההולדת ה־85",
-   "text": "\"My 85th Anniversary – יום הולדת 85 שלי\" (Geni).",
-   "sources": [
-    {
-     "type": "image",
-     "label": "יום ההולדת ה־85",
-     "src": "img/g/g_2011_85.jpg",
-     "thumb": "img/t/g_2011_85.jpg"
-    },
-    {
-     "type": "image",
-     "label": "נובמבר 2011",
-     "src": "img/g/g_2011_85b.jpg",
-     "thumb": "img/t/g_2011_85b.jpg"
-    }
-   ],
-   "id": "e30"
-  },
-  {
-   "date": "23.11.2013",
-   "year": 2013,
-   "title": "\"החבר הנעלם\"",
-   "text": "טקסט קצר שכתב.",
-   "sources": [
-    {
-     "type": "story",
-     "label": "החבר הנעלם",
-     "src": "stories/haver.html"
-    }
-   ],
-   "id": "e31"
-  },
-  {
-   "date": "6.5.2016",
-   "year": 2016.3,
-   "title": "\"אבא מספר את סיפור ילדותו בשואה\"",
-   "text": "הקלטה ביתית (1:04:26) שבה סיפר לבני המשפחה את סיפור ילדותו בשואה: הדרך לשרגורוד, החדר בגטו, הרעב והטיפוס, השחרור והדרך לבוטושאני.",
-   "sources": [
-    {
-     "type": "anchor",
-     "label": "להאזנה ולתמלול",
-     "src": "#recording2016"
-    },
-    {
-     "type": "story",
-     "label": "שארגורוד – הסיפור הכתוב",
-     "src": "stories/shargorod.html"
-    }
-   ],
-   "id": "e32"
-  },
-  {
    "date": "13.8.2016",
    "year": 2016.6,
    "title": "נפטר בכפר יונה",
@@ -1231,14 +983,6 @@
     }
    ],
    "id": "e33"
-  },
-  {
-   "date": "25.11.2026",
-   "year": 2026,
-   "title": "100 שנה להולדתו",
-   "text": "המשפחה מתכנסת לציין 100 שנה להולדתו.",
-   "sources": [],
-   "id": "e34"
   },
   {
    "date": "שנות ה־90",
