@@ -4,37 +4,42 @@ const esc=s=>String(s==null?'':s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;'
 const W=168,H=70;
 
 const PEOPLE=[
-  {id:'ysr',x:500,y:24,sex:'m',living:false,name:'יצחק רוזנר',dates:'1850 – בערך 1910',role:'סבא מצד האב',detail:'נולד ב־1850 בפוטילה, בוקובינה. נפטר בערך ב־1910 בפוטילה.'},
-  {id:'khaya',x:684,y:24,sex:'f',living:false,name:'חיה רוזנר (שרף)',dates:'בערך 1850 – 1935',role:'סבתא מצד האב',detail:'נולדה בערך ב־1850. נפטרה ב־20.11.1935 במולדוביצה. שם נעוריה: שרף (Scharf).'},
-  {id:'natan',x:960,y:24,sex:'m',living:false,name:'נתן מרקוביץ׳',dates:'',role:'סבא מצד האם',detail:'בעלה של לואיז מרקוביץ׳ (טאובס) ואביה של רגינה. תאריכי הלידה והפטירה אינם מופיעים ב־Geni.'},
-  {id:'louise',x:1144,y:24,sex:'f',living:false,name:'לואיז מרקוביץ׳ (טאובס)',dates:'1873 – 1940',role:'סבתא מצד האם',detail:'נולדה ב־1873 בבורדוז׳ן, רומניה. נפטרה באפריל 1940 במולדוביצה.'},
-  {id:'mendel',x:24,y:186,sex:'m',living:false,name:'מנדל וסרמן',dates:'1906 – בערך 1986',role:'גיסו של ליטמן',detail:'בעלה של פפי (רוזנר) וסרמן. 1906 – בערך 1986.'},
-  {id:'pepi',x:208,y:186,sex:'f',living:false,name:'פפי וסרמן (רוזנר)',dates:'1909 –',role:'אחותו של ליטמן',detail:'בתם של יצחק וחיה רוזנר, אחות ליטמן. נולדה ב־1909. אשת מנדל וסרמן ואמו של מאיר וסרמן.'},
-  {id:'litman',x:540,y:186,sex:'m',living:false,name:'ליטמן רוזנר',dates:'13.1.1886 – 3.3.1979',role:'אבא',detail:'נולד ב־13.1.1886 בקיסליצני, בוקובינה. נפטר ב־3.3.1979 בירושלים.'},
-  {id:'regina',x:724,y:186,sex:'f',living:false,name:'רגינה (גינה) רוזנר (מרקוביץ׳)',dates:'15.8.1898 – 23.9.1987',role:'אמא',detail:'נולדה ב־15.8.1898 בבורדוז׳ן, רומניה. נפטרה ב־23.9.1987 בירושלים.'},
-  {id:'meyer',x:116,y:360,sex:'m',living:true,name:'מאיר וסרמן',dates:'',role:'בן דוד',detail:'בנם של פפי ומנדל וסרמן.'},
-  {id:'berta',x:390,y:360,sex:'f',living:false,name:'ברתה רוזנר (רוזנטל)',dates:'בערך 1914 – 2002',role:'אשתו לשעבר',detail:'נולדה בערך בפברואר 1914 בסלטינה, רומניה. נפטרה בינואר 2002 בחיפה. אמו של דן.'},
-  {id:'yitzhak',x:574,y:360,sex:'m',living:false,focus:true,name:'יצחק (ז׳אק) רוזנר',dates:'25.11.1926 – 13.8.2016',role:'',detail:'נולד ב־25.11.1926 ביאשי, רומניה. נפטר ב־13.8.2016 בכפר יונה. בנם של ליטמן ורגינה, אחיה של נלי.',photo:'img/hero.jpg'},
-  {id:'ruth',x:758,y:360,sex:'f',living:true,name:'רות רוזנר (וולד)',dates:'',role:'אשתו',detail:'אשתו של יצחק ואמם של שרון ואילון.'},
-  {id:'nelly',x:1520,y:360,sex:'f',living:false,name:'נלי גודאנו (רוזנר)',dates:'',role:'אחות',detail:'בתם של ליטמן ורגינה, אחותו של יצחק. אשת הרמן גודאנו ואמו של זאב (אנדי).'},
-  {id:'dan',x:196,y:534,sex:'m',living:true,name:'דן רוזנר',dates:'',role:'בן',detail:'בנם של יצחק ושל אשתו הראשונה, ברתה (בקה).'},
-  {id:'sharon',x:560,y:534,sex:'m',living:true,name:'שרון רוזנר',dates:'',role:'בן',detail:'בנם של יצחק ורות. בן זוגה של זהר שפי.'},
-  {id:'zohar',x:744,y:534,sex:'f',living:true,name:'זהר שפי',dates:'',role:'בת זוג של שרון',detail:'בת זוגו של שרון רוזנר.'},
-  {id:'eylon',x:1114,y:534,sex:'m',living:true,name:'אילון רוזנר',dates:'',role:'בן',detail:'בנם של יצחק ורות. בעלה של שרון (לולאצ׳י).'},
-  {id:'sharonL',x:1298,y:534,sex:'f',living:true,name:'שרון רוזנר (לולאצ׳י)',dates:'',role:'אשת אילון',detail:'אשתו של אילון רוזנר.'},
-  {id:'zeev',x:1520,y:534,sex:'m',living:true,name:'זאב (אנדי)',dates:'',role:'אחיין',detail:'בנם של נלי והרמן גודאנו. אנדי הוא כינוי הבית.'},
-  {id:'ben',x:16,y:708,sex:'m',living:true,name:'בן',dates:'',role:'נכד',detail:'בנו של דן רוזנר.'},
-  {id:'ady',x:196,y:708,sex:'f',living:true,name:'עדי',dates:'',role:'נכדה',detail:'בתו של דן רוזנר.'},
-  {id:'eran',x:376,y:708,sex:'m',living:true,name:'ערן',dates:'',role:'נכד',detail:'בנו של דן רוזנר.'},
-  {id:'emanuel',x:560,y:708,sex:'m',living:true,name:'עמנואל',dates:'',role:'נכד',detail:'בנם של שרון רוזנר וזהר שפי.'},
-  {id:'noa',x:744,y:708,sex:'f',living:true,name:'נועה',dates:'',role:'נכדה',detail:'בתם של שרון רוזנר וזהר שפי.'},
-  {id:'yali',x:936,y:708,sex:'m',living:true,name:'יהלי',dates:'',role:'נכד',detail:'בנם של אילון ושרון רוזנר.'},
-  {id:'maya',x:1116,y:708,sex:'f',living:true,name:'מאיה',dates:'',role:'נכדה',detail:'בתם של אילון ושרון רוזנר.'},
-  {id:'omri',x:1296,y:708,sex:'m',living:true,name:'עמרי',dates:'',role:'נכד',detail:'בנם של אילון ושרון רוזנר.'},
-  {id:'bar',x:1476,y:708,sex:'m',living:true,name:'בר',dates:'',role:'נכד',detail:'בנם של אילון ושרון רוזנר.'}
+  {id:'ysr',x:400,y:24,sex:'m',living:false,name:'יצחק רוזנר',dates:'1850 – בערך 1910',role:'סבא מצד האב',detail:'נולד ב־1850 בפוטילה, בוקובינה. נפטר בערך ב־1910 בפוטילה.'},
+  {id:'khaya',x:584,y:24,sex:'f',living:false,name:'חיה רוזנר (שרף)',dates:'בערך 1850 – 1935',role:'סבתא מצד האב',detail:'נולדה בערך ב־1850. נפטרה ב־20.11.1935 במולדוביצה. שם נעוריה: שרף (Scharf).'},
+  {id:'natan',x:1100,y:24,sex:'m',living:false,name:'נתן מרקוביץ׳',dates:'',role:'סבא מצד האם',detail:'בעלה של לואיז מרקוביץ׳ (טאובס) ואביה של רגינה. תאריכי הלידה והפטירה אינם מופיעים ב־Geni.'},
+  {id:'louise',x:1284,y:24,sex:'f',living:false,name:'לואיז מרקוביץ׳ (טאובס)',dates:'1873 – 1940',role:'סבתא מצד האם',detail:'נולדה ב־1873 בבורדוז׳ן, רומניה. נפטרה באפריל 1940 במולדוביצה.'},
+  {id:'meir',x:16,y:186,sex:'m',living:false,name:'מאיר רוזנר',dates:'1876 – 1912',role:'דוד (אחיו של ליטמן)',detail:'בנם של יצחק וחיה רוזנר, אחיו של ליטמן. בעלה של פולי (Fulie) רוזנר ואביהם של פפי ושל ביבי.'},
+  {id:'fulie',x:196,y:186,sex:'f',living:false,name:'פולי רוזנר',dates:'',role:'אשת הדוד מאיר',detail:'אשתו של מאיר רוזנר (Fulie Rosner) ואמם של פפי ושל ביבי. תאריכים אינם ידועים.'},
+  {id:'aronleib',x:400,y:186,sex:'m',living:false,name:'אהרון לייב וסרמן',dates:'1879 –',role:'בעלה של הדודה פני',detail:'בעלה של פני (פאני) רוזנר, אחות ליטמן, ואביו של מנדל וסרמן. נולד ב־1879.'},
+  {id:'fanny',x:580,y:186,sex:'f',living:false,name:'פני (פאני) וסרמן (רוזנר)',dates:'1884 –',role:'דודה (אחותו של ליטמן)',detail:'בתם של יצחק וחיה רוזנר, אחותו של ליטמן. נולדה ב־1884. אשתו של אהרון לייב וסרמן ואמו של מנדל וסרמן.'},
+  {id:'bibi',x:16,y:360,sex:'m',living:false,name:'ביבי רוזנר (מיהאי בויקו)',dates:'25.12.1912 – 9.4.1972',role:'בן דוד',detail:'בנם של מאיר ופולי רוזנר, אחיה של פפי ובן דודו של יצחק. ברומניה נקרא מיהאי בויקו.'},
+  {id:'pepi',x:200,y:360,sex:'f',living:false,name:'פפי וסרמן (רוזנר)',dates:'1909 –',role:'בת דודה',detail:'בתם של מאיר ופולי רוזנר, בת דודתו של יצחק. נולדה ב־1909. אשתו של מנדל וסרמן ואמו של מאיר וסרמן.'},
+  {id:'mendel',x:384,y:360,sex:'m',living:false,name:'מנדל וסרמן',dates:'1906 – בערך 1986',role:'בן דוד',detail:'בנם של אהרון לייב ופני וסרמן, בן דודו של יצחק. בעלה של פפי (רוזנר) וסרמן.'},
+  {id:'meyer',x:200,y:534,sex:'m',living:true,name:'מאיר וסרמן',dates:'',role:'בן של בני דודים',detail:'בנם של פפי ומנדל וסרמן.'},
+  {id:'litman',x:800,y:186,sex:'m',living:false,name:'ליטמן רוזנר',dates:'13.1.1886 – 3.3.1979',role:'אבא',detail:'נולד ב־13.1.1886 בקיסליצני, בוקובינה. נפטר ב־3.3.1979 בירושלים.'},
+  {id:'regina',x:984,y:186,sex:'f',living:false,name:'רגינה (גינה) רוזנר (מרקוביץ׳)',dates:'15.8.1898 – 23.9.1987',role:'אמא',detail:'נולדה ב־15.8.1898 בבורדוז׳ן, רומניה. נפטרה ב־23.9.1987 בירושלים.'},
+  {id:'berta',x:610,y:360,sex:'f',living:false,name:'ברתה רוזנר (רוזנטל)',dates:'בערך 1914 – 2002',role:'אשתו לשעבר',detail:'נולדה בערך בפברואר 1914 בסלטינה, רומניה. נפטרה בינואר 2002 בחיפה. אמו של דן.'},
+  {id:'yitzhak',x:794,y:360,sex:'m',living:false,focus:true,name:'יצחק (ז׳אק) רוזנר',dates:'25.11.1926 – 13.8.2016',role:'',detail:'נולד ב־25.11.1926 ביאשי, רומניה. נפטר ב־13.8.2016 בכפר יונה. בנם של ליטמן ורגינה, אחיה של נלי.',photo:'img/hero.jpg'},
+  {id:'ruth',x:978,y:360,sex:'f',living:true,name:'רות רוזנר (וולד)',dates:'',role:'אשתו',detail:'אשתו של יצחק ואמם של שרון ואילון.'},
+  {id:'nelly',x:1740,y:360,sex:'f',living:false,name:'נלי גודאנו (רוזנר)',dates:'',role:'אחות',detail:'בתם של ליטמן ורגינה, אחותו של יצחק. אשת הרמן גודאנו ואמו של זאב (אנדי).'},
+  {id:'dan',x:416,y:534,sex:'m',living:true,name:'דן רוזנר',dates:'',role:'בן',detail:'בנם של יצחק ושל אשתו הראשונה, ברתה (בקה).'},
+  {id:'sharon',x:780,y:534,sex:'m',living:true,name:'שרון רוזנר',dates:'',role:'בן',detail:'בנם של יצחק ורות. בן זוגה של זהר שפי.'},
+  {id:'zohar',x:964,y:534,sex:'f',living:true,name:'זהר שפי',dates:'',role:'בת זוג של שרון',detail:'בת זוגו של שרון רוזנר.'},
+  {id:'eylon',x:1334,y:534,sex:'m',living:true,name:'אילון רוזנר',dates:'',role:'בן',detail:'בנם של יצחק ורות. בעלה של שרון (לולאצ׳י).'},
+  {id:'sharonL',x:1518,y:534,sex:'f',living:true,name:'שרון רוזנר (לולאצ׳י)',dates:'',role:'אשת אילון',detail:'אשתו של אילון רוזנר.'},
+  {id:'zeev',x:1740,y:534,sex:'m',living:true,name:'זאב (אנדי)',dates:'',role:'אחיין',detail:'בנם של נלי והרמן גודאנו. אנדי הוא כינוי הבית.'},
+  {id:'ben',x:236,y:708,sex:'m',living:true,name:'בן',dates:'',role:'נכד',detail:'בנו של דן רוזנר.'},
+  {id:'ady',x:416,y:708,sex:'f',living:true,name:'עדי',dates:'',role:'נכדה',detail:'בתו של דן רוזנר.'},
+  {id:'eran',x:596,y:708,sex:'m',living:true,name:'ערן',dates:'',role:'נכד',detail:'בנו של דן רוזנר.'},
+  {id:'emanuel',x:780,y:708,sex:'m',living:true,name:'עמנואל',dates:'',role:'נכד',detail:'בנם של שרון רוזנר וזהר שפי.'},
+  {id:'noa',x:964,y:708,sex:'f',living:true,name:'נועה',dates:'',role:'נכדה',detail:'בתם של שרון רוזנר וזהר שפי.'},
+  {id:'yali',x:1156,y:708,sex:'m',living:true,name:'יהלי',dates:'',role:'נכד',detail:'בנם של אילון ושרון רוזנר.'},
+  {id:'maya',x:1336,y:708,sex:'f',living:true,name:'מאיה',dates:'',role:'נכדה',detail:'בתם של אילון ושרון רוזנר.'},
+  {id:'omri',x:1516,y:708,sex:'m',living:true,name:'עמרי',dates:'',role:'נכד',detail:'בנם של אילון ושרון רוזנר.'},
+  {id:'bar',x:1696,y:708,sex:'m',living:true,name:'בר',dates:'',role:'נכד',detail:'בנם של אילון ושרון רוזנר.'}
 ];
 const BY=Object.fromEntries(PEOPLE.map(p=>[p.id,p]));
-const CAN_W=1720, CAN_H=820;
+const CAN_W=1930, CAN_H=820;
 
 const avatar=(sex)=>{
   const fill=sex==='f'?'#e8a0b5':sex==='m'?'#8eb4cc':'#c4b8a8';
@@ -79,12 +84,15 @@ function render(){
   const root=$('#treeCanvas'); if(!root)return;
   const lines=[
     marry('ysr','khaya'), marry('natan','louise'),
-    marry('mendel','pepi'), marry('litman','regina'),
+    marry('meir','fulie'), marry('aronleib','fanny'), marry('litman','regina'),
+    marry('pepi','mendel'),
     marry('berta','yitzhak',true), marry('yitzhak','ruth'),
     marry('sharon','zohar'), marry('eylon','sharonL'),
-    offspring(['ysr','khaya'],['pepi','litman']),
+    offspring(['ysr','khaya'],['meir','fanny','litman']),
     offspring(['natan','louise'],['regina']),
-    offspring(['mendel','pepi'],['meyer']),
+    offspring(['meir','fulie'],['bibi','pepi']),
+    offspring(['aronleib','fanny'],['mendel']),
+    offspring(['pepi','mendel'],['meyer']),
     offspring(['litman','regina'],['yitzhak','nelly']),
     offspring(['berta','yitzhak'],['dan']),
     offspring(['yitzhak','ruth'],['sharon','eylon']),
@@ -105,7 +113,7 @@ function showInfo(id){
   const role=p.role?`<p class="ft-info-role">${esc(p.role)}</p>`:'';
   box.innerHTML=`<button class="ft-info-x" type="button" aria-label="סגירה">×</button>
     <h3>${esc(p.name)}</h3>${role}${dates}<p>${esc(p.detail)}</p>
-    <p class="muted">מקור: העץ ב־Geni${p.living?' · לבני משפחה בחיים מוצג השם בלבד':''}.</p>`;
+    <p class="muted">מקור: העץ ב־Geni והמצגת המשפחתית של ז׳אק "The Rosner-Wassermann Family"${p.living?' · לבני משפחה בחיים מוצג השם בלבד':''}.</p>`;
   box.hidden=false;
   box.querySelector('.ft-info-x').onclick=()=>{box.hidden=true;rootSelect(null)};
 }
@@ -174,7 +182,7 @@ showInfo=function(id){
   const living=p.living?' · '+esc(T('tree.livingNote','לבני משפחה בחיים מוצג השם בלבד')):'';
   box.innerHTML=`<button class="ft-info-x" type="button" aria-label="${esc(T('lb.close','סגירה'))}">×</button>
     <h3>${esc(p.name)}</h3>${role}${dates}<p>${esc(p.detail)}</p>
-    <p class="muted">${esc(T('tree.source','מקור: העץ ב־Geni'))}${living}.</p>`;
+    <p class="muted">${esc(T('tree.source','מקור: העץ ב־Geni והמצגת המשפחתית של ז׳אק "The Rosner-Wassermann Family"'))}${living}.</p>`;
   box.hidden=false;
   box.querySelector('.ft-info-x').onclick=()=>{box.hidden=true;rootSelect(null)};
 };
