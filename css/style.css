@@ -114,7 +114,7 @@ figcaption{font-size:16px;color:var(--muted);margin-top:8px}
 .doc .meta{font-size:14px;color:var(--accent);margin-bottom:8px}
 .doc p{font-size:16px;margin:0 0 10px}
 .doc .pages{display:flex;gap:8px;flex-wrap:wrap}
-.doc .pages button{border:0;padding:0;background:none;cursor:pointer}
+.doc .pages button,.doc .pages a.doc-file{border:0;padding:0;background:none;cursor:pointer;display:inline-block;line-height:0}
 .doc .pages img{height:150px;width:auto;border:1px solid var(--line);border-radius:6px}
 /* gallery */
 .g-period{font-size:24px;font-weight:600;margin:30px 0 12px;color:var(--accent2)}

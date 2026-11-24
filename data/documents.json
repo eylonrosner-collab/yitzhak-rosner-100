@@ -406,5 +406,22 @@
     "label": "תעודת פטירה · עמוד 1"
    }
   ]
+ },
+ {
+  "id": "rwfamily",
+  "name": "rw-family-presentation",
+  "pages": 0,
+  "title": "מצגת משפחת רוזנר–ווסרמן",
+  "date": "",
+  "lang": "אנגלית",
+  "caption": "מצגת שהכין ז׳אק לדורות הבאים במשפחה (באנגלית, PowerPoint)",
+  "file": "docs/rw_family.ppsx",
+  "images": [
+   {
+    "src": "docs/rw_family.ppsx",
+    "thumb": "img/docs/rw-family-t.jpg",
+    "label": "מצגת משפחת רוזנר–ווסרמן"
+   }
+  ]
  }
 ]

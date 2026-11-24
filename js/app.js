@@ -141,7 +141,7 @@ Promise.all([getJSON('data/documents.json'),loadDocTr().catch(()=>null)]).then((
     caption:T('doc.'+d.id+'.caption',d.caption),
     images:d.images.map((im,k)=>Object.assign({},im,{label:T('doc.'+d.id+'.img.'+k,im.label)}))
   }));
-  $('#docs').innerHTML=loc.map((d,i)=>`<div class="doc" id="doc-${esc(d.id)}"><h3>${esc(d.title)}</h3><div class="meta">${esc(d.date)} · ${esc(d.lang)}</div><p>${esc(d.caption)}</p><div class="pages">${d.images.map((p,k)=>`<button data-d="${i}" data-k="${k}"><img loading="lazy" src="${esc(p.thumb)}" alt="${esc(p.label)}"></button>`).join('')}</div>${d.tr?`<p class="ev-tr">${trButtons(d.tr,'doc-tr-btn')}</p>`:''}</div>`).join('');
+  $('#docs').innerHTML=loc.map((d,i)=>`<div class="doc" id="doc-${esc(d.id)}"><h3>${esc(d.title)}</h3><div class="meta">${[d.date,d.lang].filter(Boolean).map(esc).join(' · ')}</div><p>${esc(d.caption)}</p><div class="pages">${d.file?`<a class="doc-file" href="${esc(d.file)}" target="_blank" rel="noopener"><img loading="lazy" src="${esc((d.images[0]||{}).thumb)}" alt="${esc((d.images[0]||{}).label||d.title)}"></a>`:d.images.map((p,k)=>`<button data-d="${i}" data-k="${k}"><img loading="lazy" src="${esc(p.thumb)}" alt="${esc(p.label)}"></button>`).join('')}</div>${d.tr?`<p class="ev-tr">${trButtons(d.tr,'doc-tr-btn')}</p>`:''}</div>`).join('');
   $('#docs').onclick=x=>{const t=x.target.closest('.doc-tr-btn');if(t){openDocTr(t.dataset.doc);return;}const b=x.target.closest('button[data-d]');if(!b)return;openLB(loc[+b.dataset.d].images,+b.dataset.k)}});
 /* ---------- gallery ---------- */
 const PERIOD_KEY={
