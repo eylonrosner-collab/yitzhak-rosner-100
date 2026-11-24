@@ -27,8 +27,8 @@
   "sec.stories.lead": "Stories and memoirs that Yitzhak Rosner wrote himself.",
   "sec.testimony": "The Yad Vashem testimony (2009)",
   "sec.testimony.lead": "Testimony he gave to Yad Vashem on 13 Adar 5769 (9.3.2009), at the house in Be’er Sheva, in two parts. Under each video there is an edited transcript with chapters, and each timestamp in the transcript opens the video at the matching moment.",
-  "sec.recording": "Father telling the story of his childhood in the Holocaust (2016)",
-  "sec.recording.lead": "A home recording from 6.5.2016 (1:04:26). Yitzhak tells the family about the road to Shargorod, the room in the ghetto, the hunger and typhus, the liberation and the way to Botoșani. In the background one also hears questions and conversation from family members.",
+  "sec.recording": "Jacques telling the story of his childhood in the Holocaust (2016)",
+  "sec.recording.lead": "A home recording from 6.5.2016 (1:04:26). Yitzhak tells the family about the road to Shargorod, the room in the ghetto, the hunger and typhus, the liberation and the way to Botoșani.",
   "sec.family": "Family tree",
   "sec.family.lead": "Based on the profiles on Geni. For living relatives, only names are shown.",
   "sec.docs": "Documents and certificates",
@@ -165,7 +165,7 @@
   "story.boker.author": "By Yitzhak \"Jacques\" Rosner",
   "story.haver.title": "The friend who vanished",
   "story.haver.period": "23 November 2013",
-  "story.haver.summary": "A short, personal text about a friend who vanished.",
+  "story.haver.summary": "About family friend Yoav Bar-Yaakov",
   "story.haver.long": "A short text written on 23 November 2013 about a friend who grew thinner and thinner until, one Sabbath, he was no longer there.",
   "story.haver.author": "By Yitzhak \"Jacques\" Rosner",
   "chapter.part1-0": "Opening and the family (from 00:00).",
@@ -1007,5 +1007,6 @@
   "tl.e51.src.3": "Abu Rudeis on Wikipedia",
   "tl.e51.src.3.url": "https://en.wikipedia.org/wiki/Abou_Redis",
   "tl.e54.src.2": "An oil platform on fire",
-  "tl.e54.src.3": "A crowd at a flag ceremony"
+  "tl.e54.src.3": "A crowd at a flag ceremony",
+  "story.haver.subtitle": "About family friend Yoav Bar-Yaakov"
 }

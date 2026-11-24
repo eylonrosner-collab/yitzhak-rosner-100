@@ -27,8 +27,8 @@
   "sec.stories.lead": "Récits et mémoires que Yitzhak Rosner a écrits lui-même.",
   "sec.testimony": "Le témoignage à Yad Vashem (2009)",
   "sec.testimony.lead": "Témoignage qu’il a donné à Yad Vashem le 13 Adar 5769 (9.3.2009), dans la maison à Beer-Sheva, en deux parties. Sous chaque vidéo se trouve une transcription revue, divisée en chapitres ; chaque horodatage ouvre la vidéo au moment correspondant.",
-  "sec.recording": "Papa raconte l’histoire de son enfance pendant la Shoah (2016)",
-  "sec.recording.lead": "Un enregistrement familial du 6.5.2016 (1:04:26). Yitzhak raconte à sa famille le chemin vers Chargorod, la pièce dans le ghetto, la faim et le typhus, la libération et la route vers Botoșani. On entend aussi, en arrière-plan, des questions et des échanges des membres de la famille.",
+  "sec.recording": "Jacques raconte l’histoire de son enfance pendant la Shoah (2016)",
+  "sec.recording.lead": "Un enregistrement familial du 6.5.2016 (1:04:26). Yitzhak raconte à sa famille le chemin vers Chargorod, la pièce dans le ghetto, la faim et le typhus, la libération et la route vers Botoșani.",
   "sec.family": "Arbre généalogique",
   "sec.family.lead": "D’après les profils sur Geni. Pour les proches encore en vie, seuls les noms sont indiqués.",
   "sec.docs": "Documents et certificats",
@@ -165,7 +165,7 @@
   "story.boker.author": "Par Yitzhak « Jacques » Rosner",
   "story.haver.title": "L’ami disparu",
   "story.haver.period": "23 novembre 2013",
-  "story.haver.summary": "Un texte court et personnel sur un ami qui a disparu.",
+  "story.haver.summary": "À propos de l’ami de la famille Yoav Bar-Yaakov",
   "story.haver.long": "Un court texte écrit le 23 novembre 2013 sur un ami qui maigrissait de plus en plus jusqu’à ce que, un shabbat, il ne fût plus là.",
   "story.haver.author": "Par Yitzhak « Jacques » Rosner",
   "chapter.part1-0": "Ouverture et la famille (à partir de 00:00).",
@@ -1006,5 +1006,6 @@
   "search.g.history": "Contexte historique",
   "tl.e51.src.3": "Abou Rudeis sur Wikipédia (hébreu)",
   "tl.e54.src.2": "Une plateforme pétrolière en feu",
-  "tl.e54.src.3": "Une foule lors d’une cérémonie du drapeau"
+  "tl.e54.src.3": "Une foule lors d’une cérémonie du drapeau",
+  "story.haver.subtitle": "À propos de l’ami de la famille Yoav Bar-Yaakov"
 }
