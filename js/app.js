@@ -176,7 +176,9 @@ function renderMem(list){
   const box=$('#memList');
   if(!memItems.length){box.innerHTML='<p class="muted" id="memEmpty">'+esc(T('mem.empty','אין עדיין זיכרונות. היו הראשונים לכתוב.'))+'</p>';return}
   const tokens=memTokens();
-  box.innerHTML=memItems.map((m,i)=>{
+  box.innerHTML=memItems.map((m0,i)=>{
+    const mk=m0.i18n?'mem.s.'+m0.i18n+'.':'';
+    const m=mk?Object.assign({},m0,{name:T(mk+'name',m0.name),relation:T(mk+'relation',m0.relation),memory:T(mk+'memory',m0.memory)}):m0;
     const files=normFiles(m.files);
     const imgs=files.filter(fileIsImage);
     const others=files.filter(f=>!fileIsImage(f));
