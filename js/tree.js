@@ -49,7 +49,7 @@ function cardHTML(p){
   const img=p.photo?`<img class="ft-photo" src="${esc(p.photo)}" alt="">`:avatar(p.sex);
   const dates=p.dates?`<div class="ft-dates">${esc(p.dates)}</div>`:'';
   return `<button type="button" class="${cls}" data-id="${p.id}" style="left:${p.x}px;top:${p.y}px" dir="ltr" aria-label="${esc(p.name)}">
-    ${img}<span class="ft-body" dir="rtl"><span class="ft-name">${esc(p.name)}</span>${dates}</span>
+    ${img}<span class="ft-body" dir="${document.documentElement.dir==='ltr'?'ltr':'rtl'}"><span class="ft-name">${esc(p.name)}</span>${dates}</span>
   </button>`;
 }
 
