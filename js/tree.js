@@ -181,5 +181,5 @@ showInfo=function(id){
   box.querySelector('.ft-info-x').onclick=()=>{box.hidden=true;rootSelect(null)};
 };
 const ready=(window.I18N&&I18N.ready)?I18N.ready:Promise.resolve();
-ready.then(()=>{localize();render();setupPanZoom()});
+ready.then(()=>{localize();render();setupPanZoom();window.TREE={people:PEOPLE,show:id=>showInfo(id)}});
 })();

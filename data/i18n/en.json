@@ -998,5 +998,21 @@
   "tree.rachel.dates": "1886 –",
   "tree.rachel.role": "Wife of uncle Hermann",
   "tree.rachel.detail": "Wife of Hermann Rosner. Born in 1886.",
-  "gallery.g_dani_beach": "Dani"
+  "gallery.g_dani_beach": "Dani",
+  "search.btn": "Search",
+  "search.open": "Search the site",
+  "search.title": "Search the site",
+  "search.ph": "Search a place, a name, a year…",
+  "search.try": "Try:",
+  "search.none": "No results found.",
+  "search.count": "{n} results",
+  "search.more": "{n} more",
+  "search.g.events": "Timeline events",
+  "search.g.memories": "Memories",
+  "search.g.photos": "Photographs",
+  "search.g.docs": "Documents",
+  "search.g.people": "People in the family tree",
+  "search.g.bio": "His life",
+  "search.g.stories": "Stories",
+  "search.g.history": "Historical background"
 }
