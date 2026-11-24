@@ -376,3 +376,13 @@ html[dir=ltr] .hero-veil{background:linear-gradient(to right,rgba(246,239,226,.5
   .hero-photo img{width:260px;height:355px;
     -webkit-mask-image:linear-gradient(to bottom,#000 91%,transparent 100%);mask-image:linear-gradient(to bottom,#000 91%,transparent 100%)}
 }
+
+/* ---------- hero: mosaic equally visible on both sides; soft glow only behind the text block ---------- */
+.hero-veil,html[dir=ltr] .hero-veil{background:rgba(246,239,226,.42)}
+.hero-text{position:relative;z-index:3}
+.hero-text::before{content:"";position:absolute;inset:-70px -110px;z-index:-1;pointer-events:none;
+  background:radial-gradient(ellipse closest-side at 50% 50%,rgba(248,242,231,.94) 0%,rgba(248,242,231,.90) 68%,rgba(248,242,231,.6) 86%,rgba(248,242,231,0) 100%)}
+@media (max-width:820px){
+  .hero-veil,html[dir=ltr] .hero-veil{background:rgba(246,239,226,.42)}
+  .hero-text::before{inset:-50px -40px}
+}
