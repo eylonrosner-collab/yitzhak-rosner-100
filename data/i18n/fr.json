@@ -346,7 +346,7 @@
   "gallery.g_1929_house": "À l’entrée de la maison familiale à Moldovița, 1929 : « J’avais 3 ans » (sa légende sur Geni)",
   "gallery.g_1930_families": "Les familles Rosner et Wassermann, 1930 (Geni)",
   "gallery.g_1934_wedding": "Mariage de Pepi Rosner et Mendel Wassermann à Moldovița, été 1934 (ou 1935), près du puits de la maison Wassermann",
-  "gallery.g_wedding_moldovitza": "« Un mariage à Moldovița » (Geni, sans date)",
+  "gallery.g_wedding_moldovitza": "Mariage à Moldovița, été 1934",
   "gallery.g_store_30s": "La boutique d’Aharon Leib Wassermann à Moldovița dans les années 1930 (d’après la présentation familiale)",
   "gallery.g_family_portraits": "Regina et Litman · d’après la présentation familiale",
   "gallery.g_young_portrait": "Jacques jeune – un portrait issu d’une diapositive de la famille de Litman Rosner dans la présentation",
@@ -417,7 +417,6 @@
   "tl.e03.date": "Été 1934 (ou 1935)",
   "tl.e03.title": "Le mariage de Pepi Rosner et Mendel Wassermann",
   "tl.e03.text": "Le mariage eut lieu dans la maison de la famille Wassermann à Moldovița et, après la cérémonie, tous les présents furent photographiés devant le puits. Jacques enfant apparaît sur la photographie.",
-  "tl.e03.src.0": "La photographie de mariage près du puits",
   "tl.e04.date": "Été 1937",
   "tl.e04.title": "Maccabi Moldovița contre Maccabi Câmpulung",
   "tl.e04.text": "Le match d’inauguration du « stade » de l’équipe du village. Jacques jouait ailier gauche et, à la 85e minute, il marqua par erreur dans le but de son équipe.",
@@ -1005,5 +1004,6 @@
   "tree.bibi.name": "Bibi Rosner (Mihai Boico)",
   "tree.bibi.dates": "25.12.1912 – 9.4.1972",
   "tree.bibi.role": "Cousin",
-  "tree.bibi.detail": "Fils de Meir et Fulie Rosner, frère de Pepi et cousin de Yitzhak. En Roumanie, il était connu sous le nom de Mihai Boico."
+  "tree.bibi.detail": "Fils de Meir et Fulie Rosner, frère de Pepi et cousin de Yitzhak. En Roumanie, il était connu sous le nom de Mihai Boico.",
+  "tl.e03.src.0": "Mariage à Moldovița, été 1934"
 }

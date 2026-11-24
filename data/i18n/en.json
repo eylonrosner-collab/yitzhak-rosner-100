@@ -346,7 +346,7 @@
   "gallery.g_1929_house": "At the entrance to the family house in Moldovița, 1929: “I was 3” (his caption on Geni)",
   "gallery.g_1930_families": "The Rosner and Wassermann families, 1930 (Geni)",
   "gallery.g_1934_wedding": "The wedding of Pepi Rosner and Mendel Wassermann in Moldovița, summer 1934 (or 1935), by the well at the Wassermann house",
-  "gallery.g_wedding_moldovitza": "“A wedding in Moldovița” (Geni, no date)",
+  "gallery.g_wedding_moldovitza": "Wedding in Moldovița, summer 1934",
   "gallery.g_store_30s": "The shop of Aharon Leib Wassermann in Moldovița in the 1930s (from the family presentation)",
   "gallery.g_family_portraits": "Regina and Litman · from the family presentation",
   "gallery.g_young_portrait": "Jacques as a young man – a portrait from a slide of Litman Rosner’s family in the presentation",
@@ -417,7 +417,6 @@
   "tl.e03.date": "Summer 1934 (or 1935)",
   "tl.e03.title": "The wedding of Pepi Rosner and Mendel Wassermann",
   "tl.e03.text": "The wedding was held at the Wassermann family house in Moldovița, and after the ceremony everyone present was photographed in front of the well. Jacques as a child appears in the photograph.",
-  "tl.e03.src.0": "The wedding photograph by the well",
   "tl.e04.date": "Summer 1937",
   "tl.e04.title": "Maccabi Moldovița versus Maccabi Câmpulung",
   "tl.e04.text": "The match that inaugurated the village team’s “stadium”. Jacques played left wing, and in the 85th minute he scored by mistake into his own team’s goal.",
@@ -1005,5 +1004,6 @@
   "tree.bibi.name": "Bibi Rosner (Mihai Boico)",
   "tree.bibi.dates": "25.12.1912 – 9.4.1972",
   "tree.bibi.role": "Cousin",
-  "tree.bibi.detail": "Son of Meir and Fulie Rosner, brother of Pepi and cousin of Yitzhak. In Romania he was known as Mihai Boico."
+  "tree.bibi.detail": "Son of Meir and Fulie Rosner, brother of Pepi and cousin of Yitzhak. In Romania he was known as Mihai Boico.",
+  "tl.e03.src.0": "Wedding in Moldovița, summer 1934"
 }
