@@ -335,7 +335,7 @@
   "gallery.g_1930_families": "The Rosner and Wassermann families, 1930",
   "gallery.g_1934_wedding": "The wedding of Pepi Rosner and Mendel Wassermann in Moldovița, summer 1934, by the well at the Wassermann house",
   "gallery.g_wedding_moldovitza": "Wedding in Moldovița, summer 1934",
-  "gallery.g_store_30s": "The shop of Aharon Leib Wassermann in Moldovița in the 1930s",
+  "gallery.g_store_30s": "The shop of Aharon Leib Wassermann in Moldovița in the 1930s, inside",
   "gallery.g_family_portraits": "Regina and Litman",
   "gallery.g_young_portrait": "Jacques as a young man",
   "gallery.g_1945_bike": "Bucharest, 1945: the clothes with the monogram MvK from the German embassy seized in August 1944, and the bicycle from the apartment of a representative of the German academy",
@@ -1013,5 +1013,12 @@
   "doc.rwfamily.caption": "A presentation Jacques made for the family’s next generations (in English, PowerPoint)",
   "doc.rwfamily.lang": "English",
   "doc.rwfamily.img.0": "The Rosner–Wassermann Family presentation",
-  "tl.e22.src.5": "News report on Abu Rudeis (YouTube)"
+  "tl.e22.src.5": "News report on Abu Rudeis (YouTube)",
+  "gallery.g_store_outside": "The shop of Aharon Leib Wassermann in Moldovița in the 1930s, outside",
+  "gallery.g_meir_greatgrandparents": "Meir Wassermann’s great-grandparents",
+  "gallery.g_meir_family": "Meir Wassermann with his parents and grandparents",
+  "gallery.g_lifshitz_shop": "Sali, Shraga and Oded Lifshitz and their employees at the sausage shop",
+  "gallery.g_lifshitz_family": "The Lifshitz family",
+  "gallery.g_pension_har_aviv": "Pension Har Aviv, Jerusalem",
+  "tl.e63.src.1": "Pension Har Aviv, Jerusalem"
 }

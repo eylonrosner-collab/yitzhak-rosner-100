@@ -53,11 +53,21 @@
   "id": "g_store_30s",
   "full": "img/g/g_store_30s.jpg",
   "thumb": "img/t/g_store_30s.jpg",
-  "caption": "החנות של אהרון לייב וסרמן במולדוביצה בשנות ה־30",
+  "caption": "החנות של אהרון לייב וסרמן במולדוביצה בשנות ה־30, מבפנים",
   "period": "1926–1940 · ילדות במולדוביצה",
   "source": "stories/rw_family_images/image97.jpg",
   "w": 800,
   "h": 534
+ },
+ {
+  "id": "g_store_outside",
+  "full": "img/g/g_store_outside.jpg",
+  "thumb": "img/t/g_store_outside.jpg",
+  "caption": "החנות של אהרון לייב וסרמן במולדוביצה בשנות ה־30, מבחוץ",
+  "period": "1926–1940 · ילדות במולדוביצה",
+  "source": "stories/rw_family_images/image96.jpg",
+  "w": 786,
+  "h": 404
  },
  {
   "id": "g_family_portraits",
@@ -68,6 +78,26 @@
   "source": "stories/rw_family_images/image52.jpg",
   "w": 572,
   "h": 800
+ },
+ {
+  "id": "g_meir_greatgrandparents",
+  "full": "img/g/g_meir_greatgrandparents.jpg",
+  "thumb": "img/t/g_meir_greatgrandparents.jpg",
+  "caption": "סבא־רבא וסבתא־רבתא של מאיר וסרמן",
+  "period": "1926–1940 · ילדות במולדוביצה",
+  "source": "stories/rw_family_images/image102.jpeg",
+  "w": 798,
+  "h": 1272
+ },
+ {
+  "id": "g_meir_family",
+  "full": "img/g/g_meir_family.jpg",
+  "thumb": "img/t/g_meir_family.jpg",
+  "caption": "מאיר וסרמן עם הוריו ועם סביו",
+  "period": "1926–1940 · ילדות במולדוביצה",
+  "source": "stories/rw_family_images/image103.jpeg",
+  "w": 920,
+  "h": 667
  },
  {
   "id": "g_young_portrait",
@@ -868,5 +898,35 @@
   "source": "incoming/2026-11-24",
   "w": 1400,
   "h": 990
+ },
+ {
+  "id": "g_lifshitz_shop",
+  "full": "img/g/g_lifshitz_shop.jpg",
+  "thumb": "img/t/g_lifshitz_shop.jpg",
+  "caption": "סאלי, שרגא ועודד ליפשיץ ועובדיהם בנקניקייה",
+  "period": "1968– · בישראל",
+  "source": "stories/rw_family_images/image99.jpg",
+  "w": 529,
+  "h": 756
+ },
+ {
+  "id": "g_lifshitz_family",
+  "full": "img/g/g_lifshitz_family.jpg",
+  "thumb": "img/t/g_lifshitz_family.jpg",
+  "caption": "משפחת ליפשיץ",
+  "period": "1968– · בישראל",
+  "source": "stories/rw_family_images/image98.jpg",
+  "w": 182,
+  "h": 143
+ },
+ {
+  "id": "g_pension_har_aviv",
+  "full": "img/g/g_pension_har_aviv.jpg",
+  "thumb": "img/t/g_pension_har_aviv.jpg",
+  "caption": "פנסיון הר אביב, ירושלים",
+  "period": "1968– · בישראל",
+  "source": "stories/rw_family_images/image100.jpg",
+  "w": 920,
+  "h": 553
  }
 ]
