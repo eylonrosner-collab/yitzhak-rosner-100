@@ -17,7 +17,7 @@ function locEv(e){
     title:T(p+'.title',e.title),
     text:T(p+'.text',e.text||''),
     note:e.note?T(p+'.note',e.note):e.note,
-    sources:(e.sources||[]).map((s,i)=>Object.assign({},s,{label:T(p+'.src.'+i,s.label)},s.type==='link'?{src:T(p+'.src.'+i+'.url',s.src)}:{}))
+    sources:(e.sources||[]).map((s,i)=>Object.assign({},s,{label:T(p+'.src.'+i,s.label),labelFull:T(p+'.src.'+i+'.full',s.labelFull||s.label)},s.type==='link'?{src:T(p+'.src.'+i+'.url',s.src)}:{}))
   });
 }
 const ready=(window.I18N&&I18N.ready)?I18N.ready:Promise.resolve();
@@ -100,7 +100,7 @@ Promise.all([getJSON('data/timeline.json'),getJSON('data/timeline_context.json')
   tl.innerHTML=ev.map(e=>{
     const imgs=e.sources.filter(s=>s.type==='image');
     const srcHtml=e.sources.map(s=>{
-      if(s.type==='image'){const k=imgs.indexOf(s);return `<button class="src-img" data-ev="${e.id}" data-k="${k}" title="${esc(s.label)}"><img loading="lazy" src="${esc(s.thumb||s.src)}" alt="${esc(s.label)}"><span>${esc(s.label)}</span></button>`}
+      if(s.type==='image'){const k=imgs.indexOf(s);const full=s.labelFull||s.label;return `<button class="src-img" data-ev="${e.id}" data-k="${k}" title="${esc(full)}" data-full="${esc(full)}"><img loading="lazy" src="${esc(s.thumb||s.src)}" alt="${esc(full)}"><span>${esc(s.label)}</span></button>`}
       if(s.type==='story')return `<a class="src-link" href="${esc(withLang(s.src))}">📖 ${esc(s.label)}</a>`;
       if(s.type==='anchor')return `<a class="src-link" href="${esc(s.src)}">▶ ${esc(s.label)}</a>`;
       if(s.type==='video')return `<a class="src-link vid" href="${esc(s.src)}" target="_blank" rel="noopener">🎥 ${esc(s.label)}</a>`;
@@ -112,7 +112,7 @@ Promise.all([getJSON('data/timeline.json'),getJSON('data/timeline_context.json')
     const b=x.target.closest('.src-img');
     if(!b)return;
     const e=ev.find(q=>q.id===b.dataset.ev);
-    openLB(e.sources.filter(s=>s.type==='image'),+b.dataset.k);
+    openLB(e.sources.filter(s=>s.type==='image').map(s=>Object.assign({},s,{label:s.labelFull||s.label})),+b.dataset.k);
   });
   const f=$('#tlFilter');f.innerHTML=ERAS.map((r,i)=>`<button data-i="${i}" class="${i?'':'on'}">${r[0]}</button>`).join('')+'<label class="ctx-toggle"><input type="checkbox" id="ctxToggle"> '+esc(T('tl.showCtx','הצג אירועי רקע היסטורי'))+'</label>';
   const ctx=()=>tl.classList.toggle('show-ctx',$('#ctxToggle').checked);$('#ctxToggle').onchange=ctx;
@@ -152,9 +152,9 @@ const PERIOD_KEY={
   '2000–2016':'gallery.period.5'
 };
 getJSON('data/gallery.json').then(g=>{
-  const items=g.map(x=>({src:x.full,label:T('gallery.'+x.id,x.caption),thumb:x.thumb,period:x.period}));
+  const items=g.map(x=>{const short=T('gallery.'+x.id,x.caption);const full=T('gallery.'+x.id+'.full',x.captionFull||short);return{src:x.full,label:full,short,thumb:x.thumb,period:x.period};});
   const periods=[...new Set(items.map(x=>x.period))];
-  $('#galleryWrap').innerHTML=periods.map(p=>`<h3 class="g-period">${esc(T(PERIOD_KEY[p]||'',p))}</h3><div class="grid">${items.map((x,i)=>x.period===p?`<button data-i="${i}"><img loading="lazy" src="${esc(x.thumb)}" alt="${esc(x.label)}"><span>${esc(x.label)}</span></button>`:'').join('')}</div>`).join('');
+  $('#galleryWrap').innerHTML=periods.map(p=>`<h3 class="g-period">${esc(T(PERIOD_KEY[p]||'',p))}</h3><div class="grid">${items.map((x,i)=>x.period===p?`<button data-i="${i}" data-full="${esc(x.label)}"><img loading="lazy" src="${esc(x.thumb)}" alt="${esc(x.label)}"><span>${esc(x.short)}</span></button>`:'').join('')}</div>`).join('');
   $('#galleryWrap').onclick=x=>{const b=x.target.closest('button');if(!b)return;openLB(items,+b.dataset.i)}});
 /* ---------- memories ---------- */
 const CFG=window.SITE_CONFIG||{};const EP=CFG.MEMORIES_ENDPOINT||'';const MAXMB=CFG.MAX_UPLOAD_MB||25;if($('#maxMb'))$('#maxMb').textContent=MAXMB;

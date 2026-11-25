@@ -72,8 +72,9 @@ function buildIndex(){
   document.querySelectorAll('#tl li.ev').forEach(li=>{
     const card=li.querySelector('.ev-card');if(!card)return;
     const srcLabels=[...card.querySelectorAll('.src-img span,.src-link')].map(txt).join(' · ');
+    const srcFull=[...card.querySelectorAll('.src-img[data-full]')].map(b=>b.getAttribute('data-full')||'').join(' ');
     items.push({type:'event',el:li,title:txt(card.querySelector('h3')),sub:txt(card.querySelector('.ev-date')),
-      body:[...card.querySelectorAll('p')].map(txt).join(' ')+' '+srcLabels});
+      body:[...card.querySelectorAll('p')].map(txt).join(' ')+' '+srcLabels+' '+srcFull});
   });
   document.querySelectorAll('#memList article.mem').forEach(a=>{
     items.push({type:'memory',el:a,title:txt(a.querySelector('.who')),sub:txt(a.querySelector('.when')),body:txt(a.querySelector('.mem-body'))});
@@ -81,7 +82,7 @@ function buildIndex(){
   document.querySelectorAll('#galleryWrap .grid button').forEach(b=>{
     const img=b.querySelector('img');
     const per=b.closest('.grid')&&b.closest('.grid').previousElementSibling;
-    items.push({type:'photo',el:b,title:txt(b.querySelector('span')),sub:txt(per),body:'',thumb:img&&img.getAttribute('src')});
+    items.push({type:'photo',el:b,title:txt(b.querySelector('span')),sub:txt(per),body:b.getAttribute('data-full')||'',thumb:img&&img.getAttribute('src')});
   });
   document.querySelectorAll('#docs .doc').forEach(d=>{
     const img=d.querySelector('.pages img');

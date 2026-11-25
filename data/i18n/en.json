@@ -330,7 +330,7 @@
   "gallery.period.3": "1945–1968 · Bucharest",
   "gallery.period.4": "1968– · In Israel",
   "gallery.period.5": "2000–2016",
-  "gallery.g_1928_visit": "A visit by the children of the Rosner family from Vienna to Moldovița, 1928. Standing from left to right: Pepi Rosner (Wassermann), Pepi Wassermann (Buchler), Herman Wassermann, Mendel Wassermann. Seated from left to right: Sali Wassermann (Lifshitz), Nelly Rosner (Godeanu), Jacques Rosner, Ernestine Rosner (Rosenberg), Paula Rosner (Bizberg)",
+  "gallery.g_1928_visit": "A visit by the children of the Rosner family from Vienna to Moldovița, 1928",
   "gallery.g_1929_house": "At the entrance to the family house in Moldovița, 1929, aged 3",
   "gallery.g_1930_families": "The Rosner and Wassermann families, 1930",
   "gallery.g_1934_wedding": "The wedding of Pepi Rosner and Mendel Wassermann in Moldovița, summer 1934, by the well at the Wassermann house",
@@ -398,7 +398,7 @@
   "tl.e02.title": "Childhood in Moldovița, Bukovina",
   "tl.e02.text": "The house in Moldovița, a village where some 400 to 500 Jews lived. “I was 3,” he wrote on the photograph at the entrance to the house from 1929.",
   "tl.e02.src.0": "At the entrance to the house, 1929",
-  "tl.e02.src.1": "A visit by the children of the Rosner family from Vienna to Moldovița, 1928. Standing from left to right: Pepi Rosner (Wassermann), Pepi Wassermann (Buchler), Herman Wassermann, Mendel Wassermann. Seated from left to right: Sali Wassermann (Lifshitz), Nelly Rosner (Godeanu), Jacques Rosner, Ernestine Rosner (Rosenberg), Paula Rosner (Bizberg)",
+  "tl.e02.src.1": "A visit by the children of the Rosner family from Vienna to Moldovița, 1928",
   "tl.e02.src.2": "The Rosner and Wassermann families, 1930",
   "tl.e02.src.3": "The story “Who am I? And Leo Schnap”",
   "tl.e02.src.4": "2009 testimony, part 1 01:22 – childhood in Moldovița",
@@ -1019,5 +1019,9 @@
   "gallery.g_lifshitz_family": "The Lifshitz family",
   "gallery.g_pension_har_aviv": "Pension Har Aviv, Jerusalem",
   "tl.e63.src.1": "Pension Har Aviv, Jerusalem",
-  "tl.e46.src.0": "2009 testimony, part 2 16:47 – the communications network and Agerpres"
+  "tl.e46.src.0": "2009 testimony, part 2 16:47 – the communications network and Agerpres",
+  "gallery.g_1928_visit.full": "A visit by the children of the Rosner family from Vienna to Moldovița, 1928. Standing from left to right: Pepi Rosner (Wassermann), Pepi Wassermann (Buchler), Herman Wassermann, Mendel Wassermann. Seated from left to right: Sali Wassermann (Lifshitz), Nelly Rosner (Godeanu), Jacques Rosner, Ernestine Rosner (Rosenberg), Paula Rosner (Bizberg)",
+  "gallery.g_1930_families.full": "The Rosner and Wassermann families, 1930. Seated from left to right: Litman Rosner, Regina Rosner, Pepi Wassermann Buchler, Siomi Buchler, Jacques (Yitzhak) Rosner, Mendel Wassermann, Nelly Rosner (Godeanu), Pepi Rosner (Wassermann), Penny (Fanny) Wassermann (Rosner), Aharon Leib Wassermann. Standing in the background from left to right: Herman Wassermann, Sali Lifshitz",
+  "tl.e02.src.1.full": "A visit by the children of the Rosner family from Vienna to Moldovița, 1928. Standing from left to right: Pepi Rosner (Wassermann), Pepi Wassermann (Buchler), Herman Wassermann, Mendel Wassermann. Seated from left to right: Sali Wassermann (Lifshitz), Nelly Rosner (Godeanu), Jacques Rosner, Ernestine Rosner (Rosenberg), Paula Rosner (Bizberg)",
+  "tl.e02.src.2.full": "The Rosner and Wassermann families, 1930. Seated from left to right: Litman Rosner, Regina Rosner, Pepi Wassermann Buchler, Siomi Buchler, Jacques (Yitzhak) Rosner, Mendel Wassermann, Nelly Rosner (Godeanu), Pepi Rosner (Wassermann), Penny (Fanny) Wassermann (Rosner), Aharon Leib Wassermann. Standing in the background from left to right: Herman Wassermann, Sali Lifshitz"
 }
